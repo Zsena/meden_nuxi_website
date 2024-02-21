@@ -36,19 +36,16 @@ module.exports = {
         "gray-light": "#8A93A6",
         "gray-lighter": "#B1B7C4", //gradient color gray base
         "gray-base": "#8C95A7", //gradient color gray secondary
-        purple: "#9388E4", //gradient color purple base
+        "purple": "#9388E4", //gradient color purple base
         "purple-dark": "#5145AE", //gradient color purple secondary
         "red-dark": "#AF052F",
-        orange: "#FA9F06",
-        black: "#313846", //gradient color black base
+        "orange": "#FA9F06",
+        "black": "#313846", //gradient color black base
         "black-darker": "#06080B", //gradient color black secondary
         "black-base": "#1A212F",
         "purple-grad": "#0250EE",
         "cian-grad": "#6556D9",
         "rosegold": "#a07360",
-      },
-      fontFamily: {
-        openSans: 'Open Sans'
       },
       fontSize: {
         'h1': '48px',
