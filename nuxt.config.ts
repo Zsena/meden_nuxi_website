@@ -37,9 +37,9 @@ export default defineNuxtConfig({
     pageTransition: { name: "page", mode: "out-in" },
   },
   modules: ["@nuxt/image", "@nuxtjs/sitemap", "nuxt-simple-robots", "nuxt-swiper"], 
-  typescript: {
-    typeCheck: false
-  }
+  // typescript: {
+  //   typeCheck: false
+  // }
 
   // sitemap: {
   //   siteUrl: 'http://localhost:3000/',

@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -10,7 +12,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'sans': ['"BeVietnamPro"', ...defaultTheme.fontFamily.sans],
+      },
       colors: {
+        "grad-btn-base": "#4d84f3",
+        "grad-btn-secondary": "#0341BE",
         "primary-blue": "#2094c5",
         "secondary-blue": "#4D84F3", //gradient color blue base 
         "blue-light": "#6A96EE",
