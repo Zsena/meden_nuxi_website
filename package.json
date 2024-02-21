@@ -10,7 +10,6 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "nuxt": "^3.10.1",
     "vue": "^3.4.15",
     "vue-router": "^4.2.5"
   },
@@ -19,10 +18,10 @@
     "@nuxtjs/sitemap": "^5.1.0",
     "autoprefixer": "^10.4.17",
     "nuxt-simple-robots": "^4.0.0-rc.14",
-    "nuxt-swiper": "^1.2.2",
     "postcss": "^8.4.35",
     "swiper": "^11.0.6",
     "tailwindcss": "^3.4.1",
-    "vue-backtotop": "^1.6.1"
+    "vue-backtotop": "^1.6.1",
+    "vue-easy-lightbox": "^1.18.0"
   }
 }

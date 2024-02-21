@@ -36,7 +36,7 @@ export default defineNuxtConfig({
     },
     pageTransition: { name: "page", mode: "out-in" },
   },
-  modules: ["@nuxt/image", "@nuxtjs/sitemap", "nuxt-simple-robots", "nuxt-swiper"], 
+  modules: ["@nuxt/image", "@nuxtjs/sitemap", "nuxt-simple-robots"], 
   // typescript: {
   //   typeCheck: false
   // }
