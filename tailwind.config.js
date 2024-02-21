@@ -43,7 +43,22 @@ module.exports = {
         black: "#313846", //gradient color black base
         "black-darker": "#06080B", //gradient color black secondary
         "black-base": "#1A212F",
+        "purple-grad": "#0250EE",
+        "cian-grad": "#6556D9",
+        "rosegold": "#a07360",
       },
+      fontFamily: {
+        openSans: 'Open Sans'
+      },
+      fontSize: {
+        'h1': '48px',
+        'h2': '36px',
+        'h3': '30px',
+        'h4': '24px',
+        'h5': '20px',
+        'h6': '16px',
+      },
+
     },
   },
   plugins: [],

@@ -1,0 +1,39 @@
+<svg width="1280" height="397" viewBox="0 0 1280 397" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_7908_228080" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1280" height="397">
+<g clip-path="url(#clip0_7908_228080)">
+<mask id="mask1_7908_228080" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1280" height="397">
+<path d="M0 0L1280 0V397H0L0 0Z" fill="#8A93A6"/>
+</mask>
+<g mask="url(#mask1_7908_228080)">
+<rect width="1280" height="397" fill="url(#paint0_linear_7908_228080)"/>
+</g>
+</g>
+</mask>
+<g mask="url(#mask0_7908_228080)">
+<g opacity="0.16" filter="url(#filter0_f_7908_228080)">
+<ellipse cx="871.132" cy="408.959" rx="696.541" ry="329.473" transform="rotate(-12.2938 871.132 408.959)" fill="#0250EE"/>
+</g>
+<g opacity="0.2" filter="url(#filter1_f_7908_228080)">
+<ellipse cx="1167.33" cy="162.394" rx="569.721" ry="108.922" transform="rotate(-30.1573 1167.33 162.394)" fill="#6556D9"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_f_7908_228080" x="-68.0967" y="-200.566" width="1878.46" height="1219.05" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="127.5" result="effect1_foregroundBlur_7908_228080"/>
+</filter>
+<filter id="filter1_f_7908_228080" x="561.646" y="-248.999" width="1211.36" height="822.785" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="55" result="effect1_foregroundBlur_7908_228080"/>
+</filter>
+<linearGradient id="paint0_linear_7908_228080" x1="640" y1="0" x2="640" y2="397" gradientUnits="userSpaceOnUse">
+<stop stop-color="#313846"/>
+<stop offset="1" stop-color="#06080B"/>
+</linearGradient>
+<clipPath id="clip0_7908_228080">
+<path d="M0 16C0 7.16345 7.16344 0 16 0L1264 0C1272.84 0 1280 7.16344 1280 16V381C1280 389.837 1272.84 397 1264 397H0L0 16Z" fill="white"/>
+</clipPath>
+</defs>
+</svg>

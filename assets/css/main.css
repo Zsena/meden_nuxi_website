@@ -1,5 +1,7 @@
 @import "./component/font.css";
 @import "./component/typo.css";
+@import "./component/cards.css";
+@import "./about.css";
 
 @tailwind base;
 @tailwind components;
@@ -34,8 +36,5 @@
 .bg-overlay-darker {
   opacity: 0.8;
 }
-
-
-
 
 @tailwind utilities;
