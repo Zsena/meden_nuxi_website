@@ -1,0 +1,21 @@
+.card-blue {
+    background: linear-gradient(180deg, #4D84F3 0%, #0341BE 100%);
+}
+
+.card-purple {
+    background: linear-gradient(180deg, #9388E4 0%, #5145AE 100%);
+}
+
+.card-black-rosegold {
+    background: linear-gradient(1deg, rgba(203, 154, 129, 1) 0%, rgba(30, 34, 43, 1) 80%, rgba(0, 0, 0, 0.99) 100%);
+
+}
+
+.card-gray {
+    background: linear-gradient(180deg, #B1B7C4 0%, #8C95A7 100%);
+}
+
+.card-rosegold-black {
+
+    background: linear-gradient(1deg, rgba(58, 63, 67, 1) 0%, rgba(203, 154, 129, 1) 100%);
+}
