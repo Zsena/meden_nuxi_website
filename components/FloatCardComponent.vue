@@ -26,3 +26,10 @@ const props = defineProps({
   url: String,
 });
 </script>
+
+<style scoped>
+.card {
+  border-radius: 1rem 1rem 1rem 0rem;
+  @apply p-5;
+}
+</style>

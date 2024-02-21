@@ -22,3 +22,10 @@ const title = ref(props.title);
 const description = ref(props.description);
 const backgroundColor = ref(props.backgroundColor);
 </script>
+
+<style scoped>
+.card {
+  border-radius: 1rem 1rem 1rem 0rem;
+  @apply text-white p-5;
+}
+</style>
