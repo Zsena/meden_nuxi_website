@@ -3,7 +3,7 @@ const title = ref("Főoldal");
 </script>
 
 <template>
-  <div class="">
+  <main class="">
     <Head>
       <Title>{{ title }}</Title>
       <Meta name="description" :content="title" />
@@ -12,5 +12,5 @@ const title = ref("Főoldal");
     <section class="min-h-[700px]">
 
     </section>
-  </div>
+  </main>
 </template>

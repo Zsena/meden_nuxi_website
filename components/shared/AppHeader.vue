@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-white fixed w-full z-20 top-0">
+  <header class="bg-white fixed w-full z-40 top-0">
     <nav class="container mx-auto flex justify-between items-center p-4">
       <NuxtLink to="/" class="text-2xl font-bold">
         <NuxtImg :src="logoSrc" alt="Logo" class="h-8" />
