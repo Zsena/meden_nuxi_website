@@ -1,45 +1,7 @@
 .h1 {
-  @apply text-4xl lg:text-7xl font-medium;
+  @apply text-4xl lg:text-7xl font-bvpMedium;
 }
 
 a {
-  @apply font-medium border-b pb-1 border-b-transparent hover:text-blue-dark hover:border-b-blue-dark transition-all duration-500 ease-out;
-}
-
-@layer utilities {
-  .font-light {
-    @apply font-["BeVietnamProLight"];
-  }
-
-  .font-bold {
-    @apply font-["BeVietnamProBold"];
-  }
-
-  .font-semibold {
-    @apply font-["BeVietnamProSemibold"];
-  }
-
-  .font-semibold-italic {
-    @apply font-semibold font-["BeVietnamProSemiBoldItalic"];
-  }
-
-  .font-medium {
-    @apply font-["BeVietnamProMedium"];
-  }
-
-  .font-medium-italic {
-    @apply font-medium font-["BeVietnamProMediumItalic"];
-  }
-
-  .font-thin {
-    @apply font-["BeVietnamProThin"];
-  }
-
-  .font-extrabold {
-    @apply font-["BeVietnamProExtrabold"];
-  }
-
-  .font-black {
-    @apply font-["BeVietnamProBlack"];
-  }
+  @apply font-bvpMedium border-b pb-1 border-b-transparent hover:text-blue-dark hover:border-b-blue-dark transition-all duration-500 ease-out;
 }

@@ -6,7 +6,7 @@
 
 .btn {
   transition: background-position .5s;
-  @apply text-center focus:ring-4 font-medium rounded-2xl text-lg px-6 py-2.5 focus:outline-none;
+  @apply text-center focus:ring-4 font-bvpMedium rounded-2xl text-lg px-6 py-2.5 focus:outline-none;
 }
 
 .grad-btn {
