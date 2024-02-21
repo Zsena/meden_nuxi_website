@@ -13,7 +13,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'sans': ['"BeVietnamPro"', ...defaultTheme.fontFamily.sans],
+        'sans': ['"BeVietnamProRegular"', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         "grad-btn-base": "#4d84f3",

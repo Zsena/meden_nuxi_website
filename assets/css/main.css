@@ -1,19 +1,8 @@
+@import "./component/font.css";
+@import "./component/typo.css";
+
 @tailwind base;
 @tailwind components;
-
-@font-face {
-  font-family: "BeVietnamPro";
-  src: url("/assets/fonts/BeVietnamPro-Regular.eot");
-  src: url("/assets/fonts/BeVietnamPro-Regular.eot?#iefix")
-      format("embedded-opentype"),
-    url("/assets/fonts/BeVietnamPro-Regular.woff2") format("woff2"),
-    url("/assets/fonts/BeVietnamPro-Regular.woff") format("woff"),
-    url("/assets/fonts/BeVietnamPro-Regular.ttf") format("truetype"),
-    url("/assets/fonts/BeVietnamPro-Regular.svg#BeVietnamPro-Regular")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
 
 .btn {
   transition: background-position .5s;
@@ -21,7 +10,7 @@
 }
 
 .grad-btn {
-  @apply text-white transition duration-500 ease-in-out opacity-80 hover:opacity-100 bg-gradient-to-r from-grad-btn-base to-grad-btn-secondary hover:from-grad-btn-secondary hover:to-grad-btn-base hover:bg-primary-blue focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800;
+  @apply text-white transition duration-500 ease-in-out opacity-80 hover:opacity-100 bg-gradient-to-r hover:text-white from-grad-btn-base to-grad-btn-secondary hover:from-grad-btn-secondary hover:to-grad-btn-base hover:bg-primary-blue focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800;
 }
 
 .spotlight {
@@ -47,8 +36,6 @@
 }
 
 
-.h1 {
-  @apply text-4xl lg:text-7xl font-bold;
-}
+
 
 @tailwind utilities;

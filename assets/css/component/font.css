@@ -1,0 +1,161 @@
+@font-face {
+  font-family: "BeVietnamProRegular";
+  src: url("./assets/fonts/BeVietnamPro-Regular.eot");
+  src: url("./assets/fonts/BeVietnamPro-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/BeVietnamPro-Regular.woff2") format("woff2"),
+    url("./assets/fonts/BeVietnamPro-Regular.woff") format("woff"),
+    url("./assets/fonts/BeVietnamPro-Regular.ttf") format("truetype"),
+    url("./assets/fonts/BeVietnamPro-Regular.svg#BeVietnamPro-Regular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BeVietnamProLight";
+  src: url("./assets/fonts/BeVietnamPro-Light.eot");
+  src: url("./assets/fonts/BeVietnamPro-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/BeVietnamPro-Light.woff2") format("woff2"),
+    url("./assets/fonts/BeVietnamPro-Light.woff") format("woff"),
+    url("./assets/fonts/BeVietnamPro-Light.ttf") format("truetype"),
+    url("./assets/fonts/BeVietnamPro-Light.svg#BeVietnamPro-Light")
+      format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BeVietnamProSemibold";
+  src: url("./assets/fonts/BeVietnamPro-SemiBold.eot");
+  src: url("./assets/fonts/BeVietnamPro-SemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/BeVietnamPro-SemiBold.woff2") format("woff2"),
+    url("./assets/fonts/BeVietnamPro-SemiBold.woff") format("woff"),
+    url("./assets/fonts/BeVietnamPro-SemiBold.ttf") format("truetype"),
+    url("./assets/fonts/BeVietnamPro-SemiBold.svg#BeVietnamPro-SemiBold")
+      format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BeVietnamProBlack";
+  src: url("./assets/fonts/BeVietnamPro-Black.eot");
+  src: url("./assets/fonts/BeVietnamPro-Black.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/BeVietnamPro-Black.woff2") format("woff2"),
+    url("./assets/fonts/BeVietnamPro-Black.woff") format("woff"),
+    url("./assets/fonts/BeVietnamPro-Black.ttf") format("truetype"),
+    url("./assets/fonts/BeVietnamPro-Black.svg#BeVietnamPro-Black")
+      format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BeVietnamProThin";
+  src: url("./assets/fonts/BeVietnamPro-Thin.eot");
+  src: url("./assets/fonts/BeVietnamPro-Thin.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/BeVietnamPro-Thin.woff2") format("woff2"),
+    url("./assets/fonts/BeVietnamPro-Thin.woff") format("woff"),
+    url("./assets/fonts/BeVietnamPro-Thin.ttf") format("truetype"),
+    url("./assets/fonts/BeVietnamPro-Thin.svg#BeVietnamPro-Thin") format("svg");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BeVietnamProExtrabold";
+  src: url("./assets/fonts/BeVietnamPro-ExtraBold.eot");
+  src: url("./assets/fonts/BeVietnamPro-ExtraBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/BeVietnamPro-ExtraBold.woff2") format("woff2"),
+    url("./assets/fonts/BeVietnamPro-ExtraBold.woff") format("woff"),
+    url("./assets/fonts/BeVietnamPro-ExtraBold.ttf") format("truetype"),
+    url("./assets/fonts/BeVietnamPro-ExtraBold.svg#BeVietnamPro-ExtraBold")
+      format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BeVietnamProSemiBoldItalic";
+  src: url("./assets/fonts/BeVietnamPro-SemiBoldItalic.eot");
+  src: url("./assets/fonts/BeVietnamPro-SemiBoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/BeVietnamPro-SemiBoldItalic.woff2") format("woff2"),
+    url("./assets/fonts/BeVietnamPro-SemiBoldItalic.woff") format("woff"),
+    url("./assets/fonts/BeVietnamPro-SemiBoldItalic.ttf") format("truetype"),
+    url("./assets/fonts/BeVietnamPro-SemiBoldItalic.svg#BeVietnamPro-SemiBoldItalic")
+      format("svg");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BeVietnamProExtraLight";
+  src: url("./assets/fonts/BeVietnamPro-ExtraLight.eot");
+  src: url("./assets/fonts/BeVietnamPro-ExtraLight.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/BeVietnamPro-ExtraLight.woff2") format("woff2"),
+    url("./assets/fonts/BeVietnamPro-ExtraLight.woff") format("woff"),
+    url("./assets/fonts/BeVietnamPro-ExtraLight.ttf") format("truetype"),
+    url("./assets/fonts/BeVietnamPro-ExtraLight.svg#BeVietnamPro-ExtraLight")
+      format("svg");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BeVietnamProBold";
+  src: url("./assets/fonts/BeVietnamPro-Bold.eot");
+  src: url("./assets/fonts/BeVietnamPro-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/BeVietnamPro-Bold.woff2") format("woff2"),
+    url("./assets/fonts/BeVietnamPro-Bold.woff") format("woff"),
+    url("./assets/fonts/BeVietnamPro-Bold.ttf") format("truetype"),
+    url("./assets/fonts/BeVietnamPro-Bold.svg#BeVietnamPro-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BeVietnamProMediumItalic";
+  src: url("./assets/fonts/BeVietnamPro-MediumItalic.eot");
+  src: url("./assets/fonts/BeVietnamPro-MediumItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/BeVietnamPro-MediumItalic.woff2") format("woff2"),
+    url("./assets/fonts/BeVietnamPro-MediumItalic.woff") format("woff"),
+    url("./assets/fonts/BeVietnamPro-MediumItalic.ttf") format("truetype"),
+    url("./assets/fonts/BeVietnamPro-MediumItalic.svg#BeVietnamPro-MediumItalic")
+      format("svg");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BeVietnamProMedium";
+  src: url("./assets/fonts/BeVietnamPro-Medium.eot");
+  src: url("./assets/fonts/BeVietnamPro-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/BeVietnamPro-Medium.woff2") format("woff2"),
+    url("./assets/fonts/BeVietnamPro-Medium.woff") format("woff"),
+    url("./assets/fonts/BeVietnamPro-Medium.ttf") format("truetype"),
+    url("./assets/fonts/BeVietnamPro-Medium.svg#BeVietnamPro-Medium")
+      format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}

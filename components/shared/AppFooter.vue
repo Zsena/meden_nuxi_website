@@ -1,8 +1,10 @@
 <template>
-  <footer class="bg-gray-100">
-    <div class="container mx-auto px-6 py-4 text-lg lg:text-xl">
+  <footer
+    class="bg-gray-100 min-h-[400px] flex flex-col items-center justify-around"
+  >
+    <div class="container mx-auto px-4 py-4 text-lg lg:text-xl">
       <div
-        class="grid grid-cols-1 md:grid-cols-2 gap-4 col-span-4 items-center justify-center"
+        class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center justify-center"
       >
         <div class="mb-4 md:mb-0">
           <div class="mb-4">
@@ -27,65 +29,35 @@
             </NuxtLink>
           </div>
         </div>
-        <div class="w-full lg:w-auto grid grid-cols-2 lg:grid-cols-4 gap-4">
-          <ul class="mb-4 lg:mb-0">
+        <div class="w-full lg:w-auto grid grid-cols-2 gap-4 lg:place-items-end">
+          <ul class="mb-4 mr-4 sm:mb-0 sm:mr-0 flex flex-col gap-y-4 lg:flex-row lg:items-center lg:gap-4">
             <li>
-              <NuxtLink to="/termekek" class="hover:underline"
-                >Termékek</NuxtLink
+              <NuxtLink to="/termekek">Cégünk</NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/szolgaltatasok"
+                >Szolgáltatásaink</NuxtLink
               >
             </li>
             <li>
-              <NuxtLink to="/szolgaltatasok" class="hover:underline"
-                >Szolgáltatások</NuxtLink
-              >
-            </li>
-            <li>
-              <NuxtLink to="/projektek" class="hover:underline"
-                >Projektek</NuxtLink
+              <NuxtLink to="/projektek"
+                >Projektjeink</NuxtLink
               >
             </li>
           </ul>
-          <ul class="mb-4 md:mb-0">
+          <ul class="mb-4 md:mb-0 flex flex-col gap-y-4">
             <li>
-              <NuxtLink to="/rolunk" class="hover:underline">Rólunk</NuxtLink>
-            </li>
-            <li>
-              <NuxtLink to="/karrier" class="hover:underline">Karrier</NuxtLink>
-            </li>
-            <li>
-              <NuxtLink to="/blog" class="hover:underline">Blog</NuxtLink>
-            </li>
-          </ul>
-          <ul class="mb-4 md:mb-0">
-            <li>
-              <NuxtLink to="/kapcsolat" class="hover:underline"
+              <NuxtLink to="/kapcsolat"
                 >Kapcsolat</NuxtLink
               >
             </li>
             <li>
-              <NuxtLink to="/tajekoztato" class="hover:underline"
+              <NuxtLink to="/tajekoztato"
                 >Tájékoztató</NuxtLink
               >
             </li>
             <li>
-              <NuxtLink to="/garancia" class="hover:underline"
-                >Garancia</NuxtLink
-              >
-            </li>
-          </ul>
-          <ul class="mb-4 md:mb-0">
-            <li>
-              <NuxtLink to="/kapcsolat" class="hover:underline"
-                >Kapcsolat</NuxtLink
-              >
-            </li>
-            <li>
-              <NuxtLink to="/tajekoztato" class="hover:underline"
-                >Tájékoztató</NuxtLink
-              >
-            </li>
-            <li>
-              <NuxtLink to="/garancia" class="hover:underline"
+              <NuxtLink to="/garancia"
                 >Garancia</NuxtLink
               >
             </li>

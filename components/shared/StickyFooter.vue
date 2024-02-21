@@ -25,7 +25,7 @@
   export default {
     setup() {
       const projectName = ref("MÉDEN ÉPÜLETGÉPÉSZET");
-      const author = ref("Geekrabbits.hu | Zsena");
+      const author = ref("Geekrabbits.hu");
       const currentYear = computed(() => new Date().getFullYear());
   
       return {
