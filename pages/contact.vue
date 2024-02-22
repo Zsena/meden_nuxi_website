@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Icon } from '@iconify/vue';
-const title = ref("Főoldal");
+const title = ref("Kapcsolat");
 </script>
 
 <template>
@@ -9,19 +9,16 @@ const title = ref("Főoldal");
       <Title>{{ title }}</Title>
       <Meta name="description" :content="title" />
     </Head>
-    <Hero />
     <section class="min-h-[700px] container mx-auto px-4">
       <div class="flex flex-col lg:flex-row gap-8 xl:gap-40 my-16 xl:my-28">
         <LargeCard
-          title="Céljaink"
-          description="
-A fő célunk, hogy ügyfeleink teljes megelégedéssel térjenek haza, és egy biztonságos, kényelmes otthonban vagy munkahelyen élvezhessék mindennapjaikat."
-          description2="Ezt a célt kiváló szaktudással, megbízhatósággal és kiváló minőségű szolgáltatásokkal érjük el. Csapatunk minden egyes tagja magas szinten képzett szakember, aki elkötelezett amellett, hogy tudását és szakmai készségeit folyamatosan fejlessze, így biztosítva, hogy a legfrissebb információkkal és technológiákkal állhassanak ügyfeleink rendelkezésére."
-          bgClass="card-blue"
+          title="Kapcsolat"
+          description="Vedd fel velünk a kapcsolatot"
+          bgClass="card-purple"
           textBaseColor="text-white"
           iconfyIcon="gg:hello"
-          image="/img/headers/header6.webp"
-          alt="Ez egy alt"
+          image="/img/headers/header4.webp"
+          alt="Kapcsolat"
         />
         <article>
           <p class="pb-6">
@@ -54,12 +51,6 @@ A fő célunk, hogy ügyfeleink teljes megelégedéssel térjenek haza, és egy 
             <span class="ml-2">+36 70 882 4217</span>
           </NuxtLink>
         </article>
-      </div>
-    </section>
-    <section class="py-10 px-4">
-      <div class="container mx-auto my-8">
-        <h2 class="h2 py-10">Munkáink</h2>
-        <LightBox />
       </div>
     </section>
   </main>

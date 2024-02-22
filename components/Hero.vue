@@ -22,7 +22,7 @@
           class="container mx-auto grid lg:grid-cols-2 p-4 gap-4 right-0 top-20 left-0 absolute bottom-0 z-10 text-white place-content-center justify-center"
         >
           <article class="text-center lg:text-left mb-5 lg:mb-0">
-            <h1 class="h1 mb-5">Szolgátatásaink</h1>
+            <h1 class="h1 mb-8">Szolgátatásaink</h1>
             <p class="text-lg">
               Országos lefedettséggel kínálunk magas színvonalú villanyszerelési
               szolgáltatásokat, amit a gyors technikának köszönhetünk.
@@ -61,15 +61,17 @@
           class="container mx-auto grid lg:grid-cols-2 p-4 gap-4 right-0 top-20 left-0 absolute bottom-0 z-10 text-white place-content-center justify-center"
         >
           <article class="text-center lg:text-left mb-5 lg:mb-0">
-            <h1 class="h1 mb-5">Cégünk</h1>
+            <h1 class="h1 mb-8">Cégünk</h1>
             <p class="text-lg">
               A vállalatunk, amely Lepsényben jött létre, széleskörű
               szolgáltatásokat nyújt az elektromos szerelés, hőszivattyús
               rendszerek telepítése, légkondicionáló berendezések beüzemelése,
               különféle épületgépészeti feladatok és gyengeáramú hálózatok
-              terén. Missziónk, hogy ügyfeleink számára magas színvonalú
-              szolgáltatást biztosítsunk és tartós ügyfélkapcsolatokat
-              alakítsunk ki.
+              terén.
+            </p>
+            <p class="text-lg mt-5">
+              Missziónk, hogy ügyfeleink számára magas színvonalú szolgáltatást
+              biztosítsunk és tartós ügyfélkapcsolatokat alakítsunk ki.
             </p>
           </article>
           <article class="flex flex-col justify-center items-center gap-4">
