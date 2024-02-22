@@ -55,7 +55,6 @@ module.exports = {
         'h5': '20px',
         'h6': '16px',
       },
-
     },
   },
   plugins: [],

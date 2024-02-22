@@ -8,28 +8,30 @@ const CardData = [
     id: "1",
     title: "Víz-, és gáz szerelés",
     list1: "Víz,-és gázvezeték hálózatok kiépítése és felújítása",
-    list2: "Vízvezeték-szerelvények beszerelése, cseréje",
-    list3: "Gázkészülékek javítása, karbantartása, cseréje",
-    bgColor: "card-blue/50",
+    list2: "Víz- és gázvezeték-szivárgások javítása",
+    list3: "Vízvezeték-szerelvények beszerelése, cseréje",
+    list4: "Gázkészülékek javítása, karbantartása, cseréje",
+    bgColor: "card-blue-opacity",
     url: "/img/01water.png",
   },
   {
     id: "2",
     title: "Solar, klíma, hőszivattyú",
-    list1: "Kivitelezés, beüzemelés, karbantartás, oktatás",
-    list2: "Energiahálózat kiépítés",
-    list3: "Energetikai felülvizsgálat és tanácsadás",
-    bgColor: "card-purple/50",
+    list1: "Rendszer kivitelezés, beüzemelés, oktatás",
+    list2: "Karbantartás, felújítás ",
+    list3: "Energiahálózat kiépítés",
+    list4: "Energetikai felülvizsgálat és tanácsadás",
+    bgColor: "card-purple-opacity",
     url: "/img/02solar.png",
   },
   {
     id: "3",
     title: "Légtechnikai rendszerek",
-    list1: "Tervezés és kivitelezés",
-    list2: "Ventilációs rendszerek korszerűsítése",
-    list3: "Szellőztetés, légellátás, légállapot kialakítás és szabályozás",
+    list1: "Ventilációs megoldások tervezése és kivitelezése",
+    list2: "Korszerűsítés és javítás",
+    list3: "Szellőztetés, légellátás ",
     list4: "Légállapot kialakítás és szabályozás",
-    bgColor: "card-black/50",
+    bgColor: "card-black-opacity",
     url: "/img/03ventilation.png",
   },
   {
@@ -37,9 +39,9 @@ const CardData = [
     title: "Fűtési rendszerek",
     list1: "Fűtési rendszerek tervezése, kiépítése",
     list2: "Intelligens fűtési vezérlőrendszerek beépítése",
-    list3: "Felületfűtési megoldások( padlófűtés, fal-, és mennyezet fűtés)",
+    list3: "Felületfűtési megoldások",
     list4: "Fűtés korszerűsítés",
-    bgColor: "card-gray/50",
+    bgColor: "card-gray-opacity",
     url: "/img/04heating.png",
   },
   {
@@ -49,7 +51,7 @@ const CardData = [
     list2: "Lakóépületek, irodaházak, ipari épületek gépészete",
     list3: "Műszaki ellenőrzés",
     list4: "Projektmenedzsment",
-    bgColor: "card-blue/50",
+    bgColor: "card-blue-opacity",
     url: "/img/05engineer.png",
   },
 ];
@@ -93,7 +95,7 @@ const CardData = [
     </section>
     <section class="properties">
       <article
-        class="container mx-auto mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4 xl:gap-8 justify-items-center"
+        class="container mx-auto mt-16 lg:mt-32 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4 xl:gap-8 justify-items-center"
       >
         <CardComponent
           title="Megbízhatóság"
@@ -123,15 +125,19 @@ const CardData = [
     </section>
     <section class="services">
       <article class="container">
-        <div v-for="item in CardData" :key="item.id">
-          <img :src="item.url" alt="building engineering">
+        <div v-for="item in CardData" :key="item.id" class="card-wrapper">
+        <div>
+          <img :src="item.url" alt="building engineering" class="img-wrapper">
+        </div>
+          
           <FloatCardComponent
             :title="item.title"
             :list1="item.list1"
             :list2="item.list2"
             :list3="item.list3"
             :list4="item.list4"
-            :bgcolor="item.bgColor"
+            :bgColor="item.bgColor"
+            class="absolute card-mobile-position lg:-left-[3.5rem] xl:-left-[3.5rem] 2xl:left-[3.5rem]"
           />
         </div>
       </article>

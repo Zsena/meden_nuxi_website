@@ -1,9 +1,9 @@
 <template>
-  <div :class="['card', backgroundColor]" class="card p-4">
-    <h3 class="text-h3 lg:text-h4 xl:text-h3 text-center mt-16 uppercase">
-      {{ title }}
+  <div :class="['card', backgroundColor]" class="card p-4 mt-4 mx-2 w-[90%] md:max-w-fit">
+    <h3 class="text-h3 sm:text-h4 lg:text-h5 xl:text-h4 2xl:text-h3 text-center mt-4 lg:mt-16 uppercase font-semibold">
+       {{ title }}
     </h3>
-    <p class="text-xl text-center mt-4 mb-32">{{ description }}</p>
+    <p class="text-md lg:text-sm xl:text-md text-center mt-6 mb-4 lg:mb-32 uppercase">{{ description }}</p>
   </div>
 </template>
 
