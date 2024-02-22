@@ -11,6 +11,12 @@ const galleryImages = ref([
   { src: "/img/ourworks/padlofutes4.webp", title: "Három szintes családi ház padlófűtése. 👨🏽‍🔧" },
   { src: "/img/ourworks/padlofutes7.webp", title: "Három szintes családi ház padlófűtése. 👨🏽‍🔧" },
   { src: "/img/ourworks/padlofutes8.webp", title: "Három szintes családi ház padlófűtése. 👨🏽‍🔧" },
+  { src: "/img/ourworks/padlofutes.webp",  title: "Három szintes családi ház padlófűtése. 👨🏽‍🔧" },
+  { src: "/img/ourworks/padlofutes2.webp", title: "Három szintes családi ház padlófűtése. 👨🏽‍🔧" },
+  { src: "/img/ourworks/padlofutes3.webp", title: "Három szintes családi ház padlófűtése. 👨🏽‍🔧" },
+  { src: "/img/ourworks/padlofutes4.webp", title: "Három szintes családi ház padlófűtése. 👨🏽‍🔧" },
+  { src: "/img/ourworks/padlofutes7.webp", title: "Három szintes családi ház padlófűtése. 👨🏽‍🔧" },
+  { src: "/img/ourworks/padlofutes8.webp", title: "Három szintes családi ház padlófűtése. 👨🏽‍🔧" },
 ]);
 </script>
 
