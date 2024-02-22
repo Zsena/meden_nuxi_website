@@ -2,6 +2,35 @@
   @apply text-4xl lg:text-7xl font-bvpMedium;
 }
 
+h2,
+.h2 {
+  @apply font-bvpMedium text-3xl lg:text-5xl;
+}
+
+h3,
+.h3 {
+  @apply font-bvpMedium text-2xl lg:text-3xl;
+}
+
+h4,
+.h4 {
+  @apply font-bvpMedium text-xl lg:text-2xl;
+}
+
+h5,
+.h5 {
+  @apply font-bvpMedium text-lg lg:text-xl;
+}
+
+h6,
+.h6 {
+  @apply font-bvpMedium text-base lg:text-lg;
+}
+
+p {
+  @apply text-base font-sans;
+}
+
 a {
-  @apply font-bvpMedium border-b pb-1 border-b-transparent hover:text-blue-dark hover:border-b-blue-dark transition-all duration-500 ease-out;
+  @apply tracking-wider font-bvpMedium border-b pb-1 border-b-transparent hover:text-blue-dark hover:border-b-blue-dark transition-all duration-500 ease-out;
 }

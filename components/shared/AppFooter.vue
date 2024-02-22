@@ -32,32 +32,32 @@
         <div class="w-full lg:w-auto grid grid-cols-2 gap-4 lg:place-items-end">
           <ul class="mb-4 mr-4 sm:mb-0 sm:mr-0 flex flex-col gap-y-4 lg:flex-row lg:items-center lg:gap-4">
             <li>
-              <NuxtLink to="/termekek">Cégünk</NuxtLink>
+              <NuxtLink to="/about">Cégünk</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/szolgaltatasok"
+              <NuxtLink to="/services"
                 >Szolgáltatásaink</NuxtLink
               >
             </li>
             <li>
-              <NuxtLink to="/projektek"
-                >Projektjeink</NuxtLink
+              <NuxtLink to="/services#projects"
+                >Munkáink</NuxtLink
               >
             </li>
           </ul>
           <ul class="mb-4 md:mb-0 flex flex-col gap-y-4">
             <li>
-              <NuxtLink to="/kapcsolat"
+              <NuxtLink to="/contact"
                 >Kapcsolat</NuxtLink
               >
             </li>
             <li>
-              <NuxtLink to="/tajekoztato"
+              <NuxtLink to="/"
                 >Tájékoztató</NuxtLink
               >
             </li>
             <li>
-              <NuxtLink to="/garancia"
+              <NuxtLink to="/"
                 >Garancia</NuxtLink
               >
             </li>
