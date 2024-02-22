@@ -2,6 +2,7 @@
 /* const title = ref("Rólunk"); */
 import CardComponent from "~/components/CardComponent.vue";
 import FloatCardComponent from "~/components/FloatCardComponent.vue";
+import { Icon } from '@iconify/vue';
 
 const CardData = [
   {
