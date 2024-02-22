@@ -1,14 +1,14 @@
 <template>
-  <div :class="['card', bgColor]" class="p-4 text-gray-950 w-[300px]">
-    <h3 class="text-h4 lg:text-h5 xl:text-h4 text-center mt-8 uppercase p-4">
+  <div :class="['card', bgColor]" class="p-4  w-full lg:w-[400px] text-white">
+    <h3 class=" sm:text-h3 lg:text-h5 xl:text-h4 text-start mb-3 uppercase font-semibold ">
       {{ title }}
     </h3>
 
-    <ol class="list-disc ml-8 p-4 mb-8">
-      <li class="pl-8 py-2">{{ list1 }}</li>
-      <li class="pl-8 py-2">{{ list2 }}</li>
-      <li class="pl-8 py-2">{{ list3 }}</li>
-      <li class="pl-8 py-2">{{ list4 }}</li>
+    <ol class="list-disc ml-8 text-[11px] sm:text-[13px] ">
+      <li class="pl-2 pb-2 uppercase">{{ list1 }}</li>
+      <li class="pl-2 pb-2 uppercase">{{ list2 }}</li>
+      <li class="pl-2 pb-2 uppercase">{{ list3 }}</li>
+      <li class="pl-2 pb-2 uppercase">{{ list4 }}</li>
     </ol>
   </div>
 </template>
