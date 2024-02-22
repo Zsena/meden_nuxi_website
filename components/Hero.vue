@@ -1,9 +1,6 @@
 <template>
   <swiper
-    :autoplay="{
-      delay: 5000,
-      disableOnInteraction: false,
-    }"
+
     :pagination="{
       clickable: true,
     }"
@@ -11,8 +8,8 @@
     :modules="modules"
     class="mySwiper"
   >
-    <swiper-slide class="md:h-[80vh]">
-      <div class="relative max-h-[1500px] lg:max-h-[800px] w-full h-full">
+    <swiper-slide class="h-screen md:h-[80vh]">
+      <div class="relative h-screen top-10 lg:max-h-[800px] w-full">
         <NuxtImg
           class="w-full h-screen md:h-[80vh] object-cover"
           src="/img/headers/header.webp"
@@ -23,14 +20,14 @@
         >
           <article class="text-center lg:text-left mb-5 lg:mb-0">
             <h1 class="h1 mb-8">Szolgátatásaink</h1>
-            <p class="text-lg">
+            <p class="text-sm md:text-lg">
               Országos lefedettséggel kínálunk magas színvonalú villanyszerelési
               szolgáltatásokat, amit a gyors technikának köszönhetünk.
               Épületgépész technikusaink biztosítják egy adott épület kényelmes
               használatához a megfelelő technológiát és ellátják az épületet
               különböző gépészeti szereléssel, felújítással és karbantartással.
             </p>
-            <p class="text-lg mt-5">
+            <p class="text-sm md:text-lg mt-5">
               Cégünk széles spektrumú szolgáltatásokkal áll rendelkezésre, hogy
               eleget tegyen az épületek kényelmi és energetikai
               követelményeinek. Lakossági és ipari területeken egyaránt

@@ -23,7 +23,11 @@
 }
 
 .lightbox-card-img {
-  @apply w-full p-10 min-h-[400px] mx-auto object-cover rounded-lg;
+  @apply w-full p-10 h-screen max-h-[400px] mx-auto object-cover rounded-lg;
+}
+
+.vel-img-title {
+  @apply font-bold text-xl text-white bottom-36 sm:bottom-12 lg:bottom-[60px] !important;
 }
 
 .large-card,
@@ -36,17 +40,33 @@
 }
 
 .card-blue-opacity {
-  background: linear-gradient(180deg, rgba(77, 132, 243, 0.7) 0%, rgba(3, 65, 190, 0.7) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(77, 132, 243, 0.7) 0%,
+    rgba(3, 65, 190, 0.7) 100%
+  );
 }
 
 .card-purple-opacity {
-  background: linear-gradient(180deg, rgba(147, 136, 228, 0.6) 0%, rgba(81, 69, 174, 0.6) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(147, 136, 228, 0.6) 0%,
+    rgba(81, 69, 174, 0.6) 100%
+  );
 }
 
 .card-black-opacity {
-  background: linear-gradient(180deg, rgba(49, 56, 70, 0.6) 0%, rgba(6, 8, 11, 0.6) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(49, 56, 70, 0.6) 0%,
+    rgba(6, 8, 11, 0.6) 100%
+  );
 }
 
 .card-gray-opacity {
-  background: linear-gradient(180deg, rgba(177, 183, 196, 0.8) 0%, rgba(140, 149, 167, 0.8) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(177, 183, 196, 0.8) 0%,
+    rgba(140, 149, 167, 0.8) 100%
+  );
 }

@@ -1,6 +1,17 @@
-<script setup lang="ts">
+<script setup>
+import { ref } from "vue";
 import { Icon } from '@iconify/vue';
+
 const title = ref("Főoldal");
+
+const galleryImages = ref([
+  { src: "/img/ourworks/padlofutes.webp", title: "Három szintes családi ház padlófűtése. 👨🏽‍🔧" },
+  { src: "/img/ourworks/padlofutes2.webp", title: "Három szintes családi ház padlófűtése. 👨🏽‍🔧" },
+  { src: "/img/ourworks/padlofutes3.webp", title: "Három szintes családi ház padlófűtése. 👨🏽‍🔧" },
+  { src: "/img/ourworks/padlofutes4.webp", title: "Három szintes családi ház padlófűtése. 👨🏽‍🔧" },
+  { src: "/img/ourworks/padlofutes7.webp", title: "Három szintes családi ház padlófűtése. 👨🏽‍🔧" },
+  { src: "/img/ourworks/padlofutes8.webp", title: "Három szintes családi ház padlófűtése. 👨🏽‍🔧" },
+]);
 </script>
 
 <template>
@@ -50,7 +61,10 @@ A fő célunk, hogy ügyfeleink teljes megelégedéssel térjenek haza, és egy 
           <p class="pb-6">Keress minket</p>
 
           <NuxtLink to="tel:+36708824217" class="h5 flex items-center w-fit">
-            <Icon icon="material-symbols-light:send-to-mobile-outline" class="w-10 h-10" />
+            <Icon
+              icon="material-symbols-light:send-to-mobile-outline"
+              class="w-10 h-10"
+            />
             <span class="ml-2">+36 70 882 4217</span>
           </NuxtLink>
         </article>
@@ -58,8 +72,9 @@ A fő célunk, hogy ügyfeleink teljes megelégedéssel térjenek haza, és egy 
     </section>
     <section class="py-10 px-4">
       <div class="container mx-auto my-8">
-        <h2 class="h2 py-10">Munkáink</h2>
-        <LightBox />
+        <h2 class="h2 my-10">Munkáink</h2>
+        <h3 class="h3 mb-10">Három szintes családi ház padlófűtése. 👨🏽‍🔧</h3>
+        <LightBox :imgs="galleryImages" :startIndex="2" />
       </div>
     </section>
   </main>
