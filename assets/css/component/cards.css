@@ -1,24 +1,28 @@
 .card-blue {
-  background: linear-gradient(180deg, #4d84f3 0%, #0341be 100%);
+  background: rgb(77, 132, 243);
+  background: linear-gradient(180deg, rgb(77, 132, 243) 0%, rgb(3, 65, 190) 100%);
 }
 
 .card-purple {
-  background: linear-gradient(180deg, #9388e4 0%, #5145ae 100%);
+  background: rgb(147, 136, 228);
+  background: linear-gradient(180deg, rgb(147, 136, 228) 0%, rgb(81, 69, 174) 100%);
 }
 
 .card-black {
-  background: linear-gradient(180deg, #313846 0%, #06080b 100%);
+  background: rgb(49, 56, 70);
+  background: linear-gradient(180deg, #303745 0%, rgb(6, 8, 11) 100%);
 }
 
 .card-gray {
-  background: linear-gradient(180deg, #b1b7c4 0%, #8c95a7 100%);
+  background: rgb(177, 183, 196);
+  background: linear-gradient(180deg, rgb(177, 183, 196) 0%, rgb(140, 149, 167) 100%);
 }
 
 /* lightbox card */
 
 .lightbox-card {
   border-radius: 1rem 1rem 1rem 0rem;
-  @apply cursor-pointer w-full max-w-[350px] h-full bg-gradient-to-tr from-white/10 to-black-darker/10 mix-blend-plus-lighter	drop-shadow-lg shadow-lg;
+  @apply cursor-pointer w-full max-w-[350px] h-full bg-gradient-to-tr from-white/10 to-black-darker/10 mix-blend-plus-lighter drop-shadow-lg shadow-lg;
 }
 
 .lightbox-card-img {
@@ -26,7 +30,7 @@
   @apply w-full p-4 h-screen max-h-[400px] mx-auto object-cover rounded-lg transition-all duration-500 ease-in-out;
 }
 
-.lightbox-card-img:hover{
+.lightbox-card-img:hover {
   filter: none;
 }
 
@@ -43,34 +47,35 @@
   @apply xl:pt-16 xl:px-16 xl:pb-16;
 }
 
+.card {
+  @apply transition-all duration-500 ease-out rounded-tr-2xl rounded-tl-2xl rounded-br-2xl rounded-bl-none;
+}
+
+
 .card-blue-opacity {
-  background: linear-gradient(
-    180deg,
-    rgba(77, 132, 243, 0.7) 0%,
-    rgba(3, 65, 190, 0.7) 100%
-  );
+  background: rgba(77, 132, 243, 0.7);
+  background: linear-gradient(180deg,
+      rgba(77, 132, 243, 0.7) 0%,
+      rgba(3, 65, 190, 0.7) 100%);
 }
 
 .card-purple-opacity {
-  background: linear-gradient(
-    180deg,
-    rgba(147, 136, 228, 0.6) 0%,
-    rgba(81, 69, 174, 0.6) 100%
-  );
+  background: (147, 136, 228, 0.6);
+  background: linear-gradient(180deg,
+      rgba(147, 136, 228, 0.6) 0%,
+      rgba(81, 69, 174, 0.6) 100%);
 }
 
 .card-black-opacity {
-  background: linear-gradient(
-    180deg,
-    rgba(49, 56, 70, 0.6) 0%,
-    rgba(6, 8, 11, 0.6) 100%
-  );
+  background: (49, 56, 70, 0.6);
+  background: linear-gradient(180deg,
+      rgba(49, 56, 70, 0.6) 0%,
+      rgba(6, 8, 11, 0.6) 100%);
 }
 
 .card-gray-opacity {
-  background: linear-gradient(
-    180deg,
-    rgba(177, 183, 196, 0.8) 0%,
-    rgba(140, 149, 167, 0.8) 100%
-  );
+  background: rgba(177, 183, 196, 0.8);
+  background: linear-gradient(180deg,
+      rgba(177, 183, 196, 0.8) 0%,
+      rgba(140, 149, 167, 0.8) 100%);
 }

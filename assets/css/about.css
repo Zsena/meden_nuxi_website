@@ -1,10 +1,8 @@
 .cian-grad {
-
     @apply absolute -top-32 right-12 z-10 w-[15rem] h-[50rem] rotate-[65deg] rounded-[70rem] opacity-20 bg-cian-grad blur-[75px]
 }
 
 .purple-grad {
-
     @apply absolute -top-[10rem] -right-10 z-10 w-[60rem] h-[80rem] rotate-[65deg] rounded-[70rem] opacity-15 bg-purple-grad blur-[127px]
 }
 
@@ -44,8 +42,6 @@
     }
 }
 
-
-
 @media only screen and (min-width:467px) and (max-width:639px) {
     .card-mobile-position {
         @apply mx-auto max-w-[90%]
@@ -63,8 +59,6 @@
         @apply pt-[18rem]
     }
 }
-
-
 
 @media only screen and (min-width:640px) and (max-width:1024px) {
     .card-mobile-position {

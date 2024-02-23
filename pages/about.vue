@@ -2,7 +2,6 @@
 /* const title = ref("Rólunk"); */
 import CardComponent from "~/components/CardComponent.vue";
 import FloatCardComponent from "~/components/FloatCardComponent.vue";
-import { Icon } from '@iconify/vue';
 
 const CardData = [
   {
@@ -13,7 +12,7 @@ const CardData = [
     list3: "Vízvezeték-szerelvények beszerelése, cseréje",
     list4: "Gázkészülékek javítása, karbantartása, cseréje",
     bgColor: "card-blue-opacity",
-    url: "/img/01water.png",
+    url: "/img/01water.webp",
   },
   {
     id: "2",
@@ -23,7 +22,7 @@ const CardData = [
     list3: "Energiahálózat kiépítés",
     list4: "Energetikai felülvizsgálat és tanácsadás",
     bgColor: "card-purple-opacity",
-    url: "/img/02solar.png",
+    url: "/img/02solar.webp",
   },
   {
     id: "3",
@@ -33,7 +32,7 @@ const CardData = [
     list3: "Szellőztetés, légellátás ",
     list4: "Légállapot kialakítás és szabályozás",
     bgColor: "card-black-opacity",
-    url: "/img/03ventilation.png",
+    url: "/img/03ventilation.webp",
   },
   {
     id: "4",
@@ -43,7 +42,7 @@ const CardData = [
     list3: "Felületfűtési megoldások",
     list4: "Fűtés korszerűsítés",
     bgColor: "card-gray-opacity",
-    url: "/img/04heating.png",
+    url: "/img/04heating.webp",
   },
   {
     id: "5",
@@ -53,21 +52,18 @@ const CardData = [
     list3: "Műszaki ellenőrzés",
     list4: "Projektmenedzsment",
     bgColor: "card-blue-opacity",
-    url: "/img/05engineer.png",
+    url: "/img/05engineer.webp",
   },
 ];
 </script>
 
 <template>
-  <main class="">
+  <main>
     <section class="hero mt-20">
       <div
-        class="container mx-auto flex flex-col-reverse lg:flex-row items-center justify-between mt-14 rounded-2xl relative overflow-hidden"
-      >
-        <div
-          class="flex flex-col mx-auto md:ml-[2rem] mr-[3rem] px-2 py-8 text-lg"
-        >
-          <h1 class="text-h2 md:text-h1 mb-10 leading-10">
+        class="container mx-auto flex flex-col-reverse lg:flex-row items-center justify-between mt-14 rounded-2xl relative overflow-hidden">
+        <div class="flex flex-col mx-auto md:ml-[2rem] mr-[3rem] px-2 py-8 text-lg">
+          <h1 class="h1 mb-10">
             Mire számíthat tőlünk?
           </h1>
           <p>
@@ -85,61 +81,36 @@ const CardData = [
             <li>Szakképzett munkatársak, szakmai tanácsadás</li>
           </ol>
         </div>
-        <img
-          src="/img/hero.png"
-          alt="whitefactory"
-          class="rounded-2xl z-30 m-8"
-        />
+
+        <NuxtImg src="/img/hero.webp" alt="whitefactory" class=" h-[400px] rounded-2xl z-30 m-8" />
+
         <div class="purple-grad"></div>
         <div class="cian-grad"></div>
       </div>
     </section>
     <section class="properties">
       <article
-        class="container mx-auto mt-16 lg:mt-32 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4 xl:gap-8 justify-items-center"
-      >
-        <CardComponent
-          title="Megbízhatóság"
-          description="Elkötelezettségünk a garancia az ügyfél elégedettségre. "
-          backgroundColor="card-black"
-          textColor="text-white"
-        />
-        <CardComponent
-          title="Szakértelem"
-          description="Hozzáértő szakembereink precíz és hatékony megoldásokat nyújtanak."
-          backgroundColor="card-black"
-          textColor="text-white"
-        />
-        <CardComponent
-          title="Innováció"
-          description="Korszerű épületgépészet megújuló energiával."
-          backgroundColor="card-black"
-          textColor="text-white"
-        />
-        <CardComponent
-          title="Minőség"
-          description="Magas színvonalú szolgáltatásokkal állunk ügyfeleink rendelkezésére "
-          backgroundColor="card-black"
-          textColor="text-white"
-        />
+        class="container mx-auto mt-16 lg:mt-32 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4 xl:gap-8 justify-items-center">
+        <CardComponent title="Megbízhatóság" description="Elkötelezettségünk a garancia az ügyfél elégedettségre. "
+          bgClass="card-black" textColor="text-white" />
+        <CardComponent title="Szakértelem"
+          description="Hozzáértő szakembereink precíz és hatékony megoldásokat nyújtanak." bgClass="card-black"
+          textColor="text-white" />
+        <CardComponent title="Innováció" description="Korszerű épületgépészet megújuló energiával." bgClass="card-black"
+          textColor="text-white" />
+        <CardComponent title="Minőség" description="Magas színvonalú szolgáltatásokkal állunk ügyfeleink rendelkezésére "
+          bgClass="card-black" textColor="text-white" />
       </article>
     </section>
     <section class="services">
       <article class="container">
         <div v-for="item in CardData" :key="item.id" class="card-wrapper">
-        <div>
-          <img :src="item.url" alt="building engineering" class="img-wrapper">
-        </div>
-          
-          <FloatCardComponent
-            :title="item.title"
-            :list1="item.list1"
-            :list2="item.list2"
-            :list3="item.list3"
-            :list4="item.list4"
-            :bgColor="item.bgColor"
-            class="absolute card-mobile-position lg:-left-[3.5rem] xl:-left-[3.5rem] 2xl:left-[3.5rem]"
-          />
+          <div>
+            <NuxtImg :src="item.url" alt="building engineering" class="img-wrapper rounded-2xl" />
+          </div>
+          <FloatCardComponent :title="item.title" :list1="item.list1" :list2="item.list2" :list3="item.list3"
+            :list4="item.list4" :bgClass="item.bgColor"
+            class="absolute card-mobile-position lg:-left-[3.5rem] xl:-left-[3.5rem] 2xl:left-[3.5rem]" />
         </div>
       </article>
     </section>
