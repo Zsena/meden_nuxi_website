@@ -63,33 +63,32 @@ const CardData = [
         </article>
         <div class="flex flex-1 justify-center h-[1600px]">
           <div class="flex flex-1 flex-col justify-start items-center gap-y-32 mt-[10rem]">
-            <!-- <span class="text-[13rem] font-extrabold absolute">1</span> -->
             <div class="relative">
-              <NuxtImg src="../public/img/1.svg" class="absolute -left-[6rem] -top-[5rem]" />
               <ImgCard :title="CardData[0].title" :list1="CardData[0].list1" :list2="CardData[0].list2"
                 :list3="CardData[0].list3" :list4="CardData[0].list4" :bgClass="CardData[0].bgColor"
                 :url="CardData[0].url" class="z-10" />
+              <NuxtImg src="../public/img/1.svg" class="absolute -left-[6rem] -top-[5rem]" />
             </div>
             <div class="relative">
-              <NuxtImg src="../public/img/3.svg" class="absolute -left-[7rem] -top-[5rem]" />
               <ImgCard :title="CardData[2].title" :list1="CardData[2].list1" :list2="CardData[2].list2"
                 :list3="CardData[2].list3" :list4="CardData[2].list4" :bgClass="CardData[2].bgColor"
                 :url="CardData[2].url" class="mb-[6rem] z-10 " />
+              <NuxtImg src="../public/img/3.svg" class="absolute -left-[7.5rem] -top-[5rem]" />
             </div>
 
           </div>
           <div class="flex flex-1 flex-col  justify-start items-center gap-y-32 mt-[20rem] ">
             <div class="relative">
-              <NuxtImg src="../public/img/2.svg" class="absolute -left-[6rem] -top-[5rem]" />
               <ImgCard :title="CardData[1].title" :list1="CardData[1].list1" :list2="CardData[1].list2"
                 :list3="CardData[1].list3" :list4="CardData[1].list4" :bgClass="CardData[1].bgColor"
                 :url="CardData[1].url" class="z-10" />
+              <NuxtImg src="../public/img/2.svg" class="absolute -left-[7rem] -top-[5rem]" />
             </div>
             <div class="relative">
-              <NuxtImg src="../public/img/4.svg" class="absolute -left-[6rem] -top-[5rem]" />
               <ImgCard :title="CardData[3].title" :list1="CardData[3].list1" :list2="CardData[3].list2"
                 :list3="CardData[3].list3" :list4="CardData[3].list4" :bgClass="CardData[3].bgColor"
                 :url="CardData[3].url" class="z-10" />
+              <NuxtImg src="../public/img/4.svg" class="absolute -left-[7rem] -top-[5rem]" />
             </div>
           </div>
         </div>
