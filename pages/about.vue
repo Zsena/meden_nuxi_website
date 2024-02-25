@@ -92,14 +92,13 @@ const CardData = [
       <article
         class="container mx-auto mt-16 lg:mt-32 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4 xl:gap-8 justify-items-center">
         <CardComponent title="Megbízhatóság" description="Elkötelezettségünk a garancia az ügyfél elégedettségre. "
-          bgClass="card-black" textColor="text-white" />
-        <CardComponent title="Szakértelem"
-          description="Hozzáértő szakembereink precíz és hatékony megoldásokat nyújtanak." bgClass="card-black"
-          textColor="text-white" />
+          bgClass="card-black" textColor="text-white" url="/icons/megbizhatosag4.svg" />
+        <CardComponent title="Szakértelem" description="Hozzáértő szakembereink precíz megoldásokat nyújtanak."
+          bgClass="card-black" textColor="text-white" url="/icons/szakertelem2.svg" />
         <CardComponent title="Innováció" description="Korszerű épületgépészet megújuló energiával." bgClass="card-black"
-          textColor="text-white" />
+          textColor="text-white" url="/icons/innovacio2.svg" />
         <CardComponent title="Minőség" description="Magas színvonalú szolgáltatásokkal állunk ügyfeleink rendelkezésére "
-          bgClass="card-black" textColor="text-white" />
+          bgClass="card-black" textColor="text-white" url="/icons/minoseg2.svg" />
       </article>
     </section>
     <section class="services">

@@ -72,7 +72,7 @@ const CardData = [
           <div
             class="card-col flex flex-1 flex-col gap-y-12 mt-[12rem] lg:justify-start lg:items-center lg:gap-y-32 lg:mt-[10rem]">
             <div
-              class="relative mt-28 md:mt-[10rem] lg:mt-1 w-[326px] xs:min-w-[412px] sm:min-w-[480px] md:min-w-[700px] lg:min-w-[350px] xl:min-w-[420px]">
+              class="relative mt-28 md:mt-[10rem] lg:mt-1 w-full min-w-[326px] max-w-[480px] md:min-w-[700px] lg:min-w-[350px] lg:max-w-[420px]">
               <ImgCard :title="CardData[0].title" :list1="CardData[0].list1" :list2="CardData[0].list2"
                 :list3="CardData[0].list3" :list4="CardData[0].list4" :bgClass="CardData[0].bgColor"
                 :url="CardData[0].url" class="z-10" />
@@ -80,7 +80,7 @@ const CardData = [
                 class="absolute left-1/2 -translate-x-1/2 -top-[9rem] lg:translate-x-1/2 lg:-left-[10.5rem] lg:-top-[5rem]" />
             </div>
             <div
-              class="absolute w-[326px] xs:min-w-[412px] sm:min-w-[480px] md:min-w-[700px] lg:min-w-[350px] xl:min-w-[420px] top-[95rem] xs:top-[90rem] sm:top-[91rem] md:top-[94rem] lg:static">
+              class="absolute w-full min-w-[326px] max-w-[480px] md:min-w-[700px] lg:min-w-[350px] lg:max-w-[420px] top-[95rem] xs:top-[90rem] sm:top-[91rem] md:top-[94rem] lg:static">
               <div class="relative">
                 <ImgCard :title="CardData[2].title" :list1="CardData[2].list1" :list2="CardData[2].list2"
                   :list3="CardData[2].list3" :list4="CardData[2].list4" :bgClass="CardData[2].bgColor"
@@ -92,7 +92,7 @@ const CardData = [
           </div>
           <div class="card-col flex flex-1 flex-col  justify-start items-center gap-y-32 mt-[30rem] ">
             <div
-              class="absolute w-[326px] xs:min-w-[412px] sm:min-w-[480px] md:min-w-[700px] lg:min-w-[350px] xl:min-w-[420px] top-[58rem] xs:top-[55rem] sm:top-[55rem] md:top-[58rem] lg:static">
+              class="absolute w-full min-w-[326px] max-w-[480px] md:min-w-[700px] lg:min-w-[350px] lg:max-w-[420px] top-[58rem] xs:top-[55rem] sm:top-[55rem] md:top-[58rem] lg:static">
               <div class="relative">
                 <ImgCard :title="CardData[1].title" :list1="CardData[1].list1" :list2="CardData[1].list2"
                   :list3="CardData[1].list3" :list4="CardData[1].list4" :bgClass="CardData[1].bgColor"
@@ -102,7 +102,7 @@ const CardData = [
               </div>
             </div>
             <div
-              class="absolute w-[326px] xs:min-w-[412px] sm:min-w-[480px] md:min-w-[700px] lg:min-w-[350px] xl:min-w-[420px] top-[131rem] xs:top-[125rem] sm:top-[127rem] md:top-[130rem] lg:static">
+              class="absolute w-full min-w-[326px] max-w-[480px] md:min-w-[700px] lg:min-w-[350px] lg:max-w-[420px] top-[131rem] xs:top-[125rem] sm:top-[127rem] md:top-[130rem] lg:static">
               <div class="relative">
                 <ImgCard :title="CardData[3].title" :list1="CardData[3].list1" :list2="CardData[3].list2"
                   :list3="CardData[3].list3" :list4="CardData[3].list4" :bgClass="CardData[3].bgColor"
@@ -112,26 +112,6 @@ const CardData = [
               </div>
             </div>
           </div>
-
-          <!-- <div class="card-col flex flex-1 flex-col  justify-start items-center gap-y-32 mt-[20rem] ">
-            <div class="">
-              <div class="relative">
-                <ImgCard :title="CardData[1].title" :list1="CardData[1].list1" :list2="CardData[1].list2"
-                  :list3="CardData[1].list3" :list4="CardData[1].list4" :bgClass="CardData[1].bgColor"
-                  :url="CardData[1].url" class="z-10" />
-                <NuxtImg src="../public/img/2.svg" class="absolute -left-[7rem] -top-[5rem]" />
-              </div>
-            </div>
-            <div class="">
-              <div class="relative">
-                <ImgCard :title="CardData[3].title" :list1="CardData[3].list1" :list2="CardData[3].list2"
-                  :list3="CardData[3].list3" :list4="CardData[3].list4" :bgClass="CardData[3].bgColor"
-                  :url="CardData[3].url" class="z-10" />
-                <NuxtImg src="../public/img/4.svg" class="absolute -left-[7rem] -top-[5rem]" />
-              </div>
-            </div>
-          </div> -->
-
         </div>
       </div>
     </section>
