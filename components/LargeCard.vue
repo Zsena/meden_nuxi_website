@@ -6,7 +6,7 @@
       </h2>
       <p class="text-2xl">{{ description }}</p>
       <p class="mt-6">{{ description2 }}</p>
-      <NuxtImg class="w-full object-cover mt-5 max-h-52 rounded-tr-2xl rounded-tl-2xl rounded-br-2xl rounded-bl-none" :src="image" :alt="alt"/>
+      <NuxtImg class="w-full object-cover mt-5 max-h-52 base-card-rounded" :src="image" :alt="alt"/>
     </article>
   </template>
   

@@ -1,5 +1,5 @@
 <template>
-  <div :class="`${bgClass}`" class="card p-5 mt-4 mx-2 w-[90%] md:max-w-fit min-h-[300px] relative">
+  <div :class="`${bgClass}`" class="card p-5 mt-4 mx-2 w-full h-full min-h-[300px] relative">
     <h3 :class="`${textColor}`" class="text-center mt-4 lg:mt-16 uppercase font-semibold">
       {{ title }}
     </h3>
