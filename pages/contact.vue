@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Icon } from '@iconify/vue';
+import { Icon } from "@iconify/vue";
 const title = ref("Kapcsolat");
 </script>
 
@@ -10,7 +10,9 @@ const title = ref("Kapcsolat");
       <Meta name="description" :content="title" />
     </Head>
     <section class="min-h-[700px] container mx-auto px-4">
-      <div class="flex flex-col lg:flex-row gap-8 xl:gap-40 my-16 xl:my-28">
+      <div
+        class="flex flex-col lg:flex-row gap-8 xl:gap-40 my-16 xl:my-28 relative top-8"
+      >
         <LargeCard
           title="Kapcsolat"
           description="Vedd fel velünk a kapcsolatot"
@@ -47,7 +49,10 @@ const title = ref("Kapcsolat");
           <p class="pb-6">Keress minket</p>
 
           <NuxtLink to="tel:+36708824217" class="h5 flex items-center w-fit">
-            <Icon icon="material-symbols-light:send-to-mobile-outline" class="w-10 h-10" />
+            <Icon
+              icon="material-symbols-light:send-to-mobile-outline"
+              class="w-10 h-10"
+            />
             <span class="ml-2">+36 70 882 4217</span>
           </NuxtLink>
         </article>

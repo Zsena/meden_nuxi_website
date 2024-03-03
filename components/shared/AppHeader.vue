@@ -8,7 +8,10 @@
         <NuxtLink to="/">Főoldal</NuxtLink>
         <NuxtLink to="/about">Rólunk</NuxtLink>
         <NuxtLink to="/services">Szolgáltatásaink</NuxtLink>
-        <NuxtLink to="/contact">Kapcsolat</NuxtLink>
+        <NuxtLink to="/contact">Árajánlat</NuxtLink>
+        <NuxtLink to="tel:+36708824217" class="h5 flex items-center w-fit">
+          <span class="ml-2">+36 70 882 4217</span>
+        </NuxtLink>
       </div>
       <button type="button" class="md:hidden p-4" @click="toggleMobileMenu">
         <span class="sr-only">Menü</span
@@ -25,57 +28,62 @@
       <transition name="slide">
         <div
           v-if="isMobileMenuOpen"
-          class="text-white fixed bottom-0 left-0 w-full max-w-sm mx-auto bg-blue-dark p-4 flex flex-col items-start z-30"
-          style="height: 100vh"
+          class="text-white fixed h-screen left-0 top-0 w-full max-w-sm mx-auto bg-blue-light p-4 z-30"
         >
-          <button class="self-end" @click="toggleMobileMenu">
-            <!-- Close Icon -->
-            <svg
-              class="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
+          <div class="mt-5 flex flex-col items-start">
+            <button class="self-end" @click="toggleMobileMenu">
+              <!-- Close Icon -->
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+            <NuxtLink to="/" class="text-2xl font-bold mb-5">
+              <NuxtImg :src="logoSrc" alt="Logo" class="h-8 opacity-60" />
+            </NuxtLink>
+            <NuxtLink
+              to="/"
+              class="block py-2 hover:text-gray-300"
+              @click="toggleMobileMenu"
+              >Főoldal</NuxtLink
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </button>
-          <NuxtLink to="/" class="text-2xl font-bold mb-5">
-            <NuxtImg :src="logoSrc" alt="Logo" class="h-8 opacity-60" />
-          </NuxtLink>
-          <NuxtLink
-            to="/"
-            class="block py-2 hover:text-gray-300"
-            @click="toggleMobileMenu"
-            >Főoldal</NuxtLink
-          >
-          <NuxtLink
-            to="/about"
-            class="block py-2 hover:text-gray-300"
-            @click="toggleMobileMenu"
-            >Rólunk</NuxtLink
-          >
-          <NuxtLink
-            to="/services"
-            class="block py-2 hover:text-gray-300"
-            @click="toggleMobileMenu"
-            >Szolgáltatások</NuxtLink
-          >
-          <NuxtLink
-            to="/contact"
-            class="block py-2 hover:text-gray-300"
-            @click="toggleMobileMenu"
-            >Kapcsolat</NuxtLink
-          >
+            <NuxtLink
+              to="/about"
+              class="block py-2 hover:text-gray-300"
+              @click="toggleMobileMenu"
+              >Rólunk</NuxtLink
+            >
+            <NuxtLink
+              to="/services"
+              class="block py-2 hover:text-gray-300"
+              @click="toggleMobileMenu"
+              >Szolgáltatások</NuxtLink
+            >
+            <NuxtLink
+              to="/contact"
+              class="block py-2 hover:text-gray-300"
+              @click="toggleMobileMenu"
+              >Árajánlat</NuxtLink
+            >
+            <NuxtLink to="tel:+36708824217" class="h5 flex items-center w-fit">
+              <span class="ml-2">+36 70 882 4217</span>
+            </NuxtLink>
+          </div>
         </div>
       </transition>
     </nav>
   </header>
 </template>
+
 <script>
 import { ref } from "vue";
 

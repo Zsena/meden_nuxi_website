@@ -3,14 +3,12 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ["~/assets/css/main.css"],
-
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
-
   components: {
     global: true,
     dirs: ["~/components"],
@@ -23,6 +21,7 @@ export default defineNuxtConfig({
       viewport: "width=device-width, initial-scale=1",
       htmlAttrs: {
         lang: "hu",
+        class: "scroll-smooth"
       },
       meta: [
         {

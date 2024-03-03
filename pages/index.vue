@@ -26,8 +26,8 @@ const galleryImages = ref([
       <Title>{{ title }}</Title>
       <Meta name="description" :content="title" />
     </Head>
-    <Hero />
-    <section class="min-h-[700px] container mx-auto px-4 pt-6">
+  <BaseHero /> 
+    <section class="min-h-[700px] container mx-auto px-4 pt-6" id="celjaink">
       <div class="flex flex-col lg:flex-row gap-8 xl:gap-40 my-16 xl:my-28">
         <LargeCard
           title="Céljaink"

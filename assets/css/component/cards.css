@@ -53,7 +53,7 @@
   }
 
   .large-card {
-    @apply xl:pt-16 xl:px-16 xl:pb-16;
+    @apply xl:pt-16 xl:px-16 xl:pb-16 flex flex-col justify-evenly;
   }
 
   .card {
