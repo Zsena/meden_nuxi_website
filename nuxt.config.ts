@@ -3,14 +3,12 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ["~/assets/css/main.css"],
-
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
-
   components: {
     global: true,
     dirs: ["~/components"],
@@ -23,6 +21,7 @@ export default defineNuxtConfig({
       viewport: "width=device-width, initial-scale=1",
       htmlAttrs: {
         lang: "hu",
+        class: "scroll-smooth",
       },
       meta: [
         {
@@ -36,11 +35,12 @@ export default defineNuxtConfig({
     },
     pageTransition: { name: "page", mode: "out-in" },
   },
-  modules: ["@nuxt/image", "@nuxtjs/sitemap", "nuxt-simple-robots"], 
-  // typescript: {
-  //   typeCheck: false
-  // }
-
+  modules: [
+    "@nuxt/image",
+    "@nuxtjs/sitemap",
+    "nuxt-simple-robots",
+    "nuxt-aos",
+  ],
   // sitemap: {
   //   siteUrl: 'http://localhost:3000/',
   // },

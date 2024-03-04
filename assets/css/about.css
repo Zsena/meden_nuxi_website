@@ -1,32 +1,41 @@
 .cian-grad {
-
-    @apply absolute -top-32 right-12 z-10 w-[15rem] h-[50rem] rotate-[65deg] rounded-[70rem] opacity-20 bg-cian-grad blur-[75px]
+  @apply absolute -top-32 right-12 z-10 w-[15rem] h-[50rem] rotate-[65deg] rounded-[70rem] opacity-20 bg-cian-grad blur-[75px];
 }
 
 .purple-grad {
-
-    @apply absolute -top-[10rem] -right-10 z-10 w-[60rem] h-[80rem] rotate-[65deg] rounded-[70rem] opacity-15 bg-purple-grad blur-[127px]
+  @apply absolute -top-[10rem] -right-10 z-10 w-[60rem] h-[80rem] rotate-[65deg] rounded-[70rem] opacity-15 bg-purple-grad blur-[127px];
 }
 
-.cian-grad::before, .purple-grad::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
+.hero-grad {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(2, 80, 238, 0.3477766106442577) 100%
+  );    
 }
 
-.card-wrapper {
-    @apply relative flex flex-col-reverse sm:flex-col items-center lg:flex-row lg:justify-center pt-[8rem] mb-14 sm:mb-0 sm:pt-[4rem] sm:mt-[4rem] sm:pb-[8rem] md:pb-10 lg:pb-0 lg:pt-16
+.cian-grad::before,
+.purple-grad::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
 }
 
-.services article {
-    @apply mx-auto flex flex-1 flex-col gap-y-20 sm:gap-y-0 -mt-[4rem] mb-[8rem] sm:mb-[2rem] sm:pb-8 sm:pt-6 md:pb-32 lg:py-16 lg:px-[6rem]
-}
+/* .card-wrapper {
+    @apply relative flex flex-col-reverse sm:flex-col items-center lg:flex-row lg:justify-center
+} */
 
-@media only screen and (min-width:375px) and (max-width:466px) {
+/* .services article {
+    @apply mx-auto flex flex-1 flex-col 
+    gap-y-20 sm:gap-y-0 -mt-[4rem] mb-[8rem] sm:mb-[2rem] sm:pb-8 sm:pt-6 md:pb-32 lg:py-16 lg:px-[6rem]
+} */
+
+/* @media only screen and (min-width:375px) and (max-width:466px) {
     .card-mobile-position {
         @apply mx-auto max-w-[90%]
     }
@@ -42,11 +51,9 @@
     .card-wrapper {
         @apply pt-[15rem]
     }
-}
+} */
 
-
-
-@media only screen and (min-width:467px) and (max-width:639px) {
+/* @media only screen and (min-width:467px) and (max-width:639px) {
     .card-mobile-position {
         @apply mx-auto max-w-[90%]
     }
@@ -65,9 +72,10 @@
 }
 
 
+} */
 
-@media only screen and (min-width:640px) and (max-width:1024px) {
+/* @media only screen and (min-width:640px) and (max-width:1024px) {
     .card-mobile-position {
         @apply mx-auto mt-[10rem] max-w-[90%]
     }
-}
+} */

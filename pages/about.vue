@@ -2,7 +2,6 @@
 /* const title = ref("Rólunk"); */
 import CardComponent from "~/components/CardComponent.vue";
 import FloatCardComponent from "~/components/FloatCardComponent.vue";
-import { Icon } from '@iconify/vue';
 
 const CardData = [
   {
@@ -13,7 +12,7 @@ const CardData = [
     list3: "Vízvezeték-szerelvények beszerelése, cseréje",
     list4: "Gázkészülékek javítása, karbantartása, cseréje",
     bgColor: "card-blue-opacity",
-    url: "/img/01water.png",
+    url: "/img/01water.webp",
   },
   {
     id: "2",
@@ -23,7 +22,7 @@ const CardData = [
     list3: "Energiahálózat kiépítés",
     list4: "Energetikai felülvizsgálat és tanácsadás",
     bgColor: "card-purple-opacity",
-    url: "/img/02solar.png",
+    url: "/img/02solar.webp",
   },
   {
     id: "3",
@@ -33,7 +32,7 @@ const CardData = [
     list3: "Szellőztetés, légellátás ",
     list4: "Légállapot kialakítás és szabályozás",
     bgColor: "card-black-opacity",
-    url: "/img/03ventilation.png",
+    url: "/img/03ventilation.webp",
   },
   {
     id: "4",
@@ -43,7 +42,7 @@ const CardData = [
     list3: "Felületfűtési megoldások",
     list4: "Fűtés korszerűsítés",
     bgColor: "card-gray-opacity",
-    url: "/img/04heating.png",
+    url: "/img/04heating.webp",
   },
   {
     id: "5",
@@ -53,93 +52,153 @@ const CardData = [
     list3: "Műszaki ellenőrzés",
     list4: "Projektmenedzsment",
     bgColor: "card-blue-opacity",
-    url: "/img/05engineer.png",
+    url: "/img/05engineer.webp",
   },
 ];
 </script>
 
 <template>
-  <main class="">
-    <section class="hero mt-20">
-      <div
-        class="container mx-auto flex flex-col-reverse lg:flex-row items-center justify-between mt-14 rounded-2xl relative overflow-hidden"
-      >
+  <main>
+    <section class="mt-20">
+      <div class="container mx-auto mt-24 px-4 relative">
         <div
-          class="flex flex-col mx-auto md:ml-[2rem] mr-[3rem] px-2 py-8 text-lg"
+          class="flex flex-col md:flex-row items-center gap-2 justify-between hero-grad base-card-rounded px-4 xl:px-6"
         >
-          <h1 class="text-h2 md:text-h1 mb-10 leading-10">
-            Mire számíthat tőlünk?
-          </h1>
-          <p>
-            Cégünk elkötelezett a <b>környezettudatos építés</b>, és a karbon
-            semleges építőipari megoldások megvalósításában.
-          </p>
-          <p class="pt-4">
-            Vállaljuk a <b>lakossági és ipari létesítmények</b> gépészeti
-            rendszereinek kivitelezését és karbantartását.
-          </p>
-          <ol class="list-disc ml-8 pt-4">
-            <li>A legkorszerűbb anyagok és technológia alkalmazása</li>
-            <li>A legmegfelelőbb rendszer kialakítása</li>
-            <li>Megfizethető árak</li>
-            <li>Szakképzett munkatársak, szakmai tanácsadás</li>
-          </ol>
+          <div class="pt-6 lg:py-8 text-lg">
+            <h1
+              class="h1 lg:h2 2xl:h1 mb-10"
+              data-aos="fade-up"
+              data-aos-duration="700"
+              data-aos-offset="100"
+              data-aos-delay="50"
+            >
+              Mire számíthat tőlünk?
+            </h1>
+
+            <article class="lg:max-w-[30rem]">
+              <p
+                data-aos="fade-up"
+                data-aos-duration="700"
+                data-aos-offset="50"
+                data-aos-delay="100"
+              >
+                Cégünk elkötelezett a <b>környezettudatos építés</b>, és a
+                karbon semleges építőipari megoldások megvalósításában.
+              </p>
+              <p
+                class="pt-4"
+                data-aos="fade-up"
+                data-aos-duration="700"
+                data-aos-offset="50"
+                data-aos-delay="150"
+              >
+                Vállaljuk a <b>lakossági és ipari létesítmények</b> gépészeti
+                rendszereinek kivitelezését és karbantartását.
+              </p>
+              <ol
+                class="list-disc ml-8 pt-4"
+                data-aos="fade-up"
+                data-aos-duration="700"
+                data-aos-offset="50"
+                data-aos-delay="200"
+              >
+                <li>A legkorszerűbb anyagok és technológia alkalmazása</li>
+                <li>A legmegfelelőbb rendszer kialakítása</li>
+                <li>Megfizethető árak</li>
+                <li>Szakképzett munkatársak, szakmai tanácsadás</li>
+              </ol>
+            </article>
+          </div>
+
+          <div class="flex justify-center lg:justify-end">
+            <NuxtImg
+              src="/img/hero.webp"
+              alt="whitefactory"
+              class="h-screen max-h-[230px] sm:max-h-[400px] w-full base-rounded my-8 z-30 object-cover"
+              data-aos="fade-up"
+              data-aos-duration="700"
+              data-aos-offset="100"
+              data-aos-delay="50"
+            />
+          </div>
         </div>
-        <img
-          src="/img/hero.png"
-          alt="whitefactory"
-          class="rounded-2xl z-30 m-8"
-        />
-        <div class="purple-grad"></div>
-        <div class="cian-grad"></div>
       </div>
     </section>
-    <section class="properties">
+    <section class="px-4">
       <article
-        class="container mx-auto mt-16 lg:mt-32 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4 xl:gap-8 justify-items-center"
+        class="container mx-auto mt-8 lg:mt-20 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 xl:gap-8 justify-items-center"
       >
         <CardComponent
           title="Megbízhatóság"
           description="Elkötelezettségünk a garancia az ügyfél elégedettségre. "
-          backgroundColor="card-black"
+          bgClass="card-black"
           textColor="text-white"
+          url="/icons/megbizhatosag4.svg"
+          data-aos="fade-up"
+          data-aos-duration="700"
+          data-aos-delay="50"
         />
         <CardComponent
           title="Szakértelem"
-          description="Hozzáértő szakembereink precíz és hatékony megoldásokat nyújtanak."
-          backgroundColor="card-black"
+          description="Hozzáértő szakembereink precíz megoldásokat nyújtanak."
+          bgClass="card-black"
           textColor="text-white"
+          url="/icons/szakertelem2.svg"
+          data-aos="fade-up"
+          data-aos-duration="700"
+          data-aos-delay="50"
         />
         <CardComponent
           title="Innováció"
           description="Korszerű épületgépészet megújuló energiával."
-          backgroundColor="card-black"
+          bgClass="card-black"
           textColor="text-white"
+          url="/icons/innovacio2.svg"
+          data-aos="fade-up"
+          data-aos-duration="700"
+          data-aos-delay="50"
         />
         <CardComponent
           title="Minőség"
           description="Magas színvonalú szolgáltatásokkal állunk ügyfeleink rendelkezésére "
-          backgroundColor="card-black"
+          bgClass="card-black"
           textColor="text-white"
+          url="/icons/minoseg2.svg"
+          data-aos="fade-up"
+          data-aos-duration="700"
+          data-aos-delay="50"
         />
       </article>
     </section>
-    <section class="services">
-      <article class="container">
-        <div v-for="item in CardData" :key="item.id" class="card-wrapper">
-        <div>
-          <img :src="item.url" alt="building engineering" class="img-wrapper">
-        </div>
-          
-          <FloatCardComponent
-            :title="item.title"
-            :list1="item.list1"
-            :list2="item.list2"
-            :list3="item.list3"
-            :list4="item.list4"
-            :bgColor="item.bgColor"
-            class="absolute card-mobile-position lg:-left-[3.5rem] xl:-left-[3.5rem] 2xl:left-[3.5rem]"
-          />
+    <section class="py-10 px-4">
+      <article class="container mx-auto">
+        <div
+          v-for="item in CardData"
+          :key="item.id"
+          class="relative"
+          data-aos="fade-up"
+          data-aos-duration="700"
+          data-aos-delay="50"
+        >
+          <div class="min-h-[230px]">
+            <NuxtImg
+              :src="item.url"
+              alt="building engineering"
+              class="ml-auto lg:mr-5 my-5 lg:my-20 min-h-[230px] object-cover base-card-rounded w-full h-full lg:w-[85%]"
+            />
+          </div>
+          <div
+            class="absolute top-0 left-0 bottom-0 right-0 w-full lg:w-fit lg:right-auto h-full flex justify-center items-center"
+          >
+            <FloatCardComponent
+              :title="item.title"
+              :list1="item.list1"
+              :list2="item.list2"
+              :list3="item.list3"
+              :list4="item.list4"
+              :bgClass="item.bgColor"
+            />
+          </div>
         </div>
       </article>
     </section>

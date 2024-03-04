@@ -7,6 +7,10 @@
       :key="index"
       class="lightbox-card"
       @click="showImg(index)"
+      data-aos="fade-up"
+      data-aos-duration="700"
+      data-aos-offset="50"
+      data-aos-delay="150"
     >
       <img
         :src="imageObject.src"

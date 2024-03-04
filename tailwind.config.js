@@ -47,6 +47,10 @@ module.exports = {
         "cian-grad": "#6556D9",
         "rosegold": "#a07360",
       },
+      screens: {
+        'xs': '450px',
+      },
+
       fontSize: {
         'h1': '56px',
         'h2': '40px',
