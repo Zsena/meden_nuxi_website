@@ -21,7 +21,7 @@ export default defineNuxtConfig({
       viewport: "width=device-width, initial-scale=1",
       htmlAttrs: {
         lang: "hu",
-        class: "scroll-smooth"
+        class: "scroll-smooth",
       },
       meta: [
         {
@@ -35,7 +35,7 @@ export default defineNuxtConfig({
     },
     pageTransition: { name: "page", mode: "out-in" },
   },
-  modules: ["@nuxt/image", "@nuxtjs/sitemap", "nuxt-simple-robots"], 
+  modules: ["@nuxt/image", "@nuxtjs/sitemap", "nuxt-simple-robots", "nuxt-aos"], 
   // typescript: {
   //   typeCheck: false
   // }

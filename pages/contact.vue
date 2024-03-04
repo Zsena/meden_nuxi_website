@@ -21,13 +21,28 @@ const title = ref("Kapcsolat");
           iconfyIcon="gg:hello"
           image="/img/headers/header4.webp"
           alt="Kapcsolat"
+          data-aos="fade-up"
+          data-aos-duration="700"
+          data-aos-offset="100"
+          data-aos-delay="50"
         />
         <article>
-          <p class="pb-6">
+          <p
+            class="pb-6"
+            data-aos="fade-up"
+            data-aos-duration="700"
+            data-aos-offset="100"
+            data-aos-delay="50"
+          >
             Törekvésünk, hogy az újítások és a kiváló minőség vezérelje
             tevékenységünket.
           </p>
-          <p>
+          <p
+            data-aos="fade-up"
+            data-aos-duration="700"
+            data-aos-offset="100"
+            data-aos-delay="100"
+          >
             így biztosítva, hogy ügyfeleink számára a lehető legjobb
             szolgáltatást nyújthassunk.
           </p>
@@ -39,16 +54,48 @@ const title = ref("Kapcsolat");
               textBaseColor="text-black-base"
               textColor="text-blue-dark hover:text-blue-light transition-all duration-500 ease-out"
               url="/about"
+              data-aos="fade-up"
+              data-aos-duration="700"
+              data-aos-offset="100"
+              data-aos-delay="150"
             />
           </div>
-          <p class="pb-6">A minőségi munkavégzés tevékenységünk alapköve</p>
-          <p>
+          <p
+            class="pb-6"
+            data-aos="fade-up"
+            data-aos-duration="700"
+            data-aos-offset="100"
+            data-aos-delay="200"
+          >
+            A minőségi munkavégzés tevékenységünk alapköve
+          </p>
+          <p
+            data-aos="fade-up"
+            data-aos-duration="700"
+            data-aos-offset="100"
+            data-aos-delay="250"
+          >
             Az a szándékunk, hogy megbízhatóságunkkal és széleskörű
             szaktudásunkkal hosszantartó ügyfél-elégedettséget biztosítsunk.
           </p>
-          <p class="pb-6">Keress minket</p>
+          <p
+            class="pb-6"
+            data-aos="fade-up"
+            data-aos-duration="700"
+            data-aos-offset="100"
+            data-aos-delay="300"
+          >
+            Keress minket
+          </p>
 
-          <NuxtLink to="tel:+36708824217" class="h5 flex items-center w-fit">
+          <NuxtLink
+            to="tel:+36708824217"
+            class="h5 flex items-center w-fit"
+            data-aos="fade-up"
+            data-aos-duration="700"
+            data-aos-offset="100"
+            data-aos-delay="350"
+          >
             <Icon
               icon="material-symbols-light:send-to-mobile-outline"
               class="w-10 h-10"

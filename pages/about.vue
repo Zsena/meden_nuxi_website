@@ -65,18 +65,43 @@ const CardData = [
           class="flex flex-col md:flex-row items-center gap-2 justify-between hero-grad base-card-rounded px-4 xl:px-6"
         >
           <div class="pt-6 lg:py-8 text-lg">
-            <h1 class="h1 lg:h2 2xl:h1 mb-10">Mire számíthat tőlünk?</h1>
+            <h1
+              class="h1 lg:h2 2xl:h1 mb-10"
+              data-aos="fade-up"
+              data-aos-duration="700"
+              data-aos-offset="100"
+              data-aos-delay="50"
+            >
+              Mire számíthat tőlünk?
+            </h1>
 
             <article class="lg:max-w-[30rem]">
-              <p>
+              <p
+                data-aos="fade-up"
+                data-aos-duration="700"
+                data-aos-offset="50"
+                data-aos-delay="100"
+              >
                 Cégünk elkötelezett a <b>környezettudatos építés</b>, és a
                 karbon semleges építőipari megoldások megvalósításában.
               </p>
-              <p class="pt-4">
+              <p
+                class="pt-4"
+                data-aos="fade-up"
+                data-aos-duration="700"
+                data-aos-offset="50"
+                data-aos-delay="150"
+              >
                 Vállaljuk a <b>lakossági és ipari létesítmények</b> gépészeti
                 rendszereinek kivitelezését és karbantartását.
               </p>
-              <ol class="list-disc ml-8 pt-4">
+              <ol
+                class="list-disc ml-8 pt-4"
+                data-aos="fade-up"
+                data-aos-duration="700"
+                data-aos-offset="50"
+                data-aos-delay="200"
+              >
                 <li>A legkorszerűbb anyagok és technológia alkalmazása</li>
                 <li>A legmegfelelőbb rendszer kialakítása</li>
                 <li>Megfizethető árak</li>
@@ -90,6 +115,10 @@ const CardData = [
               src="/img/hero.webp"
               alt="whitefactory"
               class="h-screen max-h-[230px] sm:max-h-[400px] w-full base-rounded my-8 z-30 object-cover"
+              data-aos="fade-up"
+              data-aos-duration="700"
+              data-aos-offset="100"
+              data-aos-delay="50"
             />
           </div>
         </div>
@@ -105,6 +134,9 @@ const CardData = [
           bgClass="card-black"
           textColor="text-white"
           url="/icons/megbizhatosag4.svg"
+          data-aos="fade-up"
+          data-aos-duration="700"
+          data-aos-delay="50"
         />
         <CardComponent
           title="Szakértelem"
@@ -112,6 +144,9 @@ const CardData = [
           bgClass="card-black"
           textColor="text-white"
           url="/icons/szakertelem2.svg"
+          data-aos="fade-up"
+          data-aos-duration="700"
+          data-aos-delay="50"
         />
         <CardComponent
           title="Innováció"
@@ -119,6 +154,9 @@ const CardData = [
           bgClass="card-black"
           textColor="text-white"
           url="/icons/innovacio2.svg"
+          data-aos="fade-up"
+          data-aos-duration="700"
+          data-aos-delay="50"
         />
         <CardComponent
           title="Minőség"
@@ -126,12 +164,22 @@ const CardData = [
           bgClass="card-black"
           textColor="text-white"
           url="/icons/minoseg2.svg"
+          data-aos="fade-up"
+          data-aos-duration="700"
+          data-aos-delay="50"
         />
       </article>
     </section>
     <section class="py-10 px-4">
       <article class="container mx-auto">
-        <div v-for="item in CardData" :key="item.id" class="relative">
+        <div
+          v-for="item in CardData"
+          :key="item.id"
+          class="relative"
+          data-aos="fade-up"
+          data-aos-duration="700"
+          data-aos-delay="50"
+        >
           <div class="min-h-[230px]">
             <NuxtImg
               :src="item.url"
