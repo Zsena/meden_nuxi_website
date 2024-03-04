@@ -56,6 +56,10 @@
     @apply xl:pt-16 xl:px-16 xl:pb-16 flex flex-col justify-evenly;
   }
 
+  .img-card {
+    @apply p-5 transition-all duration-500 ease-out base-card-rounded;
+  }
+
   .card {
     @apply transition-all duration-500 ease-out base-card-rounded;
   }

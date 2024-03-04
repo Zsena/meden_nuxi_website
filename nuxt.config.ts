@@ -35,11 +35,12 @@ export default defineNuxtConfig({
     },
     pageTransition: { name: "page", mode: "out-in" },
   },
-  modules: ["@nuxt/image", "@nuxtjs/sitemap", "nuxt-simple-robots", "nuxt-aos"], 
-  // typescript: {
-  //   typeCheck: false
-  // }
-
+  modules: [
+    "@nuxt/image",
+    "@nuxtjs/sitemap",
+    "nuxt-simple-robots",
+    "nuxt-aos",
+  ],
   // sitemap: {
   //   siteUrl: 'http://localhost:3000/',
   // },

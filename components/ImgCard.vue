@@ -1,6 +1,6 @@
 <template>
     <div :class="`${bgClass}`"
-        class="card p-5 text-white flex-col items-center md:flex-row md:items-center md:justify-between lg:flex-col lg:items-center">
+        class="img-card text-white h-fit">
         <div>
             <h3 class=" text-start mb-3 uppercase font-semibold ">
                 {{ title }}
@@ -13,7 +13,7 @@
             </ol>
         </div>
 
-        <NuxtImg :src="url" alt="viz-gáz" class="rounded-lg mx-auto" />
+        <NuxtImg :src="url" alt="viz-gáz" class="w-full object-cover mt-5 max-h-52 base-card-rounded" />
 
     </div>
 </template>
