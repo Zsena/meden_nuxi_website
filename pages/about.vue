@@ -179,13 +179,14 @@ const CardData = [
           data-aos="fade-up"
           data-aos-duration="700"
           data-aos-delay="50"
-        >
-          <div class="min-h-[230px]">
+          >
+          <div class="min-h-[230px] relative ml-auto w-full lg:w-[93%]">
             <NuxtImg
               :src="item.url"
               alt="building engineering"
-              class="ml-auto lg:mr-5 my-5 lg:my-20 min-h-[230px] object-cover base-card-rounded w-full h-full lg:w-[85%]"
+              class="my-5 lg:my-20 min-h-[230px] object-cover base-card-rounded w-full h-full"
             />
+            <div class="bg-overlay z-0 base-rounded"></div>
           </div>
           <div
             class="absolute top-0 left-0 bottom-0 right-0 w-full lg:w-fit lg:right-auto h-full flex justify-center items-center"
