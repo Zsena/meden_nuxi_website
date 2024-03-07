@@ -8,6 +8,12 @@
     @apply w-full base-rounded;
   }
 
+  .bg-overlay-darker {
+    opacity: 0.8;
+  }
+}
+
+@layer utilities {
   .bg-overlay {
     position: absolute;
     top: 0;
@@ -17,10 +23,7 @@
     height: 100%;
     background-color: #1d1e20;
     opacity: 0.4;
-  }
-
-  .bg-overlay-darker {
-    opacity: 0.8;
+    @apply transition-all ease-in-out duration-700;
   }
 }
 

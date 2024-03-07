@@ -5,18 +5,21 @@
     <div
       v-for="(imageObject, index) in imgs"
       :key="index"
-      class="lightbox-card"
+      class="lightbox-card cursor-pointer"
       @click="showImg(index)"
       data-aos="fade-up"
       data-aos-duration="700"
       data-aos-offset="50"
       data-aos-delay="100"
     >
-      <img
-        :src="imageObject.src"
-        class="lightbox-card-img"
-        :alt="imageObject.title"
-      />
+      <div class="h-full w-full relative">
+        <img
+          :src="imageObject.src"
+          class="lightbox-card-img"
+          :alt="imageObject.title"
+        />
+        <div class="bg-card-overlay"></div>
+      </div>
     </div>
 
     <vue-easy-lightbox
