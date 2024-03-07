@@ -33,24 +33,24 @@
             class="mb-4 mr-4 sm:mb-0 sm:mr-0 flex flex-col gap-y-4 lg:flex-row lg:items-center lg:gap-4"
           >
             <li>
-              <NuxtLink to="/about" :class="{'active-link': isActive('/about')}">Cégünk</NuxtLink>
+              <NuxtLink to="/cegunk" :class="{'active-link': isActive('/cegunk')}">Cégünk</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/services" :class="{'active-link': isActive('/services')}">Szolgáltatásaink</NuxtLink>
+              <NuxtLink to="/szolgaltatasok" :class="{'active-link': isActive('/szolgaltatasok')}">Szolgáltatásaink</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/ourworks" :class="{'active-link': isActive('/ourworks')}">Munkáink</NuxtLink>
+              <NuxtLink to="/munkaink" :class="{'active-link': isActive('/munkaink')}">Munkáink</NuxtLink>
             </li>
           </ul>
           <ul class="mb-4 md:mb-0 flex flex-col gap-y-4">
             <li>
-              <NuxtLink to="/contact" :class="{'active-link': isActive('/contact')}">Árajánlat</NuxtLink>
+              <NuxtLink to="/arajanlat" :class="{'active-link': isActive('/arajanlat')}">Árajánlat</NuxtLink>
             </li>
             <li>
               <NuxtLink to="https://www.ceginformacio.hu/cr9311992643" target="_blank">Céginfó</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/guarantee" :class="{'active-link': isActive('/guarantee')}">Garancia</NuxtLink>
+              <NuxtLink to="/garancia" :class="{'active-link': isActive('/garancia')}">Garancia</NuxtLink>
             </li>
           </ul>
         </div>

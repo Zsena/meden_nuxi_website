@@ -39,7 +39,7 @@ useHead({
               description="Elkötelezettek vagyunk amellett, hogy folyamatosan fejlesszük magunkat"
               textBaseColor="text-black-base"
               textColor="text-blue-dark hover:text-blue-light transition-all duration-500 ease-out"
-              url="/about"
+              url="/cegunk"
               data-aos="fade-up"
               data-aos-duration="700"
             />

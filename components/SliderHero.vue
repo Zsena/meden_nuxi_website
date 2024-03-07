@@ -47,7 +47,7 @@
             <article class="flex flex-col justify-center items-center gap-4">
               <NuxtLink
                 class="btn grad-btn p-5 text-xl lg:text-3xl"
-                to="/contact"
+                to="/arajanlat"
                 >Kérjen ingyenes árajánlatot most!</NuxtLink
               >
               <NuxtLink class="btn grad-btn lg:text-lg" to="tel:+36708824217"
@@ -85,7 +85,7 @@
             <article class="flex flex-col justify-center items-center gap-4">
               <NuxtLink
                 class="btn grad-btn p-5 text-xl lg:text-3xl"
-                to="/contact"
+                to="/arajanlat"
                 >Kérjen ingyenes árajánlatot most!</NuxtLink
               >
               <NuxtLink class="btn grad-btn lg:text-lg" to="tel:+36708824217"

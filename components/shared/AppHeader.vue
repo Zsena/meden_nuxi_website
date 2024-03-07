@@ -6,10 +6,10 @@
       </NuxtLink>
       <div class="hidden md:flex space-x-4">
         <NuxtLink to="/" :class="{'active-link': isActive('/')}" class="home"><Icon icon="iconoir:home" /></NuxtLink>
-        <NuxtLink to="/about" :class="{'active-link': isActive('/about')}">Cégünk</NuxtLink>
-        <NuxtLink to="/services" :class="{'active-link': isActive('/services')}">Szolgáltatásaink</NuxtLink>
-        <NuxtLink to="/ourworks" :class="{'active-link': isActive('/ourworks')}">Munkáink</NuxtLink>
-        <NuxtLink to="/contact" :class="{'active-link': isActive('/contact')}">Árajánlat</NuxtLink>
+        <NuxtLink to="/cegunk" :class="{'active-link': isActive('/cegunk')}">Cégünk</NuxtLink>
+        <NuxtLink to="/szolgaltatasok" :class="{'active-link': isActive('/szolgaltatasok')}">Szolgáltatásaink</NuxtLink>
+        <NuxtLink to="/munkaink" :class="{'active-link': isActive('/munkaink')}">Munkáink</NuxtLink>
+        <NuxtLink to="/arajanlat" :class="{'active-link': isActive('/arajanlat')}">Árajánlat</NuxtLink>
         <NuxtLink to="tel:+36708824217" class="h5 hidden lg:flex items-center w-fit">
           <span class="ml-2">+36 70 882 4217</span>
         </NuxtLink>
@@ -58,25 +58,25 @@
               ><Icon icon="iconoir:home" /></NuxtLink
             >
             <NuxtLink
-              to="/about" :class="{'active-link': isActive('/about')}"
+              to="/cegunk" :class="{'active-link': isActive('/cegunk')}"
               class="block py-2 hover:text-gray-300"
               @click="toggleMobileMenu"
               >Cégünk</NuxtLink
             >
             <NuxtLink
-              to="/services" :class="{'active-link': isActive('/services')}"
+              to="/szolgaltatasok" :class="{'active-link': isActive('/szolgaltatasok')}"
               class="block py-2 hover:text-gray-300"
               @click="toggleMobileMenu"
               >Szolgáltatások</NuxtLink
             >
             <NuxtLink
-              to="/ourworks" :class="{'active-link': isActive('/ourworks')}"
+              to="/munkaink" :class="{'active-link': isActive('/munkaink')}"
               class="block py-2 hover:text-gray-300"
               @click="toggleMobileMenu"
               >Munkáink</NuxtLink
             >
             <NuxtLink
-              to="/contact" :class="{'active-link': isActive('/contact')}"
+              to="/arajanlat" :class="{'active-link': isActive('/arajanlat')}"
               class="block py-2 hover:text-gray-300"
               @click="toggleMobileMenu"
               >Árajánlat</NuxtLink

@@ -4,53 +4,53 @@ import { Icon } from "@iconify/vue";
 
 const galleryImages = ref([
   {
-    src: "/img/ourworks/csaladihazpadlofutes_rendszerlemez2.webp",
+    src: "/img/munkaink/csaladihazpadlofutes_rendszerlemez2.webp",
     title: "Családi ház padlófűtés szerelése, rendszer lemez használatával! 👨🏽‍🔧",
   },
   {
-    src: "/img/ourworks/csaladihazpadlofutes_rendszerlemez3.webp",
+    src: "/img/munkaink/csaladihazpadlofutes_rendszerlemez3.webp",
     title: "Családi ház padlófűtés szerelése, rendszer lemez használatával! 👨🏽‍🔧",
   },
   {
-    src: "/img/ourworks/csaladihazpadlofutes.webp",
+    src: "/img/munkaink/csaladihazpadlofutes.webp",
     title: "Három szintes családi ház padlófűtése. 👨🏽‍🔧",
   },
   {
-    src: "/img/ourworks/padlofutes7.webp",
+    src: "/img/munkaink/padlofutes7.webp",
     title: "Három szintes családi ház padlófűtése. 👨🏽‍🔧",
   },
   {
-    src: "/img/ourworks/padlofutes.webp",
+    src: "/img/munkaink/padlofutes.webp",
     title: "Három szintes családi ház padlófűtése. 👨🏽‍🔧",
   },
   {
-    src: "/img/ourworks/furdo_feluitas4.webp",
+    src: "/img/munkaink/furdo_feluitas4.webp",
     title:
       "Fürdőszoba felújítás: víz és csatorna vezeték, szerelvények fel helyezése. 👩‍🔧",
   },
   {
-    src: "/img/ourworks/furdo_feluitas.webp",
+    src: "/img/munkaink/furdo_feluitas.webp",
     title:
       "Fürdőszoba felújítás: víz és csatorna vezeték, szerelvények fel helyezése. 👩‍🔧",
   },
   {
-    src: "/img/ourworks/futesszereles.webp",
+    src: "/img/munkaink/futesszereles.webp",
     title: "Fűtés szerelése 👨🏽‍🔧",
   },
   {
-    src: "/img/ourworks/futesszereles2.webp",
+    src: "/img/munkaink/futesszereles2.webp",
     title: "Fűtés szerelése 👨🏽‍🔧",
   },
   {
-    src: "/img/ourworks/vizgazfutes.webp",
+    src: "/img/munkaink/vizgazfutes.webp",
     title: "Víz gáz fűtés szerelés és duguláselhárítás. 👨‍🔧",
   },
   {
-    src: "/img/ourworks/hokozpont4.webp",
+    src: "/img/munkaink/hokozpont4.webp",
     title: "Hőközpont építése szalmabálás kazánnal. 👨‍🔧",
   },
   {
-    src: "/img/ourworks/matyasdomb2.webp",
+    src: "/img/olgál/matyasdomb2.webp",
     title: "Mátyásdomb fűtés szerelés 👨‍🔧",
   },
 ]);
@@ -110,7 +110,7 @@ A fő célunk, hogy ügyfeleink teljes megelégedéssel térjenek haza, és egy 
               description="Elkötelezettek vagyunk amellett, hogy folyamatosan fejlesszük magunkat"
               textBaseColor="text-black-base"
               textColor="text-blue-dark hover:text-blue-light transition-all duration-500 ease-out"
-              url="/about"
+              url="/cegunk"
               data-aos="fade-up"
               data-aos-duration="700"
               data-aos-offset="50"

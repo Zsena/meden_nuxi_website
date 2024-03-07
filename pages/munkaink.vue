@@ -7,113 +7,113 @@ useHead({
 
 const galleryImages1 = ref([
   {
-    src: "/img/ourworks/csaladihazpadlofutes.webp",
+    src: "/img/munkaink/csaladihazpadlofutes.webp",
     title: "Három szintes családi ház padlófűtése. 👨🏽‍🔧",
   },
   {
-    src: "/img/ourworks/csaladihazpadlofutes2.webp",
+    src: "/img/munkaink/csaladihazpadlofutes2.webp",
     title: "Három szintes családi ház padlófűtése.👨🏽‍🔧",
   },
   {
-    src: "/img/ourworks/csaladihazpadlofutes3.webp",
+    src: "/img/munkaink/csaladihazpadlofutes3.webp",
     title: "Három szintes családi ház padlófűtése. 👨🏽‍🔧",
   },
   {
-    src: "/img/ourworks/padlofutes4.webp",
+    src: "/img/munkaink/padlofutes4.webp",
     title: "Három szintes családi ház padlófűtése. 👨🏽‍🔧",
   },
   {
-    src: "/img/ourworks/padlofutes7.webp",
+    src: "/img/munkaink/padlofutes7.webp",
     title: "Három szintes családi ház padlófűtése. 👨🏽‍🔧",
   },
   {
-    src: "img/ourworks/padlofutes8.webp",
+    src: "img/munkaink/padlofutes8.webp",
     title: "Három szintes családi ház padlófűtése. 👨🏽‍🔧",
   },
   {
-    src: "/img/ourworks/csaladihazpadlofutes.webp",
+    src: "/img/munkaink/csaladihazpadlofutes.webp",
     title: "Három szintes családi ház padlófűtése. 👨🏽‍🔧",
   },
   {
-    src: "/img/ourworks/csaladihazpadlofutes.webp",
+    src: "/img/munkaink/csaladihazpadlofutes.webp",
     title: "Három szintes családi ház padlófűtése. 👨🏽‍🔧",
   },
 ]);
 
 const galleryImages2 = ref([
   {
-    src: "/img/ourworks/futesszereles.webp",
+    src: "/img/munkaink/futesszereles.webp",
     title: "Fűtés szerelése 👨🏽‍🔧",
   },
   {
-    src: "/img/ourworks/futesszereles2.webp",
+    src: "/img/munkaink/futesszereles2.webp",
     title: "Fűtés szerelése 👨🏽‍🔧",
   },
   {
-    src: "/img/ourworks/futesszereles3.webp",
+    src: "/img/munkaink/futesszereles3.webp",
     title: "Fűtés szerelése 👨🏽‍🔧",
   },
   {
-    src: "/img/ourworks/vizgazfutes.webp",
+    src: "/img/munkaink/vizgazfutes.webp",
     title: "Víz gáz fűtés szerelés és duguláselhárítás. 👨‍🔧",
   },
   {
-    src: "/img/ourworks/vizgazfutes2.webp",
+    src: "/img/munkaink/vizgazfutes2.webp",
     title: "Víz gáz fűtés szerelés és duguláselhárítás. 👨‍🔧",
   },
   {
-    src: "/img/ourworks/vizgazfutes3.webp",
+    src: "/img/munkaink/vizgazfutes3.webp",
     title: "Víz gáz fűtés szerelés és duguláselhárítás. 👨‍🔧",
   },
   {
-    src: "/img/ourworks/hokozpont.webp",
+    src: "/img/munkaink/hokozpont.webp",
     title: "Hőközpont építése szalmabálás kazánnal. 👨‍🔧",
   },
   {
-    src: "/img/ourworks/hokozpont2.webp",
+    src: "/img/munkaink/hokozpont2.webp",
     title: "Hőközpont építése szalmabálás kazánnal. 👨‍🔧",
   },
   {
-    src: "/img/ourworks/hokozpont3.webp",
+    src: "/img/munkaink/hokozpont3.webp",
     title: "Hőközpont építése szalmabálás kazánnal. 👨‍🔧",
   },
   {
-    src: "/img/ourworks/hokozpont4.webp",
+    src: "/img/munkaink/hokozpont4.webp",
     title: "Hőközpont építése szalmabálás kazánnal. 👨‍🔧",
   },
   {
-    src: "/img/ourworks/matyasdomb.webp",
+    src: "/img/munkaink/matyasdomb.webp",
     title: "Mátyásdomb fűtés szerelés 👨‍🔧",
   },
   {
-    src: "/img/ourworks/matyasdomb2.webp",
+    src: "/img/munkaink/matyasdomb2.webp",
     title: "Mátyásdomb fűtés szerelés 👨‍🔧",
   },
   {
-    src: "/img/ourworks/matyasdomb3.webp",
+    src: "/img/munkaink/matyasdomb3.webp",
     title: "Mátyásdomb fűtés szerelés 👨‍🔧",
   },
   {
-    src: "/img/ourworks/matyasdomb4.webp",
+    src: "/img/munkaink/matyasdomb4.webp",
     title: "Mátyásdomb fűtés szerelés 👨‍🔧",
   },
   {
-    src: "/img/ourworks/furdo_feluitas4.webp",
+    src: "/img/munkaink/furdo_feluitas4.webp",
     title:
       "Fürdőszoba felújítás: víz és csatorna vezeték, szerelvények fel helyezése. 👩‍🔧",
   },
   {
-    src: "/img/ourworks/furdo_feluitas.webp",
+    src: "/img/munkaink/furdo_feluitas.webp",
     title:
       "Fürdőszoba felújítás: víz és csatorna vezeték, szerelvények fel helyezése. 👩‍🔧",
   },
   {
-    src: "/img/ourworks/furdo_feluitas3.webp",
+    src: "/img/munkaink/furdo_feluitas3.webp",
     title:
       "Fürdőszoba felújítás: víz és csatorna vezeték, szerelvények fel helyezése. 👩‍🔧",
   },
   {
-    src: "/img/ourworks/furdo_feluitas2.webp",
+    src: "/img/munkaink/furdo_feluitas2.webp",
     title:
       "Fürdőszoba felújítás: víz és csatorna vezeték, szerelvények fel helyezése. 👩‍🔧",
   },
@@ -121,22 +121,22 @@ const galleryImages2 = ref([
 
 const galleryImages3 = ref([
   {
-    src: "/img/ourworks/csaladihazpadlofutes_rendszerlemez.webp",
+    src: "/img/munkaink/csaladihazpadlofutes_rendszerlemez.webp",
     title:
       "Családi ház padlófűtés szerelése, rendszer lemez használatával!  👨🏽‍🔧",
   },
   {
-    src: "/img/ourworks/csaladihazpadlofutes_rendszerlemez2.webp",
+    src: "/img/munkaink/csaladihazpadlofutes_rendszerlemez2.webp",
     title:
       "Családi ház padlófűtés szerelése, rendszer lemez használatával!  👨🏽‍🔧",
   },
   {
-    src: "/img/ourworks/csaladihazpadlofutes_rendszerlemez3.webp",
+    src: "/img/munkaink/csaladihazpadlofutes_rendszerlemez3.webp",
     title:
       "Családi ház padlófűtés szerelése, rendszer lemez használatával!  👨🏽‍🔧",
   },
   {
-    src: "/img/ourworks/csaladihazpadlofutes_rendszerlemez4.webp",
+    src: "/img/munkaink/csaladihazpadlofutes_rendszerlemez4.webp",
     title:
       "Családi ház padlófűtés szerelése, rendszer lemez használatával!  👨🏽‍🔧",
   },

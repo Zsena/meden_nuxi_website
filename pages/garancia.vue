@@ -55,7 +55,7 @@ useHead({
                       Amennyiben a garanciaidőszak alatt bármilyen hiba vagy
                       rendellenesség merül fel a munkánk kapcsán, kérjük,
                       azonnal vegye fel velünk a
-                      <NuxtLink to="contact">kapcsolatot</NuxtLink> . Vállaljuk,
+                      <NuxtLink to="arajanlat">kapcsolatot</NuxtLink> . Vállaljuk,
                       hogy 72 órán belül kiszállunk, és orvosoljuk a problémát,
                       garantálva ezzel az Ön megelégedettségét.
                     </p>
