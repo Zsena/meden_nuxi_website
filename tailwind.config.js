@@ -12,6 +12,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      grayscale: {
+        60: '60%',
+      },
       fontFamily: {
         sans: ['"BeVietnamProRegular"', ...defaultTheme.fontFamily.sans],
         "bvpLight": ['"BeVietnamProLight", sans-serif'],

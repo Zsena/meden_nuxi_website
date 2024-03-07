@@ -71,7 +71,7 @@
       ></div>
     </div>
     <div
-      class="mt-[-50px] flex h-screen items-center justify-center relative z-20"
+      class="flex items-center justify-center relative z-20 min-h-[1000px] sm:min-h-[750px] md:min-h-[850px]"
     >
       <div
         class="max-w-full flex-shrink-0 px-4 text-center lg:mx-0 lg:max-w-3xl lg:pt-8"
