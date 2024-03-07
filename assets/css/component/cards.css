@@ -34,14 +34,15 @@
   /* lightbox card */
 
   .lightbox-card {
-    border-radius: 1rem 1rem 1rem 0rem;
-    @apply cursor-pointer w-full max-w-[350px] h-full bg-gradient-to-tr from-white/10 to-black-darker/10 mix-blend-plus-lighter drop-shadow-lg shadow-lg;
+    @apply cursor-pointer base-rounded h-full w-full max-w-[350px] max-h-[200px] sm:max-h-[300px] bg-gradient-to-tr from-white/10 to-black-darker/10 mix-blend-plus-lighter drop-shadow-lg shadow-lg;
+  }
+  @layer utilities {
+    .lightbox-card-img {
+      filter: grayscale(60%);
+      @apply w-full p-4 h-full mx-auto object-cover base-rounded transition-all duration-500 ease-in-out;
+    }
   }
 
-  .lightbox-card-img {
-    filter: grayscale(60%);
-    @apply w-full p-4 h-screen max-h-[400px] mx-auto object-cover rounded-lg transition-all duration-500 ease-in-out;
-  }
 
   .lightbox-card-img:hover {
     filter: none;

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="container flex items-center justify-between flex-wrap gap-5 mx-auto"
+    class="container grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 mx-auto"
   >
     <div
       v-for="(imageObject, index) in imgs"
@@ -10,7 +10,7 @@
       data-aos="fade-up"
       data-aos-duration="700"
       data-aos-offset="50"
-      data-aos-delay="150"
+      data-aos-delay="100"
     >
       <img
         :src="imageObject.src"
