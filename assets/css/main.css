@@ -1,69 +1,9 @@
 @import "./component/font.css";
 @import "./component/typo.css";
 @import "./component/cards.css";
+@import "./component/buttons.css";
 @import "./about.css";
-
+@import "base.css";
 @tailwind base;
 @tailwind components;
-
-.btn {
-  transition: background-position .5s;
-  @apply text-center focus:ring-4 font-bvpMedium rounded-2xl text-lg px-6 py-2.5 focus:outline-none;
-}
-
-.grad-btn {
-  @apply text-white transition duration-500 ease-in-out opacity-80 hover:opacity-100 bg-gradient-to-r hover:text-white from-grad-btn-base to-grad-btn-secondary hover:from-grad-btn-secondary hover:to-grad-btn-base hover:bg-primary-blue focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800;
-}
-
-.spotlight {
-  background: linear-gradient(45deg, #00dc82 0%, #36e4da 50%, #0047e1 100%);
-  filter: blur(20vh);
-  height: 40vh;
-  bottom: -30vh;
-}
-
-.bg-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  width: 100%;
-  height: 100%;
-  background-color: #1d1e20;
-  opacity: 0.4;
-}
-
-.bg-overlay-darker {
-  opacity: 0.8;
-}
-
-.cloud-float {
-	transition: transform 0.5s ease;
-	transform: translatey(0);
-	animation: floating 4s ease-in-out infinite;
-}
-
-.cloud-float-2 {
-	transition: transform 0.5s ease;
-	transform: translatey(0);
-	animation: floating 7s ease-in-out infinite;
-}
-
-
-@keyframes floating {
-	0% {
-		transform: translate(0, 0px);
-	}
-	50% {
-		transform: translate(0, 15px);
-	}
-	100% {
-		transform: translate(0, -0px);
-	}
-}
-
-.scroll-smooth {
-  scroll-behavior: smooth;
-}
-
-@tailwind utilities;  
+@tailwind utilities;

@@ -103,6 +103,14 @@
     );
     @apply h-full lg:h-auto;
   }
+
+  .vel-img-title {
+    @apply font-bold text-sm line-clamp-3 whitespace-normal lg:text-xl text-white bottom-44 sm:bottom-12 lg:bottom-[60px] !important;
+  }
+
+  .vel-img {
+    @apply base-rounded !important;
+  }
 }
 
 @layer utilities {
@@ -114,15 +122,7 @@
   .line-clamp-3 {
     display: -webkit-box;
     -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;  
+    -webkit-box-orient: vertical;
     overflow: hidden;
   }
-}
-
-.vel-img-title {
-  @apply font-bold text-sm line-clamp-3 whitespace-normal lg:text-xl text-white bottom-44 sm:bottom-12 lg:bottom-[60px] !important;
-}
-
-.vel-img {
-  @apply base-rounded !important;
 }

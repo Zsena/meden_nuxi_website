@@ -1,0 +1,20 @@
+@layer components {
+  .back-button {
+    @apply mb-8 cursor-pointer flex h-10 w-10 items-center justify-center rounded-full bg-secondary-blue text-white shadow-md shadow-slate-800/5 ring-1 ring-slate-900/5 transition lg:absolute lg:-left-5 lg:-mt-2 lg:mb-0 xl:-top-1.5 xl:left-0 xl:mt-0 hover:border-none hover:text-black;
+  }
+  .btn {
+    transition: background-position 0.5s;
+    @apply text-center focus:ring-4 font-bvpMedium rounded-2xl text-lg px-6 py-2.5 focus:outline-none;
+  }
+
+  .grad-btn {
+    @apply text-white transition duration-500 ease-in-out opacity-80 hover:opacity-100 bg-gradient-to-r hover:text-white from-grad-btn-base to-grad-btn-secondary hover:from-grad-btn-secondary hover:to-grad-btn-base hover:bg-primary-blue focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800;
+  }
+
+  .spotlight {
+    background: linear-gradient(45deg, #00dc82 0%, #36e4da 50%, #0047e1 100%);
+    filter: blur(20vh);
+    height: 40vh;
+    bottom: -30vh;
+  }
+}

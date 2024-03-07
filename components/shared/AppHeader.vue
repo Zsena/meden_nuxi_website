@@ -5,11 +5,12 @@
         <NuxtImg :src="logoSrc" alt="Logo" class="h-8" />
       </NuxtLink>
       <div class="hidden md:flex space-x-4">
-        <NuxtLink to="/">Főoldal</NuxtLink>
-        <NuxtLink to="/about">Rólunk</NuxtLink>
-        <NuxtLink to="/services">Szolgáltatásaink</NuxtLink>
-        <NuxtLink to="/contact">Árajánlat</NuxtLink>
-        <NuxtLink to="tel:+36708824217" class="h5 flex items-center w-fit">
+        <NuxtLink to="/" :class="{'active-link': isActive('/')}" class="home"><Icon icon="iconoir:home" /></NuxtLink>
+        <NuxtLink to="/about" :class="{'active-link': isActive('/about')}">Cégünk</NuxtLink>
+        <NuxtLink to="/services" :class="{'active-link': isActive('/services')}">Szolgáltatásaink</NuxtLink>
+        <NuxtLink to="/ourworks" :class="{'active-link': isActive('/ourworks')}">Munkáink</NuxtLink>
+        <NuxtLink to="/contact" :class="{'active-link': isActive('/contact')}">Árajánlat</NuxtLink>
+        <NuxtLink to="tel:+36708824217" class="h5 hidden lg:flex items-center w-fit">
           <span class="ml-2">+36 70 882 4217</span>
         </NuxtLink>
       </div>
@@ -51,25 +52,31 @@
               <NuxtImg :src="logoSrc" alt="Logo" class="h-8 opacity-60" />
             </NuxtLink>
             <NuxtLink
-              to="/"
+              to="/" :class="{'active-link': isActive('/')}"
               class="block py-2 hover:text-gray-300"
               @click="toggleMobileMenu"
-              >Főoldal</NuxtLink
+              ><Icon icon="iconoir:home" /></NuxtLink
             >
             <NuxtLink
-              to="/about"
+              to="/about" :class="{'active-link': isActive('/about')}"
               class="block py-2 hover:text-gray-300"
               @click="toggleMobileMenu"
-              >Rólunk</NuxtLink
+              >Cégünk</NuxtLink
             >
             <NuxtLink
-              to="/services"
+              to="/services" :class="{'active-link': isActive('/services')}"
               class="block py-2 hover:text-gray-300"
               @click="toggleMobileMenu"
               >Szolgáltatások</NuxtLink
             >
             <NuxtLink
-              to="/contact"
+              to="/ourworks" :class="{'active-link': isActive('/ourworks')}"
+              class="block py-2 hover:text-gray-300"
+              @click="toggleMobileMenu"
+              >Munkáink</NuxtLink
+            >
+            <NuxtLink
+              to="/contact" :class="{'active-link': isActive('/contact')}"
               class="block py-2 hover:text-gray-300"
               @click="toggleMobileMenu"
               >Árajánlat</NuxtLink
@@ -84,24 +91,22 @@
   </header>
 </template>
 
-<script>
-import { ref } from "vue";
+<script setup>
+import { Icon } from "@iconify/vue";
+import { ref } from 'vue';
+import { useRoute } from 'vue-router';
 
-export default {
-  setup() {
-    const logoSrc = "/img/logo.png";
-    const isMobileMenuOpen = ref(false);
+const logoSrc = "/img/logo.png";
+const isMobileMenuOpen = ref(false);
 
-    const toggleMobileMenu = () => {
-      isMobileMenuOpen.value = !isMobileMenuOpen.value;
-    };
+const toggleMobileMenu = () => {
+  isMobileMenuOpen.value = !isMobileMenuOpen.value;
+};
 
-    return {
-      logoSrc,
-      isMobileMenuOpen,
-      toggleMobileMenu,
-    };
-  },
+const route = useRoute();
+
+const isActive = (path) => {
+  return route.path === path;
 };
 </script>
 

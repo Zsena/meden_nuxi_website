@@ -41,7 +41,4 @@ export default defineNuxtConfig({
     "nuxt-simple-robots",
     "nuxt-aos",
   ],
-  // sitemap: {
-  //   siteUrl: 'http://localhost:3000/',
-  // },
 });

@@ -188,6 +188,7 @@ A fő célunk, hogy ügyfeleink teljes megelégedéssel térjenek haza, és egy 
           Természetes folyamatokban kínálunk szolgáltatásokat, Víz-, gáz-, és
           fűtésszerelés, továbbá a duguláselhárítás terén is tevékenykedünk. 👨🏽‍🔧
         </h3>
+        <CallToAction />
         <LightBox :imgs="galleryImages" :startIndex="2" />
       </div>
     </section>

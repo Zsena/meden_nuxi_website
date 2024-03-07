@@ -1,6 +1,6 @@
 <template>
     <div :class="`${bgClass}`"
-        class="img-card text-white h-fit">
+        class="img-card text-white h-full lg:h-fit">
         <div>
             <h3 class=" text-start mb-3 uppercase font-semibold ">
                 {{ title }}

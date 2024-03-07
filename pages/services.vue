@@ -57,18 +57,37 @@ const CardData = [
       <Meta name="description" :content="title" />
     </Head>
     <SliderHero />
-    <section class="mt-32">
-      <div class="container mx-auto flex flex-col items-center relative h-full gap-16">
+    <section class="my-32">
+      <div
+        class="container px-4 lg:max-w-4xl xl:max-w-6xl mx-auto flex flex-col items-center relative h-full gap-8"
+      >
         <div class="flex justify-end w-full">
-          <article class="w-auto text-right">
+          <article class="w-auto text-right"  data-aos="fade-up"
+            data-aos-duration="700"
+            data-aos-offset="100"
+            data-aos-delay="50">
             <h2 class="h2">Szolgáltatásaink</h2>
-            <h3 class="h3">Tervezés, kivitelezés</h3>
-            <h4 class="h4">Beüzemelés, felújítás</h4>
-            <h5 class="h5">Karbantartás, csere</h5>
+            <h3 class="text-2xl lg:text-3xl font-bvpLight">
+              Tervezés, kivitelezés
+            </h3>
+            <h4 class="text-xl lg:text-2xl font-bvpLight">
+              Beüzemelés, felújítás
+            </h4>
+            <h5 class="text-lg lg:text-xl font-bvpMedium">
+              Karbantartás, csere
+            </h5>
           </article>
         </div>
-        <div class="flex flex-col md:flex-row justify-between w-full gap-16">
-          <div class="flex flex-row-reverse relative">
+        <div
+          class="flex flex-col md:flex-row justify-between w-full gap-8 mt-10"
+        >
+          <div
+            class="mt-20 lg:flex relative"
+            data-aos="fade-up"
+            data-aos-duration="700"
+            data-aos-offset="100"
+            data-aos-delay="50"
+          >
             <ImgCard
               :title="CardData[0].title"
               :list1="CardData[0].list1"
@@ -79,10 +98,15 @@ const CardData = [
               :url="CardData[0].url"
               class="z-10"
             />
-            <NumberOne class="absolute top-0 left-10" />
+            <NumberOne
+              class="absolute -ml-[72px] lg:ml-0 -top-24 inset-1/2 lg:-left-20"
+            />
           </div>
 
-          <div class="flex md:mt-[35rem] relative">
+          <div class="mt-20 lg:flex lg:mt-[35rem] relative"  data-aos="fade-up"
+            data-aos-duration="700"
+            data-aos-offset="100"
+            data-aos-delay="100">
             <ImgCard
               :title="CardData[2].title"
               :list1="CardData[2].list1"
@@ -93,11 +117,16 @@ const CardData = [
               :url="CardData[2].url"
               class="z-10"
             />
-            <NumberTwo class="absolute top-0 right-10" />
+            <NumberTwo
+              class="absolute -ml-[72px] lg:ml-0 -top-24 inset-1/2 lg:-left-20"
+            />
           </div>
         </div>
-        <div class="flex flex-col md:flex-row justify-between w-full gap-16">
-          <div class="flex flex-row-reverse relative">
+        <div class="flex flex-col md:flex-row justify-between w-full gap-8">
+          <div class="mt-20 lg:flex relative"  data-aos="fade-up"
+            data-aos-duration="700"
+            data-aos-offset="100"
+            data-aos-delay="150">
             <ImgCard
               :title="CardData[1].title"
               :list1="CardData[1].list1"
@@ -108,10 +137,15 @@ const CardData = [
               :url="CardData[1].url"
               class="z-10"
             />
-            <NumberThree class="absolute top-0 left-10" />
+            <NumberThree
+              class="absolute -ml-[72px] lg:ml-0 -top-24 inset-1/2 lg:-left-20"
+            />
           </div>
 
-          <div class="flex md:mt-[35rem] relative">
+          <div class="mt-20 lg:flex lg:mt-[35rem] relative"  data-aos="fade-up"
+            data-aos-duration="700"
+            data-aos-offset="100"
+            data-aos-delay="200">
             <ImgCard
               :title="CardData[3].title"
               :list1="CardData[3].list1"
@@ -122,15 +156,11 @@ const CardData = [
               :url="CardData[3].url"
               class="z-10"
             />
-            <NumberFour class="absolute top-0 right-10" />
+            <NumberFour
+              class="absolute -ml-[72px] lg:ml-0 -top-24 inset-1/2 lg:-left-20"
+            />
           </div>
         </div>
-      </div>
-    </section>
-    <section class="py-10 px-4">
-      <div class="container mx-auto my-8">
-        <h2 class="h2 py-10">Munkáink</h2>
-        <!-- <LightBox /> -->
       </div>
     </section>
   </main>

@@ -9,10 +9,11 @@ const title = ref("Kapcsolat");
       <Title>{{ title }}</Title>
       <Meta name="description" :content="title" />
     </Head>
-    <section class="min-h-[700px] container mx-auto px-4">
-      <div
-        class="flex flex-col lg:flex-row gap-8 xl:gap-40 my-16 xl:my-28 relative top-8"
-      >
+    <section class="min-h-[700px] container mx-auto px-4 xl:my-28">
+      <h1 class="h1" data-aos="fade-up" data-aos-duration="700">
+        Kérjen árajánlatot
+      </h1>
+      <div class="flex flex-col lg:flex-row gap-8 xl:gap-40 my-16 xl:my-28">
         <LargeCard
           title="Kapcsolat"
           description="Vedd fel velünk a kapcsolatot"
@@ -23,26 +24,13 @@ const title = ref("Kapcsolat");
           alt="Kapcsolat"
           data-aos="fade-up"
           data-aos-duration="700"
-          data-aos-offset="100"
-          data-aos-delay="50"
         />
         <article>
-          <p
-            class="pb-6"
-            data-aos="fade-up"
-            data-aos-duration="700"
-            data-aos-offset="100"
-            data-aos-delay="50"
-          >
+          <p class="pb-6" data-aos="fade-up" data-aos-duration="700">
             Törekvésünk, hogy az újítások és a kiváló minőség vezérelje
             tevékenységünket.
           </p>
-          <p
-            data-aos="fade-up"
-            data-aos-duration="700"
-            data-aos-offset="100"
-            data-aos-delay="100"
-          >
+          <p data-aos="fade-up" data-aos-duration="700">
             így biztosítva, hogy ügyfeleink számára a lehető legjobb
             szolgáltatást nyújthassunk.
           </p>
@@ -56,35 +44,16 @@ const title = ref("Kapcsolat");
               url="/about"
               data-aos="fade-up"
               data-aos-duration="700"
-              data-aos-offset="100"
-              data-aos-delay="150"
             />
           </div>
-          <p
-            class="pb-6"
-            data-aos="fade-up"
-            data-aos-duration="700"
-            data-aos-offset="100"
-            data-aos-delay="200"
-          >
+          <p class="pb-6" data-aos="fade-up" data-aos-duration="700">
             A minőségi munkavégzés tevékenységünk alapköve
           </p>
-          <p
-            data-aos="fade-up"
-            data-aos-duration="700"
-            data-aos-offset="100"
-            data-aos-delay="250"
-          >
+          <p data-aos="fade-up" data-aos-duration="700">
             Az a szándékunk, hogy megbízhatóságunkkal és széleskörű
             szaktudásunkkal hosszantartó ügyfél-elégedettséget biztosítsunk.
           </p>
-          <p
-            class="pb-6"
-            data-aos="fade-up"
-            data-aos-duration="700"
-            data-aos-offset="100"
-            data-aos-delay="300"
-          >
+          <p class="pb-6" data-aos="fade-up" data-aos-duration="700">
             Keress minket
           </p>
 
@@ -93,8 +62,6 @@ const title = ref("Kapcsolat");
             class="h5 flex items-center w-fit"
             data-aos="fade-up"
             data-aos-duration="700"
-            data-aos-offset="100"
-            data-aos-delay="350"
           >
             <Icon
               icon="material-symbols-light:send-to-mobile-outline"

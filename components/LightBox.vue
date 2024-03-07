@@ -53,6 +53,7 @@ export default defineComponent({
 
     watch(startIndex, (newVal) => {
       indexRef.value = newVal;
+      console.log("indexRef.value", indexRef.value);
     });
 
     const showImg = (index) => {

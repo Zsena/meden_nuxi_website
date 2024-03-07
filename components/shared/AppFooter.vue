@@ -12,54 +12,45 @@
               Professzionális épületgépészeti megoldások 1999 óta.
             </p>
           </div>
-          <NuxtImg :src="logoSrc" alt="Logo" class="h-16" />
+          <NuxtLink to="/">
+            <NuxtImg :src="logoSrc" alt="Logo" class="h-16" />
+          </NuxtLink>
           <div class="flex space-x-4 mt-4">
             <!-- Social Icons -->
-            <NuxtLink to="#" class="hover:opacity-75">
-              <Icon icon="mdi:instagram" class="h-6 w-6" />
-            </NuxtLink>
-            <NuxtLink to="#" class="hover:opacity-75">
+            <NuxtLink to="https://www.facebook.com/medenepuletgepeszkft" target="_blank" class="hover:opacity-75">
               <Icon icon="mdi:facebook" class="h-6 w-6" />
             </NuxtLink>
-            <NuxtLink to="#" class="hover:opacity-75">
-              <Icon icon="mdi:youtube" class="h-6 w-6" />
+            <NuxtLink to="/" class="hover:opacity-75">
+              <Icon icon="mdi:instagram" class="h-6 w-6" />
             </NuxtLink>
-            <NuxtLink to="#" class="hover:opacity-75">
-              <Icon icon="mdi:vk" class="h-6 w-6" />
+            <NuxtLink to="/" class="hover:opacity-75">
+              <Icon icon="mdi:youtube" class="h-6 w-6" />
             </NuxtLink>
           </div>
         </div>
         <div class="w-full lg:w-auto grid grid-cols-2 gap-4 lg:place-items-end">
-          <ul class="mb-4 mr-4 sm:mb-0 sm:mr-0 flex flex-col gap-y-4 lg:flex-row lg:items-center lg:gap-4">
+          <ul
+            class="mb-4 mr-4 sm:mb-0 sm:mr-0 flex flex-col gap-y-4 lg:flex-row lg:items-center lg:gap-4"
+          >
             <li>
-              <NuxtLink to="/about">Cégünk</NuxtLink>
+              <NuxtLink to="/about" :class="{'active-link': isActive('/about')}">Cégünk</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/services"
-                >Szolgáltatásaink</NuxtLink
-              >
+              <NuxtLink to="/services" :class="{'active-link': isActive('/services')}">Szolgáltatásaink</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/services#projects"
-                >Munkáink</NuxtLink
-              >
+              <NuxtLink to="/ourworks" :class="{'active-link': isActive('/ourworks')}">Munkáink</NuxtLink>
             </li>
           </ul>
           <ul class="mb-4 md:mb-0 flex flex-col gap-y-4">
             <li>
-              <NuxtLink to="/contact"
-                >Kapcsolat</NuxtLink
-              >
+              <NuxtLink to="/contact" :class="{'active-link': isActive('/contact')}">Árajánlat</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/"
-                >Tájékoztató</NuxtLink
-              >
+              <NuxtLink to="https://www.ceginformacio.hu/cr9311992643" target="_blank">Céginfó</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/"
-                >Garancia</NuxtLink
-              >
+              <NuxtLink to="/guarantee" :class="{'active-link': isActive('/guarantee')}">Garancia</NuxtLink>
             </li>
           </ul>
         </div>
@@ -72,5 +63,14 @@
 <script setup>
 import { Icon } from "@iconify/vue";
 
+// import { ref, computed } from 'vue';
+import { useRoute } from 'vue-router';
+
 const logoSrc = "/img/logo.png";
+
+const route = useRoute();
+
+const isActive = (path) => {
+  return route.path === path;
+};
 </script>

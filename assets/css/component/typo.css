@@ -2,32 +2,42 @@
   .h1 {
     @apply text-4xl lg:text-7xl font-bvpMedium;
   }
-  
+
   .h2 {
     @apply font-bvpMedium text-3xl lg:text-5xl;
   }
-  
+
   .h3 {
     @apply font-bvpMedium text-2xl lg:text-3xl;
   }
-  
+
   .h4 {
     @apply font-bvpMedium text-xl lg:text-2xl;
   }
-  
+
   .h5 {
     @apply font-bvpMedium text-lg lg:text-xl;
   }
-  
+
   .h6 {
     @apply font-bvpMedium text-base lg:text-lg;
   }
 }
 
-p {
-  @apply text-base font-sans;
-}
+@layer base {
+  p {
+    @apply text-base font-sans;
+  }
 
-a {
-  @apply tracking-wider font-bvpMedium border-b pb-1 border-b-transparent hover:text-blue-dark hover:border-b-blue-dark transition-all duration-500 ease-out;
+  a {
+    @apply tracking-wider font-bvpMedium border-b pb-[2px] border-b-transparent active:text-purple-dark hover:text-blue-dark md:hover:border-b-blue-dark transition-all duration-500 ease-out;
+  }
+
+  .active-link {
+    @apply text-purple-dark border-b-2 md:border-purple-dark  hover:text-blue-dark hover:border-blue-dark;
+  }
+  
+  .home {
+    @apply border-none relative top-1 pb-0;
+  }
 }
