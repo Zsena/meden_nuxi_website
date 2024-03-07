@@ -6,19 +6,15 @@ const title = ref("Főoldal");
 
 const galleryImages = ref([
   {
-    src: "/img/ourworks/padlofutes.webp",
-    title: "Három szintes családi ház padlófűtése. 👨🏽‍🔧",
+    src: "/img/ourworks/csaladihazpadlofutes_rendszerlemez2.webp",
+    title: "Családi ház padlófűtés szerelése, rendszer lemez használatával! 👨🏽‍🔧",
   },
   {
-    src: "/img/ourworks/padlofutes2.webp",
-    title: "Három szintes családi ház padlófűtése. 👨🏽‍🔧",
+    src: "/img/ourworks/csaladihazpadlofutes_rendszerlemez3.webp",
+    title: "Családi ház padlófűtés szerelése, rendszer lemez használatával! 👨🏽‍🔧",
   },
   {
-    src: "/img/ourworks/padlofutes3.webp",
-    title: "Három szintes családi ház padlófűtése. 👨🏽‍🔧",
-  },
-  {
-    src: "/img/ourworks/padlofutes4.webp",
+    src: "/img/ourworks/csaladihazpadlofutes.webp",
     title: "Három szintes családi ház padlófűtése. 👨🏽‍🔧",
   },
   {
@@ -26,32 +22,38 @@ const galleryImages = ref([
     title: "Három szintes családi ház padlófűtése. 👨🏽‍🔧",
   },
   {
-    src: "/img/ourworks/padlofutes8.webp",
-    title: "Három szintes családi ház padlófűtése. 👨🏽‍🔧",
-  },
-  {
     src: "/img/ourworks/padlofutes.webp",
     title: "Három szintes családi ház padlófűtése. 👨🏽‍🔧",
   },
   {
-    src: "/img/ourworks/padlofutes2.webp",
-    title: "Három szintes családi ház padlófűtése. 👨🏽‍🔧",
+    src: "/img/ourworks/furdo_feluitas4.webp",
+    title:
+      "Fürdőszoba felújítás: víz és csatorna vezeték, szerelvények fel helyezése. 👩‍🔧",
   },
   {
-    src: "/img/ourworks/padlofutes3.webp",
-    title: "Három szintes családi ház padlófűtése. 👨🏽‍🔧",
+    src: "/img/ourworks/furdo_feluitas.webp",
+    title:
+      "Fürdőszoba felújítás: víz és csatorna vezeték, szerelvények fel helyezése. 👩‍🔧",
   },
   {
-    src: "/img/ourworks/padlofutes4.webp",
-    title: "Három szintes családi ház padlófűtése. 👨🏽‍🔧",
+    src: "/img/ourworks/futesszereles.webp",
+    title: "Fűtés szerelése 👨🏽‍🔧",
   },
   {
-    src: "/img/ourworks/padlofutes7.webp",
-    title: "Három szintes családi ház padlófűtése. 👨🏽‍🔧",
+    src: "/img/ourworks/futesszereles2.webp",
+    title: "Fűtés szerelése 👨🏽‍🔧",
   },
   {
-    src: "/img/ourworks/padlofutes8.webp",
-    title: "Három szintes családi ház padlófűtése. 👨🏽‍🔧",
+    src: "/img/ourworks/vizgazfutes.webp",
+    title: "Víz gáz fűtés szerelés és duguláselhárítás. 👨‍🔧",
+  },
+  {
+    src: "/img/ourworks/hokozpont4.webp",
+    title: "Hőközpont építése szalmabálás kazánnal. 👨‍🔧",
+  },
+  {
+    src: "/img/ourworks/matyasdomb2.webp",
+    title: "Mátyásdomb fűtés szerelés 👨‍🔧",
   },
 ]);
 </script>
@@ -183,12 +185,10 @@ A fő célunk, hogy ügyfeleink teljes megelégedéssel térjenek haza, és egy 
           data-aos-offset="50"
           data-aos-delay="100"
         >
-          Három szintes családi ház padlófűtése. 👨🏽‍🔧
+          Természetes folyamatokban kínálunk szolgáltatásokat, Víz-, gáz-, és
+          fűtésszerelés, továbbá a duguláselhárítás terén is tevékenykedünk. 👨🏽‍🔧
         </h3>
-        <LightBox
-          :imgs="galleryImages"
-          :startIndex="2"
-        />
+        <LightBox :imgs="galleryImages" :startIndex="2" />
       </div>
     </section>
   </main>

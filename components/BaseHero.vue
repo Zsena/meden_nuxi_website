@@ -87,6 +87,9 @@
           falvésést, valamint a kapcsolók és világítótestek felszerelését is,
           mindezt garanciálisan.
         </p>
+        <p class="mt-6 text-lg leading-8 text-gray-300">
+          Vállalkozásunk Víz Gáz és fűtés szerelés mellett foglalkozik gépi és magasnyomású mosóval való dugulás elhárítással valamint gépi, vegyszeres fűtés rendszer tisztítással is! 
+        </p>
         <div class="mt-5 flex items-center justify-center gap-x-6">
           <NuxtLink
             href="/#celjaink"
