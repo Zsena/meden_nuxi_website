@@ -50,7 +50,7 @@ const galleryImages = ref([
     title: "Hőközpont építése szalmabálás kazánnal. 👨‍🔧",
   },
   {
-    src: "/img/olgál/matyasdomb2.webp",
+    src: "/img/munkaink/matyasdomb2.webp",
     title: "Mátyásdomb fűtés szerelés 👨‍🔧",
   },
 ]);
