@@ -1,6 +1,8 @@
 <script setup lang="ts">
-const title = ref("Garancia");
 import { Icon } from "@iconify/vue";
+useHead({
+  title: `Meden Épületgépészet - Garancia`,
+})
 </script>
 
 <template>

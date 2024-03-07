@@ -1,7 +1,10 @@
 <script setup lang="ts">
 import CallToAction from '~/components/CallToAction.vue';
 
-const title = ref("Munkáink");
+useHead({
+  title: `Meden Épületgépészet - Munkáink`,
+})
+
 const galleryImages1 = ref([
   {
     src: "/img/ourworks/csaladihazpadlofutes.webp",
@@ -142,10 +145,6 @@ const galleryImages3 = ref([
 
 <template>
   <main class="">
-    <Head>
-      <Title>{{ title }}</Title>
-      <Meta name="description" :content="title" />
-    </Head>
     <SliderHero />
     <section class="mt-32">
       <div

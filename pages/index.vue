@@ -2,8 +2,6 @@
 import { ref } from "vue";
 import { Icon } from "@iconify/vue";
 
-const title = ref("Főoldal");
-
 const galleryImages = ref([
   {
     src: "/img/ourworks/csaladihazpadlofutes_rendszerlemez2.webp",
@@ -56,14 +54,11 @@ const galleryImages = ref([
     title: "Mátyásdomb fűtés szerelés 👨‍🔧",
   },
 ]);
+
 </script>
 
 <template>
   <main class="">
-    <Head>
-      <Title>{{ title }}</Title>
-      <Meta name="description" :content="title" />
-    </Head>
     <BaseHero />
     <section class="min-h-[700px] container mx-auto px-4 pt-6" id="celjaink">
       <div class="flex flex-col lg:flex-row gap-8 xl:gap-40 my-16 xl:my-28">

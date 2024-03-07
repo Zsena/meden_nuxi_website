@@ -1,14 +1,12 @@
 <script setup lang="ts">
 import { Icon } from "@iconify/vue";
-const title = ref("Kapcsolat");
+useHead({
+  title: `Meden Épületgépészet - Árajánlatkérés`,
+})
 </script>
 
 <template>
   <main class="">
-    <Head>
-      <Title>{{ title }}</Title>
-      <Meta name="description" :content="title" />
-    </Head>
     <section class="min-h-[700px] container mx-auto px-4 xl:my-28">
       <h1 class="h1" data-aos="fade-up" data-aos-duration="700">
         Kérjen árajánlatot

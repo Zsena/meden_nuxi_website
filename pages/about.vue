@@ -1,8 +1,10 @@
 <script setup lang="ts">
-/* const title = ref("Rólunk"); */
 import CardComponent from "~/components/CardComponent.vue";
 import FloatCardComponent from "~/components/FloatCardComponent.vue";
 
+useHead({
+  title: `Meden Épületgépészet - Cégünk`,
+})
 const CardData = [
   {
     id: "1",

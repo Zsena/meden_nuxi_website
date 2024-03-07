@@ -4,7 +4,9 @@ import NumberOne from "~/components/svg/NumberOne.vue";
 import NumberThree from "~/components/svg/NumberThree.vue";
 import NumberTwo from "~/components/svg/NumberTwo.vue";
 
-const title = ref("Szolgáltatásaink");
+useHead({
+  title: `Meden Épületgépészet - Szolgáltatásaink`,
+})
 
 const CardData = [
   {
@@ -52,10 +54,6 @@ const CardData = [
 
 <template>
   <main class="">
-    <Head>
-      <Title>{{ title }}</Title>
-      <Meta name="description" :content="title" />
-    </Head>
     <SliderHero />
     <section class="my-32">
       <div
