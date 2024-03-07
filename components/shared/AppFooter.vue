@@ -9,7 +9,7 @@
         <div class="mb-4 md:mb-0">
           <div class="mb-4">
             <p class="text-lg text-gray-700">
-              Professzionális épületgépészeti megoldások 1999 óta.
+              Professzionális épületgépészeti megoldások 2021 óta.
             </p>
           </div>
           <NuxtLink to="/">

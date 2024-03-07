@@ -34,13 +34,12 @@
   /* lightbox card */
 
   .lightbox-card {
-    @apply cursor-pointer base-rounded p-2 md:p-4 w-full transition-all ease-in-out duration-700 max-w-[350px] h-[150px] sm:h-[300px] bg-gradient-to-tr from-blue-light/40 to-black/60 mix-blend-plus-lighter drop-shadow-lg shadow-lg;
+    @apply cursor-pointer base-rounded p-2 md:p-4 w-full transition-all ease-in-out duration-700 
+    max-w-[350px] h-[150px] sm:h-[300px] bg-gradient-to-tr from-blue-light/40 to-black/60 drop-shadow-xl shadow-xl;
   }
 
-  .lightbox-card .bg-card-overlay {
-    z-index: 2;
-    background-color: #1d1e20;
-    @apply transition-all ease-in-out duration-700 opacity-40 base-rounded w-full h-full top-0 left-0 absolute
+  /* .lightbox-card .bg-card-overlay {
+    @apply transition-all ease-in-out duration-700 bg-black/40 z-10 base-rounded w-full h-full top-0 left-0 absolute;
   }
 
   .lightbox-card:hover .bg-card-overlay {
@@ -49,11 +48,11 @@
 
   .lightbox-card:hover .bg-card-overlay {
     @apply p-2 md:p-4 base-rounded;
-  }
+  } */
 
   @layer utilities {
     .lightbox-card-img {
-      @apply w-full h-full mx-auto object-cover base-rounded transition-all duration-500 ease-in-out;
+      @apply w-full h-full transition-all duration-500 ease-in-out mx-auto object-cover base-rounded filter grayscale-60 hover:grayscale-0;
     }
   }
 
