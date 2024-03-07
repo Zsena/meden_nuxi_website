@@ -191,7 +191,7 @@ const CardData = [
             <div class="bg-overlay z-0 base-rounded"></div>
           </div>
           <div
-            class="absolute top-0 left-0 bottom-0 right-0 w-full lg:w-fit lg:right-auto h-full flex justify-center items-center"
+            class="absolute top-0 left-0 bottom-0 right-0 w-full lg:w-fit lg:right-auto h-full flex justify-center items-center z-10"
           >
             <FloatCardComponent
               :title="item.title"

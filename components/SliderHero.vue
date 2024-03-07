@@ -1,8 +1,15 @@
 <template>
-  <div class="relative top-14">
+  <div class="relative top-24">
     <swiper
       :pagination="{
+        type: 'bullets',
         clickable: true,
+        bulletClass: `swiper-pagination-bullet meden-pagination`
+      }"
+      :loop="true"
+      :autoplay="{
+        delay: 7000,
+        disableOnInteraction: false,
       }"
       :navigation="false"
       :modules="modules"
@@ -98,9 +105,10 @@ import { Swiper, SwiperSlide } from "swiper/vue";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
-
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 // import required modules
-import { Navigation, Autoplay, Pagination } from "swiper/modules";
+import { Autoplay, Pagination, Navigation, Scrollbar } from "swiper/modules";
 
 export default {
   components: {
@@ -109,7 +117,7 @@ export default {
   },
   setup() {
     return {
-      modules: [Autoplay, Pagination, Navigation],
+      modules: [Autoplay, Pagination, Navigation, Scrollbar],
     };
   },
 };
