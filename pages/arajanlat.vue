@@ -44,15 +44,26 @@ useHead({
               data-aos-duration="700"
             />
           </div>
-          <p class="pb-6" data-aos="fade-up" data-aos-duration="700">
-            A minőségi munkavégzés tevékenységünk alapköve
-          </p>
+          <div class="pb-6 flex items-center flex-wrap" data-aos="fade-up" data-aos-duration="700">
+            <p class="pb-0 mt-4">A minőségi munkavégzés tevékenységünk alapköve </p>
+            <div
+        class="flex justify-center mt-4"
+        data-aos="fade-up"
+        data-aos-duration="700"
+        data-aos-offset="50"
+        data-aos-delay="50"
+      >
+        <NuxtLink to="/garancia" class="btn btn-primary px-10 ml-2">
+          Garanciális feltételek
+        </NuxtLink>
+      </div>
+          </div>
           <p data-aos="fade-up" data-aos-duration="700">
             Az a szándékunk, hogy megbízhatóságunkkal és széleskörű
             szaktudásunkkal hosszantartó ügyfél-elégedettséget biztosítsunk.
           </p>
           <p class="pb-6" data-aos="fade-up" data-aos-duration="700">
-            Keress minket
+            Keressen minket
           </p>
 
           <NuxtLink

@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import CallToAction from '~/components/CallToAction.vue';
+import CallToAction from "~/components/CallToAction.vue";
 
 useHead({
   title: `Meden Épületgépészet - Munkáink`,
-})
+});
 
 const galleryImages1 = ref([
   {
@@ -151,10 +151,13 @@ const galleryImages3 = ref([
         class="container px-4 lg:max-w-4xl xl:max-w-6xl mx-auto flex flex-col items-center relative h-full gap-8"
       >
         <div class="flex justify-end w-full">
-          <article class="w-auto text-right"  data-aos="fade-up"
+          <article
+            class="w-auto text-right"
+            data-aos="fade-up"
             data-aos-duration="700"
             data-aos-offset="100"
-            data-aos-delay="50">
+            data-aos-delay="50"
+          >
             <h2 class="h2 text-left -ml-5">Munkáink</h2>
             <h3 class="text-2xl lg:text-3xl font-bvpLight">
               Tervezés, kivitelezés
@@ -205,6 +208,17 @@ const galleryImages3 = ref([
         </h3>
         <CallToAction />
         <LightBox :imgs="galleryImages3" :startIndex="2" />
+      </div>
+      <div
+        class="flex justify-center mt-10"
+        data-aos="fade-up"
+        data-aos-duration="700"
+        data-aos-offset="50"
+        data-aos-delay="50"
+      >
+        <NuxtLink to="/arajanlat" class="btn btn-primary px-10">
+          Kérjen árajánlatot most!
+        </NuxtLink>
       </div>
     </section>
   </main>

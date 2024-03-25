@@ -54,7 +54,6 @@ const galleryImages = ref([
     title: "Mátyásdomb fűtés szerelés 👨‍🔧",
   },
 ]);
-
 </script>
 
 <template>
@@ -142,7 +141,7 @@ A fő célunk, hogy ügyfeleink teljes megelégedéssel térjenek haza, és egy 
             data-aos-offset="50"
             data-aos-delay="400"
           >
-            Keress minket
+            Keressen minket
           </p>
 
           <NuxtLink
@@ -185,6 +184,17 @@ A fő célunk, hogy ügyfeleink teljes megelégedéssel térjenek haza, és egy 
         </h3>
         <CallToAction />
         <LightBox :imgs="galleryImages" :startIndex="2" />
+        <div
+          class="flex justify-center mt-10"
+          data-aos="fade-up"
+          data-aos-duration="700"
+          data-aos-offset="50"
+          data-aos-delay="50"
+        >
+          <NuxtLink to="/munkaink" class="btn btn-primary px-10">
+            Még több
+          </NuxtLink>
+        </div>
       </div>
     </section>
   </main>

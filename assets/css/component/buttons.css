@@ -3,12 +3,17 @@
     @apply mb-8 cursor-pointer flex h-10 w-10 items-center justify-center rounded-full bg-secondary-blue text-white shadow-md shadow-slate-800/5 ring-1 ring-slate-900/5 transition lg:absolute lg:-left-5 lg:-mt-2 lg:mb-0 xl:-top-1.5 xl:left-0 xl:mt-0 hover:border-none hover:text-black;
   }
   .btn {
-    transition: background-position 0.5s;
-    @apply text-center focus:ring-4 font-bvpMedium rounded-2xl text-lg px-6 py-2.5 focus:outline-none;
+    transition: 0.3s;
+    @apply border-0 text-center focus:ring-4 font-bvpMedium rounded-2xl text-lg px-6 py-2.5 focus:outline-none;
+  }
+
+  .btn-primary {
+    @apply text-white bg-blue-dark hover:bg-blue-light focus:bg-blue-darker active:bg-blue-dark 
+   hover:text-white active:text-white;
   }
 
   .grad-btn {
-    @apply text-white transition duration-500 ease-in-out opacity-80 hover:opacity-100 bg-gradient-to-r hover:text-white from-grad-btn-base to-grad-btn-secondary hover:from-grad-btn-secondary hover:to-grad-btn-base hover:bg-primary-blue focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800;
+    @apply text-white transition-colors duration-500 ease-in-out opacity-80 hover:opacity-100 bg-gradient-to-r hover:text-white from-grad-btn-base to-grad-btn-secondary hover:from-grad-btn-secondary hover:to-grad-btn-base hover:bg-primary-blue focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800;
   }
 
   .spotlight {

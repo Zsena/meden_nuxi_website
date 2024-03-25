@@ -160,6 +160,17 @@ const CardData = [
           </div>
         </div>
       </div>
+      <div
+        class="flex justify-center mt-10"
+        data-aos="fade-up"
+        data-aos-duration="700"
+        data-aos-offset="50"
+        data-aos-delay="50"
+      >
+        <NuxtLink to="/arajanlat" class="btn btn-primary px-10">
+            Kérjen árajánlatot most!
+        </NuxtLink>
+      </div>
     </section>
   </main>
 </template>

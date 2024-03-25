@@ -16,16 +16,16 @@ const handleError = () => clearError({ redirect: "/" });
     <div class="relative z-20 px-5">
       <NuxtImg
         src="/img/404.png"
-        alt="404! Hoppá, ezt az oldalt most nem találtuk meg Neked!"
+        alt="404! Hoppá, ezt az oldalt most nem találtuk meg Önnek!"
         class="w-full"
       />
       <template v-if="props.error?.statusCode === 404">
         <h1 class="text-9xl font-medium my-8">404!</h1>
         <p class="font-bold text-xl mb-5">
-          Hoppá, ezt az oldalt most nem találtuk meg Neked! ☹
+          Hoppá, ezt az oldalt most nem találtuk meg Önnek! ☹
         </p>
         <p class="font-medium text-lg">
-          Az általad keresett lap ideiglenesen nem elérhető, a neve
+          Az Ön által keresett lap ideiglenesen nem elérhető, a neve
           megváltozott, vagy eltávolították.
         </p>
       </template>
@@ -33,11 +33,11 @@ const handleError = () => clearError({ redirect: "/" });
         <h1 class="text-9xl font-medium my-8">Hoppá! Valami elromlott.</h1>
         <p class="font-bold text-xl mb-5">
           Sajnáljuk, de úgy tűnik, hogy belső hiba történt a szerverünkön, és
-          nem tudjuk megjeleníteni a kért oldalt. Kérjük, próbálkozz újra később
-          vagy írj nekünk a zsanett.tamas87@gmail.com-ra.
+          nem tudjuk megjeleníteni a kért oldalt. Kérjük, próbálkozzon újra később
+          vagy írjon nekünk a zsanett.tamas87@gmail.com-ra.
         </p>
         <p class="font-medium text-lg">
-          Köszönjük a türelmedet és megértésedet.
+          Köszönjük a türelmét és megértését.
         </p>
       </template>
       <p>

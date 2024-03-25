@@ -2,7 +2,7 @@
 import { Icon } from "@iconify/vue";
 useHead({
   title: `Meden Épületgépészet - Garancia`,
-})
+});
 </script>
 
 <template>
@@ -55,9 +55,9 @@ useHead({
                       Amennyiben a garanciaidőszak alatt bármilyen hiba vagy
                       rendellenesség merül fel a munkánk kapcsán, kérjük,
                       azonnal vegye fel velünk a
-                      <NuxtLink to="arajanlat">kapcsolatot</NuxtLink> . Vállaljuk,
-                      hogy 72 órán belül kiszállunk, és orvosoljuk a problémát,
-                      garantálva ezzel az Ön megelégedettségét.
+                      <NuxtLink to="arajanlat">kapcsolatot</NuxtLink> .
+                      Vállaljuk, hogy 72 órán belül kiszállunk, és orvosoljuk a
+                      problémát, garantálva ezzel az Ön megelégedettségét.
                     </p>
                     <h2 class="h2">Kiterjesztett garancia:</h2>
                     <p>
@@ -103,6 +103,17 @@ useHead({
                       <li>Munka határidőre elvégzése</li>
                       <li>Türelem</li>
                     </ol>
+                  </div>
+                  <div
+                    class="flex justify-center mt-10"
+                    data-aos="fade-up"
+                    data-aos-duration="700"
+                    data-aos-offset="50"
+                    data-aos-delay="50"
+                  >
+                    <NuxtLink to="/arajanlat" class="btn btn-primary px-10">
+                      Kérjen árajánlatot
+                    </NuxtLink>
                   </div>
                 </article>
               </div>

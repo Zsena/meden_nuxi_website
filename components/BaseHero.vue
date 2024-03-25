@@ -82,13 +82,16 @@
           <span class="text-blue-light">Önnek</span>
         </h1>
         <p class="mt-6 text-lg leading-8 text-gray-300">
-          Akár kis, akár nagy elektromos munkálatokról van szó, vállaljuk
-          lakóingatlanok teljes körű elektromos újrahuzalozását, beleértve a
-          falvésést, valamint a kapcsolók és világítótestek felszerelését is,
-          mindezt garanciálisan.
+          Cégünk fő feladata az épületekben biztosítani a kényelmes
+          környezetet és ivóvizet, valamint gondoskodni a szennyvíz
+          elvezetéséről, a megfelelő hőmérsékletről és a levegő minőségéről.
+          Ennek érdekében foglalkozik az épületek belső csőhálózataival, a
+          szerelvényekkel és a hozzájuk tartozó berendezésekkel.
         </p>
         <p class="mt-6 text-lg leading-8 text-gray-300">
-          Vállalkozásunk Víz Gáz és fűtés szerelés mellett foglalkozik gépi és magasnyomású mosóval való dugulás elhárítással valamint gépi, vegyszeres fűtés rendszer tisztítással is! 
+          Vállalkozásunk Víz Gáz és fűtés szerelés mellett foglalkozik gépi és
+          magasnyomású mosóval való dugulás elhárítással valamint gépi,
+          vegyszeres fűtés rendszer tisztítással is!
         </p>
         <div class="mt-5 flex items-center justify-center gap-x-6">
           <NuxtLink

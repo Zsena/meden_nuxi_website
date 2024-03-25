@@ -4,7 +4,7 @@ import FloatCardComponent from "~/components/FloatCardComponent.vue";
 
 useHead({
   title: `Meden Épületgépészet - Cégünk`,
-})
+});
 const CardData = [
   {
     id: "1",
@@ -79,15 +79,6 @@ const CardData = [
 
             <article class="lg:max-w-[30rem]">
               <p
-                data-aos="fade-up"
-                data-aos-duration="700"
-                data-aos-offset="50"
-                data-aos-delay="100"
-              >
-                Cégünk elkötelezett a <b>környezettudatos építés</b>, és a
-                karbon semleges építőipari megoldások megvalósításában.
-              </p>
-              <p
                 class="pt-4"
                 data-aos="fade-up"
                 data-aos-duration="700"
@@ -97,18 +88,26 @@ const CardData = [
                 Vállaljuk a <b>lakossági és ipari létesítmények</b> gépészeti
                 rendszereinek kivitelezését és karbantartását.
               </p>
-              <ol
-                class="list-disc ml-8 pt-4"
+              <div
+                class="list-disc mt-4"
                 data-aos="fade-up"
                 data-aos-duration="700"
                 data-aos-offset="50"
                 data-aos-delay="200"
               >
-                <li>A legkorszerűbb anyagok és technológia alkalmazása</li>
-                <li>A legmegfelelőbb rendszer kialakítása</li>
-                <li>Megfizethető árak</li>
-                <li>Szakképzett munkatársak, szakmai tanácsadás</li>
-              </ol>
+                <h2 class="h4">Amikkel foglalkozunk:</h2>
+                <ul class="list-disc ml-8">
+                  <li>fűtéstechnika vízellátás, csatornázás</li>
+                  <li>
+                    gázellátás – (égéstermék-elvezetés) légtechnika, szellőzés
+                  </li>
+                  <li>klímatechnika</li>
+                  <li>
+                    A legmegfelelőbb rendszer kialakítása, megfizethető árak
+                  </li>
+                  <li>Szakképzett munkatársak, szakmai tanácsadás</li>
+                </ul>
+              </div>
             </article>
           </div>
 
@@ -181,7 +180,7 @@ const CardData = [
           data-aos="fade-up"
           data-aos-duration="700"
           data-aos-delay="50"
-          >
+        >
           <div class="min-h-[230px] relative ml-auto w-full lg:w-[93%]">
             <NuxtImg
               :src="item.url"
@@ -204,6 +203,17 @@ const CardData = [
           </div>
         </div>
       </article>
+      <div
+        class="flex justify-center mt-10"
+        data-aos="fade-up"
+        data-aos-duration="700"
+        data-aos-offset="50"
+        data-aos-delay="50"
+      >
+        <NuxtLink to="/munkaink" class="btn btn-primary px-10">
+          Tekintse meg munkáinkat
+        </NuxtLink>
+      </div>
     </section>
   </main>
 </template>

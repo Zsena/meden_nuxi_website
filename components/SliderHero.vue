@@ -4,7 +4,7 @@
       :pagination="{
         type: 'bullets',
         clickable: true,
-        bulletClass: `swiper-pagination-bullet meden-pagination`
+        bulletClass: `swiper-pagination-bullet meden-pagination`,
       }"
       :loop="true"
       :autoplay="{
@@ -28,25 +28,17 @@
             <article class="text-center lg:text-left mb-5 lg:mb-0">
               <h1 class="h1 my-8">Szolgátatásaink</h1>
               <p class="text-sm md:text-lg">
-                Országos lefedettséggel kínálunk magas színvonalú
-                villanyszerelési szolgáltatásokat, amit a gyors technikának
-                köszönhetünk. Épületgépész technikusaink biztosítják egy adott
-                épület kényelmes használatához a megfelelő technológiát és
-                ellátják az épületet különböző gépészeti szereléssel,
-                felújítással és karbantartással.
-              </p>
-              <p class="text-sm md:text-lg mt-5">
-                Cégünk széles spektrumú szolgáltatásokkal áll rendelkezésre,
-                hogy eleget tegyen az épületek kényelmi és energetikai
-                követelményeinek. Lakossági és ipari területeken egyaránt
-                vállalunk villanyszerelést, valamint épületgépészeti, klíma- és
-                hőszivattyú-szerelési munkálatokat, mindezt versenyképes árakon,
-                garanciális feltételekkel és szakértői kivitelezésben.
+                Cégünk alapvető célja az épületekben a kellemes
+                környezet, az ivóvíz biztosítása, a szennyvíz hatékony
+                elvezetése, a megfelelő hőmérséklet és a friss, tiszta levegő
+                biztosítása. Ennek érdekében foglalkozik az épületek belső víz-
+                és csatornahálózataival, valamint a szükséges berendezésekkel és
+                szerelvényekkel.
               </p>
             </article>
             <article class="flex flex-col justify-center items-center gap-4">
               <NuxtLink
-                class="btn grad-btn p-5 text-xl lg:text-3xl"
+                class="btn btn-primary p-5 text-xl lg:text-3xl"
                 to="/arajanlat"
                 >Kérjen ingyenes árajánlatot most!</NuxtLink
               >
@@ -71,10 +63,8 @@
               <h1 class="h1 my-8">Cégünk</h1>
               <p class="text-sm md:text-lg">
                 A vállalatunk, amely Lepsényben jött létre, széleskörű
-                szolgáltatásokat nyújt az elektromos szerelés, hőszivattyús
-                rendszerek telepítése, légkondicionáló berendezések beüzemelése,
-                különféle épületgépészeti feladatok és gyengeáramú hálózatok
-                terén.
+                szolgáltatásokat nyújt a padlófűtés, a víz- és gázvezetékek,
+                rendszerek telepítése, duguláselhárítás és fűtési rendszerek terén.
               </p>
               <p class="text-sm md:text-lg mt-5">
                 Missziónk, hogy ügyfeleink számára magas színvonalú
@@ -84,7 +74,7 @@
             </article>
             <article class="flex flex-col justify-center items-center gap-4">
               <NuxtLink
-                class="btn grad-btn p-5 text-xl lg:text-3xl"
+                class="btn btn-primary p-5 text-xl lg:text-3xl"
                 to="/arajanlat"
                 >Kérjen ingyenes árajánlatot most!</NuxtLink
               >
@@ -105,8 +95,8 @@ import { Swiper, SwiperSlide } from "swiper/vue";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 // import required modules
 import { Autoplay, Pagination, Navigation, Scrollbar } from "swiper/modules";
 
