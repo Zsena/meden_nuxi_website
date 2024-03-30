@@ -2,9 +2,41 @@
 import CardComponent from "~/components/CardComponent.vue";
 import FloatCardComponent from "~/components/FloatCardComponent.vue";
 
-useHead({
-  title: `Meden Épületgépészet - Cégünk`,
-});
+useHead(() => ({
+  title: "Mé-den épületgépészet - Cégünk",
+  meta: [
+    {
+      hid: "description",
+      name: "description",
+      content:
+        "Ismerje meg vállalkozásunkat! Szakembereink Víz, Gáz és Fűtés szereléssel foglalkoznak, valamint gépi és magasnyomású mosással, duguláselhárítással, valamint gépi, vegyszeres fűtésrendszer tisztítással is állnak rendelkezésére.",
+    },
+    {
+      hid: "og:title",
+      property: "og:title",
+      content: "Mé-den épületgépészet - Cégünk",
+    },
+    {
+      hid: "og:description",
+      property: "og:description",
+      content:
+        "Ismerje meg vállalkozásunkat! Szakembereink Víz, Gáz és Fűtés szereléssel foglalkoznak, valamint gépi és magasnyomású mosással, duguláselhárítással, valamint gépi, vegyszeres fűtésrendszer tisztítással is állnak rendelkezésére.",
+    },
+  ],
+  script: [
+    {
+      type: "application/ld+json",
+      innerHTML: JSON.stringify({
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        name: "Mé-den épületgépészet - Cégünk",
+        description:
+          "Ismerje meg vállalkozásunkat! Szakembereink Víz, Gáz és Fűtés szereléssel foglalkoznak, valamint gépi és magasnyomású mosással, duguláselhárítással, valamint gépi, vegyszeres fűtésrendszer tisztítással is állnak rendelkezésére.",
+        image: "/img/cegunk.webp",
+      }),
+    },
+  ],
+}));
 const CardData = [
   {
     id: "1",

@@ -1,9 +1,42 @@
 <script setup lang="ts">
 import CallToAction from "~/components/CallToAction.vue";
 
-useHead({
-  title: `Meden Épületgépészet - Munkáink`,
-});
+useHead(() => ({
+  title: "Mé-den épületgépészet - Munkáink",
+  meta: [
+    {
+      hid: "description",
+      name: "description",
+      content:
+        "Tekintse meg referenciáinkat és eddigi munkáinkat! Vállalkozásunk számos sikeres projektet tud felmutatni Víz, Gáz és Fűtés szerelésben, gépi és magasnyomású mosásban, duguláselhárításban, valamint gépi, vegyszeres fűtésrendszer tisztításban.",
+    },
+    {
+      hid: "og:title",
+      property: "og:title",
+      content: "Mé-den épületgépészet - Munkáink",
+    },
+    {
+      hid: "og:description",
+      property: "og:description",
+      content:
+        "Tekintse meg referenciáinkat és eddigi munkáinkat! Vállalkozásunk számos sikeres projektet tud felmutatni Víz, Gáz és Fűtés szerelésben, gépi és magasnyomású mosásban, duguláselhárításban, valamint gépi, vegyszeres fűtésrendszer tisztításban.",
+    },
+    { hid: "og:image", property: "og:image", content: "/img/04heating.webp" },
+  ],
+  script: [
+    {
+      type: "application/ld+json",
+      innerHTML: JSON.stringify({
+        "@context": "http://schema.org",
+        "@type": "Service",
+        name: "Mé-den épületgépészet - Munkáink",
+        description:
+          "Tekintse meg referenciáinkat és eddigi munkáinkat! Vállalkozásunk számos sikeres projektet tud felmutatni Víz, Gáz és Fűtés szerelésben, gépi és magasnyomású mosásban, duguláselhárításban, valamint gépi, vegyszeres fűtésrendszer tisztításban.",
+        image: "/img/04heating.webp",
+      }),
+    },
+  ],
+}));
 
 const galleryImages1 = ref([
   {

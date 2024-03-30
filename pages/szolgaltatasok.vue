@@ -4,9 +4,42 @@ import NumberOne from "~/components/svg/NumberOne.vue";
 import NumberThree from "~/components/svg/NumberThree.vue";
 import NumberTwo from "~/components/svg/NumberTwo.vue";
 
-useHead({
-  title: `Meden Épületgépészet - Szolgáltatásaink`,
-})
+useHead(() => ({
+  title: "Mé-den épületgépészet - Szolgáltatásaink",
+  meta: [
+    {
+      hid: "description",
+      name: "description",
+      content:
+        "Tekintse meg szolgáltatásainkat! Vállalkozásunk széleskörűen foglalkozik Víz, Gáz és Fűtés szereléssel, gépi és magasnyomású mosással, duguláselhárítással, valamint gépi, vegyszeres fűtésrendszer tisztítással.",
+    },
+    {
+      hid: "og:title",
+      property: "og:title",
+      content: "Mé-den épületgépészet - Szolgáltatásaink",
+    },
+    {
+      hid: "og:description",
+      property: "og:description",
+      content:
+        "Tekintse meg szolgáltatásainkat! Vállalkozásunk széleskörűen foglalkozik Víz, Gáz és Fűtés szereléssel, gépi és magasnyomású mosással, duguláselhárítással, valamint gépi, vegyszeres fűtésrendszer tisztítással.",
+    },
+    { hid: "og:image", property: "og:image", content: "/img/01water.webp" },
+  ],
+  script: [
+    {
+      type: "application/ld+json",
+      innerHTML: JSON.stringify({
+        "@context": "http://schema.org",
+        "@type": "Service",
+        name: "Mé-den épületgépészet - Szolgáltatásaink",
+        description:
+          "Tekintse meg szolgáltatásainkat! Vállalkozásunk széleskörűen foglalkozik Víz, Gáz és Fűtés szereléssel, gépi és magasnyomású mosással, duguláselhárítással, valamint gépi, vegyszeres fűtésrendszer tisztítással.",
+        image: "/img/01water.webp",
+      }),
+    },
+  ],
+}));
 
 const CardData = [
   {
@@ -60,10 +93,13 @@ const CardData = [
         class="container px-4 lg:max-w-4xl xl:max-w-6xl mx-auto flex flex-col items-center relative h-full gap-8"
       >
         <div class="flex justify-end w-full">
-          <article class="w-auto text-right"  data-aos="fade-up"
+          <article
+            class="w-auto text-right"
+            data-aos="fade-up"
             data-aos-duration="700"
             data-aos-offset="100"
-            data-aos-delay="50">
+            data-aos-delay="50"
+          >
             <h2 class="h2">Szolgáltatásaink</h2>
             <h3 class="text-2xl lg:text-3xl font-bvpLight">
               Tervezés, kivitelezés
@@ -101,10 +137,13 @@ const CardData = [
             />
           </div>
 
-          <div class="mt-20 lg:flex lg:mt-[35rem] relative"  data-aos="fade-up"
+          <div
+            class="mt-20 lg:flex lg:mt-[35rem] relative"
+            data-aos="fade-up"
             data-aos-duration="700"
             data-aos-offset="100"
-            data-aos-delay="100">
+            data-aos-delay="100"
+          >
             <ImgCard
               :title="CardData[2].title"
               :list1="CardData[2].list1"
@@ -121,10 +160,13 @@ const CardData = [
           </div>
         </div>
         <div class="flex flex-col md:flex-row justify-between w-full gap-8">
-          <div class="mt-20 lg:flex relative"  data-aos="fade-up"
+          <div
+            class="mt-20 lg:flex relative"
+            data-aos="fade-up"
             data-aos-duration="700"
             data-aos-offset="100"
-            data-aos-delay="150">
+            data-aos-delay="150"
+          >
             <ImgCard
               :title="CardData[1].title"
               :list1="CardData[1].list1"
@@ -140,10 +182,13 @@ const CardData = [
             />
           </div>
 
-          <div class="mt-20 lg:flex lg:mt-[35rem] relative"  data-aos="fade-up"
+          <div
+            class="mt-20 lg:flex lg:mt-[35rem] relative"
+            data-aos="fade-up"
             data-aos-duration="700"
             data-aos-offset="100"
-            data-aos-delay="200">
+            data-aos-delay="200"
+          >
             <ImgCard
               :title="CardData[3].title"
               :list1="CardData[3].list1"
@@ -168,7 +213,7 @@ const CardData = [
         data-aos-delay="50"
       >
         <NuxtLink to="/arajanlat" class="btn btn-primary px-10">
-            Kérjen árajánlatot most!
+          Kérjen árajánlatot most!
         </NuxtLink>
       </div>
     </section>

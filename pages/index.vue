@@ -2,6 +2,22 @@
 import { ref } from "vue";
 import { Icon } from "@iconify/vue";
 
+useHead(() => ({
+  script: [
+    {
+      type: "application/ld+json",
+      innerHTML: JSON.stringify({
+        "@context": "http://schema.org",
+        "@type": "WebPage",
+        name: "Mé-den épületgépészet",
+        description:
+          "Vállalkozásunk Víz Gáz és fűtés szerelés mellett foglalkozik gépi és magasnyomású mosóval való dugulás elhárítással valamint gépi, vegyszeres fűtés rendszer tisztítással is!",
+        image: "/img/headers/header3.webp",
+      }),
+    },
+  ],
+}));
+
 const galleryImages = ref([
   {
     src: "/img/munkaink/csaladihazpadlofutes_rendszerlemez2.webp",

@@ -1,8 +1,45 @@
 <script setup lang="ts">
 import { Icon } from "@iconify/vue";
-useHead({
-  title: `Meden Épületgépészet - Garancia`,
-});
+useHead(() => ({
+  title: "Mé-den épületgépészet - Garancia",
+  meta: [
+    {
+      hid: "description",
+      name: "description",
+      content:
+        "Tekintse meg garanciális feltételeinket! Vállalkozásunk színvonalas szolgáltatásokkal, hosszú távú tapasztalattal és elégedett ügyfelekkel büszkélkedhet Víz, Gáz és Fűtés szerelésben, gépi és magasnyomású mosásban, duguláselhárításban, valamint gépi, vegyszeres fűtésrendszer tisztításban.",
+    },
+    {
+      hid: "og:title",
+      property: "og:title",
+      content: "Mé-den épületgépészet - Garancia",
+    },
+    {
+      hid: "og:description",
+      property: "og:description",
+      content:
+        "Tekintse meg garanciális feltételeinket! Vállalkozásunk színvonalas szolgáltatásokkal, hosszú távú tapasztalattal és elégedett ügyfelekkel büszkélkedhet Víz, Gáz és Fűtés szerelésben, gépi és magasnyomású mosásban, duguláselhárításban, valamint gépi, vegyszeres fűtésrendszer tisztításban.",
+    },
+    {
+      hid: "og:image",
+      property: "og:image",
+      content: "/img/headers/header6.webp",
+    },
+  ],
+  script: [
+    {
+      type: "application/ld+json",
+      innerHTML: JSON.stringify({
+        "@context": "http://schema.org",
+        "@type": "Service",
+        name: "Mé-den épületgépészet - Garancia",
+        description:
+          "Tekintse meg garanciális feltételeinket! Vállalkozásunk színvonalas szolgáltatásokkal, hosszú távú tapasztalattal és elégedett ügyfelekkel büszkélkedhet Víz, Gáz és Fűtés szerelésben, gépi és magasnyomású mosásban, duguláselhárításban, valamint gépi, vegyszeres fűtésrendszer tisztításban.",
+        image: "/img/headers/header6.webp",
+      }),
+    },
+  ],
+}));
 </script>
 
 <template>

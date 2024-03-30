@@ -4,8 +4,6 @@
       class="absolute inset-0 -z-10 h-full w-full stroke-blue-darker/40 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
       aria-hidden="true"
     >
-      <!-- Let's define the pattern -->
-      <!-- The width and height should be double the size of a single checker -->
       <pattern
         id="pattern-checkers"
         x="0"
@@ -14,15 +12,9 @@
         height="100"
         patternUnits="userSpaceOnUse"
       >
-        <!-- Two instances of the same checker, only positioned apart on the `x` and `y` axis -->
-        <!-- We will define the `fill` in the CSS for flexible use -->
-        <!--<rect class="checker" x="0" width="1" height="100" y="0"/>
-    <rect class="checker" x="100" width="100" height="1" y="100"/>-->
         <polyline points="0 10, 1000 10" fill="none" stroke="black" />
         <polyline points="10 0, 10 100" fill="none" stroke="black" />
       </pattern>
-
-      <!-- Define the shape that will contain our pattern as the fill -->
       <rect
         x="0"
         y="0"

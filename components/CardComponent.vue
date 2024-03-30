@@ -15,7 +15,6 @@
 
 <script setup>
 import { defineProps } from "vue";
-/* import { Icon } from '@iconify/vue'; */
 const props = defineProps({
   title: String,
   description: String,

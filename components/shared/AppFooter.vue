@@ -63,7 +63,6 @@
 <script setup>
 import { Icon } from "@iconify/vue";
 
-// import { ref, computed } from 'vue';
 import { useRoute } from 'vue-router';
 
 const logoSrc = "/img/logo.png";

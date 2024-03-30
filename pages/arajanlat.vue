@@ -1,8 +1,42 @@
 <script setup lang="ts">
 import { Icon } from "@iconify/vue";
-useHead({
-  title: `Meden Épületgépészet - Árajánlatkérés`,
-})
+
+useHead(() => ({
+  title: "Mé-den épületgépészet - Árajánlatkérés",
+  meta: [
+    {
+      hid: "description",
+      name: "description",
+      content:
+        "Kérjen árajánlatot szolgáltatásainkra! Vállalkozásunk készséggel áll rendelkezésére Víz, Gáz és Fűtés szerelésben, gépi és magasnyomású mosásban, duguláselhárításban, valamint gépi, vegyszeres fűtésrendszer tisztításban.",
+    },
+    {
+      hid: "og:title",
+      property: "og:title",
+      content: "Mé-den épületgépészet - Árajánlatkérés",
+    },
+    {
+      hid: "og:description",
+      property: "og:description",
+      content:
+        "Kérjen árajánlatot szolgáltatásainkra! Vállalkozásunk készséggel áll rendelkezésére Víz, Gáz és Fűtés szerelésben, gépi és magasnyomású mosásban, duguláselhárításban, valamint gépi, vegyszeres fűtésrendszer tisztításban.",
+    },
+    { hid: "og:image", property: "og:image", content: "/img/05engineer.webp" },
+  ],
+  script: [
+    {
+      type: "application/ld+json",
+      innerHTML: JSON.stringify({
+        "@context": "http://schema.org",
+        "@type": "Service",
+        name: "Mé-den épületgépészet - Árajánlatkérés",
+        description:
+          "Kérjen árajánlatot szolgáltatásainkra! Vállalkozásunk készséggel áll rendelkezésére Víz, Gáz és Fűtés szerelésben, gépi és magasnyomású mosásban, duguláselhárításban, valamint gépi, vegyszeres fűtésrendszer tisztításban.",
+        image: "/img/05engineer.webp",
+      }),
+    },
+  ],
+}));
 </script>
 
 <template>
@@ -44,19 +78,25 @@ useHead({
               data-aos-duration="700"
             />
           </div>
-          <div class="pb-6 flex items-center flex-wrap" data-aos="fade-up" data-aos-duration="700">
-            <p class="pb-0 mt-4">A minőségi munkavégzés tevékenységünk alapköve </p>
+          <div
+            class="pb-6 flex items-center flex-wrap"
+            data-aos="fade-up"
+            data-aos-duration="700"
+          >
+            <p class="pb-0 mt-4">
+              A minőségi munkavégzés tevékenységünk alapköve
+            </p>
             <div
-        class="flex justify-center mt-4"
-        data-aos="fade-up"
-        data-aos-duration="700"
-        data-aos-offset="50"
-        data-aos-delay="50"
-      >
-        <NuxtLink to="/garancia" class="btn btn-primary px-10 ml-2">
-          Garanciális feltételek
-        </NuxtLink>
-      </div>
+              class="flex justify-center mt-4"
+              data-aos="fade-up"
+              data-aos-duration="700"
+              data-aos-offset="50"
+              data-aos-delay="50"
+            >
+              <NuxtLink to="/garancia" class="btn btn-primary px-10 ml-2">
+                Garanciális feltételek
+              </NuxtLink>
+            </div>
           </div>
           <p data-aos="fade-up" data-aos-duration="700">
             Az a szándékunk, hogy megbízhatóságunkkal és széleskörű

@@ -32,6 +32,11 @@ export default defineNuxtConfig({
         },
         { name: "format-detection", content: "telephone=no" },
         {
+          hid: "keywords",
+          name: "keywords",
+          content: "épületgépészet, gépészeti tervezés, fűtés, szellőzés, légkondicionálás, hűtés, hőszivattyú, energetika, energiahatékonyság, épületautomatizálás, HVAC, légtechnika, szabályozás, páraelszívó, csőhálózat, fűtéskorszerűsítés, energiafelhasználás, hőcserélő, gázellátás, vízellátás, épületenergetika, klímaberendezés, energiaaudit, zöldtechnológia, hőszigetelés, kazán, hőleadás, hőmérséklet-szabályozás, energiatakarékosság, hőterhelés, légáramlás, tűzvédelem.",
+        },
+        {
           hid: "og:title",
           property: "og:title",
           content: "Mé-den Épületgépészet",
@@ -46,13 +51,21 @@ export default defineNuxtConfig({
           property: "og:image",
           content: "/img/headers/header3.webp",
         },
+        { property: 'og:type', content: 'website' },
         {
           hid: "twitter:card",
           name: "twitter:card",
           content: "summary_large_image",
         },
+        { name: 'robots', content: 'index, follow' },
+        { name: 'author', content: 'Zsena - Geekrabbits.hu' },
+        { name: 'language', content: 'hu' },
+        { name: 'geo.position', content: '46.9777206, 18.21988267' }
       ],
-      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+      link: [
+        { rel: 'canonical', href: 'https://medenepuletgepesz.hu/' },
+        { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      ],
     },
     pageTransition: { name: "page", mode: "out-in" },
   },
