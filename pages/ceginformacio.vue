@@ -73,12 +73,9 @@ useHead(() => ({
                     <p>
                       A Mé-den Épületgépészet Kft. elkötelezett az iránt, hogy
                       ügyfelei számára kiváló minőségű épületgépészeti
-                      megoldásokat nyújtson. Tudjuk, hogy a megbízhatóság és a
-                      minőség kulcsfontosságú a hosszú távú ügyfélelégedettség
-                      szempontjából, ezért vállalatunk büszkén kínálja alábbi
-                      garanciális feltételeit:
+                      megoldásokat nyújtson.
                     </p>
-                    <NuxtImg src="/img/headers/header5.webp" />
+                    <NuxtImg src="/img/headers/header3.webp" />
                     <h2 class="h2">Cégadatok:</h2>
                     <p>RÖVIDÍTETT NÉV: <br> <strong>MÉ-DEN Épületgépész Kft.</strong></p>
                     <p>TELJES NÉV: <br><strong>MÉ-DEN Épületgépész Korlátolt Felelősségű Társaság</strong></p>
