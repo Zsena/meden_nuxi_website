@@ -47,7 +47,7 @@
               <NuxtLink to="/arajanlat" :class="{'active-link': isActive('/arajanlat')}">Árajánlat</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/ceginformacio" :class="{'active-link': isActive('/ceginformacio')}">Céginformáció</NuxtLink>
+              <NuxtLink to="/ceginformacio" :class="{'active-link': isActive('/ceginformacio')}">Céginfó</NuxtLink>
             </li>
             <li>
               <NuxtLink to="/garancia" :class="{'active-link': isActive('/garancia')}">Garancia</NuxtLink>
