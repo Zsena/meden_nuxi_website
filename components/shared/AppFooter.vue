@@ -36,7 +36,7 @@
               <NuxtLink to="/cegunk" :class="{'active-link': isActive('/cegunk')}">Cégünk</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/szolgaltatasok" :class="{'active-link': isActive('/szolgaltatasok')}">Szolgáltatásaink</NuxtLink>
+              <NuxtLink to="/szolgaltatasok" class="break-words" :class="{'active-link': isActive('/szolgaltatasok')}">Szolgáltatásaink</NuxtLink>
             </li>
             <li>
               <NuxtLink to="/munkaink" :class="{'active-link': isActive('/munkaink')}">Munkáink</NuxtLink>

@@ -49,7 +49,7 @@ useHead(() => ({
       <div class="flex flex-col lg:flex-row gap-8 xl:gap-40 my-16 xl:my-28">
         <LargeCard
           title="Kapcsolat"
-          description="Vedd fel velünk a kapcsolatot"
+          description="Vegye fel velünk a kapcsolatot"
           bgClass="card-purple"
           textBaseColor="text-white"
           iconfyIcon="gg:hello"
