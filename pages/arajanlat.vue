@@ -22,7 +22,7 @@ useHead(() => ({
         "Kérjen árajánlatot szolgáltatásainkra! Vállalkozásunk készséggel áll rendelkezésére Víz, Gáz és Fűtés szerelésben, gépi és magasnyomású mosásban, duguláselhárításban, valamint gépi, vegyszeres fűtésrendszer tisztításban.",
     },
     { hid: "og:image", property: "og:image", content: "/img/05engineer.webp" },
-    { hid: "og:url", property: "og:url", content: "/arajanlat" },
+    { hid: "og:url", property: "og:url", content: "https://medenepuletgepesz.hu/arajanlat" },
   ],
   script: [
     {

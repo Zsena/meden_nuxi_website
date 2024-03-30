@@ -25,7 +25,7 @@ useHead(() => ({
       property: "og:image",
       content: "/img/headers/header6.webp",
     },
-    { hid: "og:url", property: "og:url", content: "/garancia" },
+    { hid: "og:url", property: "og:url", content: "https://medenepuletgepesz.hu/garancia" },
   ],
   script: [
     {

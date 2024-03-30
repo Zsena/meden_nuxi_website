@@ -22,7 +22,7 @@ useHead(() => ({
       content:
         "Ismerje meg vállalkozásunkat! Szakembereink Víz, Gáz és Fűtés szereléssel foglalkoznak, valamint gépi és magasnyomású mosással, duguláselhárítással, valamint gépi, vegyszeres fűtésrendszer tisztítással is állnak rendelkezésére.",
     },
-    { hid: "og:url", property: "og:url", content: "/cegunk" },
+    { hid: "og:url", property: "og:url", content: "https://medenepuletgepesz.hu/cegunk" },
   ],
   script: [
     {

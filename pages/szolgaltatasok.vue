@@ -25,7 +25,7 @@ useHead(() => ({
         "Tekintse meg szolgáltatásainkat! Vállalkozásunk széleskörűen foglalkozik Víz, Gáz és Fűtés szereléssel, gépi és magasnyomású mosással, duguláselhárítással, valamint gépi, vegyszeres fűtésrendszer tisztítással.",
     },
     { hid: "og:image", property: "og:image", content: "/img/01water.webp" },
-    { hid: "og:url", property: "og:url", content: "/szolgaltatasok" },
+    { hid: "og:url", property: "og:url", content: "https://medenepuletgepesz.hu/szolgaltatasok" },
   ],
   script: [
     {
