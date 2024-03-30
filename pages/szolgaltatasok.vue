@@ -24,7 +24,7 @@ useHead(() => ({
       content:
         "Tekintse meg szolgáltatásainkat! Vállalkozásunk széleskörűen foglalkozik Víz, Gáz és Fűtés szereléssel, gépi és magasnyomású mosással, duguláselhárítással, valamint gépi, vegyszeres fűtésrendszer tisztítással.",
     },
-    { hid: "og:image", property: "og:image", content: "/img/01water.webp" },
+    { hid: "og:image", property: "og:image", content: "https://medenepuletgepesz.hu/img/01water.webp" },
     { hid: "og:url", property: "og:url", content: "https://medenepuletgepesz.hu/szolgaltatasok" },
   ],
   script: [
@@ -36,7 +36,7 @@ useHead(() => ({
         name: "Mé-den épületgépészet - Szolgáltatásaink",
         description:
           "Tekintse meg szolgáltatásainkat! Vállalkozásunk széleskörűen foglalkozik Víz, Gáz és Fűtés szereléssel, gépi és magasnyomású mosással, duguláselhárítással, valamint gépi, vegyszeres fűtésrendszer tisztítással.",
-        image: "/img/01water.webp",
+        image: "https://medenepuletgepesz.hu/img/01water.webp",
       }),
     },
   ],

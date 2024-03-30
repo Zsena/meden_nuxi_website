@@ -21,7 +21,7 @@ useHead(() => ({
       content:
         "Kérjen árajánlatot szolgáltatásainkra! Vállalkozásunk készséggel áll rendelkezésére Víz, Gáz és Fűtés szerelésben, gépi és magasnyomású mosásban, duguláselhárításban, valamint gépi, vegyszeres fűtésrendszer tisztításban.",
     },
-    { hid: "og:image", property: "og:image", content: "/img/05engineer.webp" },
+    { hid: "og:image", property: "og:image", content: "https://medenepuletgepesz.hu/img/05engineer.webp" },
     { hid: "og:url", property: "og:url", content: "https://medenepuletgepesz.hu/arajanlat" },
   ],
   script: [
@@ -33,7 +33,7 @@ useHead(() => ({
         name: "Mé-den épületgépészet - Árajánlatkérés",
         description:
           "Kérjen árajánlatot szolgáltatásainkra! Vállalkozásunk készséggel áll rendelkezésére Víz, Gáz és Fűtés szerelésben, gépi és magasnyomású mosásban, duguláselhárításban, valamint gépi, vegyszeres fűtésrendszer tisztításban.",
-        image: "/img/05engineer.webp",
+        image: "https://medenepuletgepesz.hu/img/05engineer.webp",
       }),
     },
   ],

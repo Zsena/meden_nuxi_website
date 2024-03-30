@@ -33,7 +33,7 @@ useHead(() => ({
         name: "Mé-den épületgépészet - Cégünk",
         description:
           "Ismerje meg vállalkozásunkat! Szakembereink Víz, Gáz és Fűtés szereléssel foglalkoznak, valamint gépi és magasnyomású mosással, duguláselhárítással, valamint gépi, vegyszeres fűtésrendszer tisztítással is állnak rendelkezésére.",
-        image: "/img/cegunk.webp",
+        image: "https://medenepuletgepesz.hu/img/headers/header3.webp",
       }),
     },
   ],

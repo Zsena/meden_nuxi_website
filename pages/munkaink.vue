@@ -21,7 +21,7 @@ useHead(() => ({
       content:
         "Tekintse meg referenciáinkat és eddigi munkáinkat! Vállalkozásunk számos sikeres projektet tud felmutatni Víz, Gáz és Fűtés szerelésben, gépi és magasnyomású mosásban, duguláselhárításban, valamint gépi, vegyszeres fűtésrendszer tisztításban.",
     },
-    { hid: "og:image", property: "og:image", content: "/img/04heating.webp" },
+    { hid: "og:image", property: "og:image", content: "https://medenepuletgepesz.hu/img/04heating.webp" },
     { hid: "og:url", property: "og:url", content: "https://medenepuletgepesz.hu/munkaink" },
   ],
   script: [
@@ -33,7 +33,7 @@ useHead(() => ({
         name: "Mé-den épületgépészet - Munkáink",
         description:
           "Tekintse meg referenciáinkat és eddigi munkáinkat! Vállalkozásunk számos sikeres projektet tud felmutatni Víz, Gáz és Fűtés szerelésben, gépi és magasnyomású mosásban, duguláselhárításban, valamint gépi, vegyszeres fűtésrendszer tisztításban.",
-        image: "/img/04heating.webp",
+        image: "https://medenepuletgepesz.hu/img/04heating.webp",
       }),
     },
   ],

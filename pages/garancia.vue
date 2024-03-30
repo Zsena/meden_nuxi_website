@@ -23,7 +23,7 @@ useHead(() => ({
     {
       hid: "og:image",
       property: "og:image",
-      content: "/img/headers/header6.webp",
+      content: "https://medenepuletgepesz.hu/img/headers/header6.webp",
     },
     { hid: "og:url", property: "og:url", content: "https://medenepuletgepesz.hu/garancia" },
   ],
@@ -36,7 +36,7 @@ useHead(() => ({
         name: "Mé-den épületgépészet - Garancia",
         description:
           "Tekintse meg garanciális feltételeinket! Vállalkozásunk színvonalas szolgáltatásokkal, hosszú távú tapasztalattal és elégedett ügyfelekkel büszkélkedhet Víz, Gáz és Fűtés szerelésben, gépi és magasnyomású mosásban, duguláselhárításban, valamint gépi, vegyszeres fűtésrendszer tisztításban.",
-        image: "/img/headers/header6.webp",
+        image: "https://medenepuletgepesz.hu/img/headers/header6.webp",
       }),
     },
   ],

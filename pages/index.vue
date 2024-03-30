@@ -12,7 +12,7 @@ useHead(() => ({
         name: "Mé-den épületgépészet",
         description:
           "Vállalkozásunk Víz Gáz és fűtés szerelés mellett foglalkozik gépi és magasnyomású mosóval való dugulás elhárítással valamint gépi, vegyszeres fűtés rendszer tisztítással is!",
-        image: "/img/headers/header3.webp",
+        image: "https://medenepuletgepesz.hu/img/headers/header3.webp",
       }),
     },
   ],
