@@ -25,6 +25,7 @@ useHead(() => ({
       property: "og:image",
       content: "/img/headers/header6.webp",
     },
+    { hid: "og:url", property: "og:url", content: "/garancia" },
   ],
   script: [
     {

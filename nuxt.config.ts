@@ -52,6 +52,7 @@ export default defineNuxtConfig({
           content: "/img/headers/header3.webp",
         },
         { property: 'og:type', content: 'website' },
+        { hid: "og:url", property: "og:url", content: "https://medenepuletgepesz.hu" },
         {
           hid: "twitter:card",
           name: "twitter:card",
