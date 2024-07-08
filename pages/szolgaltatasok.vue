@@ -41,7 +41,7 @@ const CardData = [
     list2: "Víz- és gázvezeték-szivárgások javítása",
     list3: "Vízvezeték-szerelvények beszerelése, cseréje",
     list4: "Gázkészülékek javítása, karbantartása, cseréje",
-    bgColor: "card-black-opacity",
+    bgColor: "card-black-opacity w-full xl:min-w-[464px]",
     url: "/img/service1.webp",
   },
   {
@@ -51,7 +51,7 @@ const CardData = [
     list2: "Karbantartás, felújítás ",
     list3: "Energiahálózat kiépítés",
     list4: "Energetikai felülvizsgálat és tanácsadás",
-    bgColor: "card-blue-opacity",
+    bgColor: "card-blue-opacity w-full xl:min-w-[464px]",
     url: "/img/service2.webp",
   },
   {
@@ -61,7 +61,7 @@ const CardData = [
     list2: "Korszerűsítés és javítás",
     list3: "Szellőztetés, légellátás ",
     list4: "Légállapot kialakítás és szabályozás",
-    bgColor: "card-purple-opacity",
+    bgColor: "card-purple-opacity w-full xl:min-w-[464px]",
     url: "/img/service3.webp",
   },
   {
@@ -71,7 +71,7 @@ const CardData = [
     list2: "Intelligens fűtési vezérlőrendszerek beépítése",
     list3: "Felületfűtési megoldások",
     list4: "Fűtés korszerűsítés",
-    bgColor: "card-gray-opacity",
+    bgColor: "card-gray-opacity w-full xl:min-w-[464px]",
     url: "/img/service4.webp",
   },
 ];

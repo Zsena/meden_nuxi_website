@@ -170,7 +170,6 @@ const galleryImages3 = ref([
 
 <template>
   <main class="">
-    <SliderHero />
     <section class="mt-32">
       <div class="container px-4 lg:max-w-4xl xl:max-w-6xl mx-auto flex flex-col items-center relative h-full gap-8">
         <div class="flex justify-end w-full">
