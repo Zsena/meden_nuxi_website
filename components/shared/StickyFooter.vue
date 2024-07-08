@@ -24,28 +24,12 @@
     </div>
   </div>
 </template>
-
-<script>
-import { ref, computed } from "vue";
-
-export default {
-  setup() {
-    const projectName = ref("MÉDEN ÉPÜLETGÉPÉSZET");
-    const author = ref("Geekrabbits.hu");
-    const currentYear = computed(() => new Date().getFullYear());
-
-    return {
-      projectName,
-      author,
-      currentYear,
-    };
-  },
-};
-</script>
 <script setup>
 import { useRoute } from 'vue-router';
 
-const logoSrc = "/img/logo.png";
+const projectName = "MÉDEN ÉPÜLETGÉPÉSZET";
+const author = "Geekrabbits.hu";
+const currentYear = new Date().getFullYear();
 
 const route = useRoute();
 
