@@ -1,4 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { gtag_report_conversion } from './composables/useReportConversion';
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
@@ -23,7 +24,26 @@ export default defineNuxtConfig({
         lang: "hu",
         class: "scroll-smooth",
       },
-      
+      script: [
+        { src: "https://www.googletagmanager.com/gtag/js?id=G-P70G108MQD", async: true },
+        {
+          hid: 'gtm',
+          children: `window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-P70G108MQD');`,
+          type: 'text/javascript',
+        },
+        {
+          hid: 'gtag_report_conversion',
+          children: `(${gtag_report_conversion.toString()})();`,
+          type: 'text/javascript',
+        },
+        {
+          src: "//cdn.cookie-script.com/s/a3448cb7ae3ea3adfd6e8acdbb58a776.js",
+          type: "text/javascript",
+        }
+      ],
       meta: [
         {
           hid: "description",

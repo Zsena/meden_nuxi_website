@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { useReportConversion } from '~/composables/useReportConversion';
+const { reportConversion } = useReportConversion();
 import { Icon } from "@iconify/vue";
 
 useHead(() => ({
@@ -47,17 +49,9 @@ useHead(() => ({
         Kérjen árajánlatot
       </h1>
       <div class="flex flex-col lg:flex-row gap-8 xl:gap-40 my-16 xl:my-28">
-        <LargeCard
-          title="Kapcsolat"
-          description="Vegye fel velünk a kapcsolatot"
-          bgClass="card-purple"
-          textBaseColor="text-white"
-          iconfyIcon="gg:hello"
-          image="/img/headers/header4.webp"
-          alt="Kapcsolat"
-          data-aos="fade-up"
-          data-aos-duration="700"
-        />
+        <LargeCard title="Kapcsolat" description="Vegye fel velünk a kapcsolatot" bgClass="card-purple"
+          textBaseColor="text-white" iconfyIcon="gg:hello" image="/img/headers/header4.webp" alt="Kapcsolat"
+          data-aos="fade-up" data-aos-duration="700" />
         <article>
           <p class="pb-6" data-aos="fade-up" data-aos-duration="700">
             Törekvésünk, hogy az újítások és a kiváló minőség vezérelje
@@ -68,32 +62,18 @@ useHead(() => ({
             szolgáltatást nyújthassunk.
           </p>
           <div class="py-6">
-            <SmallCard
-              urlTitle="#víziónk"
-              bgClass="bg-purple-grad/10"
+            <SmallCard urlTitle="#víziónk" bgClass="bg-purple-grad/10"
               description="Elkötelezettek vagyunk amellett, hogy folyamatosan fejlesszük magunkat"
               textBaseColor="text-black-base"
-              textColor="text-blue-dark hover:text-blue-light transition-all duration-500 ease-out"
-              url="/cegunk"
-              data-aos="fade-up"
-              data-aos-duration="700"
-            />
+              textColor="text-blue-dark hover:text-blue-light transition-all duration-500 ease-out" url="/cegunk"
+              data-aos="fade-up" data-aos-duration="700" />
           </div>
-          <div
-            class="pb-6 flex items-center flex-wrap"
-            data-aos="fade-up"
-            data-aos-duration="700"
-          >
+          <div class="pb-6 flex items-center flex-wrap" data-aos="fade-up" data-aos-duration="700">
             <p class="pb-0 mt-4">
               A minőségi munkavégzés tevékenységünk alapköve
             </p>
-            <div
-              class="flex justify-center mt-4"
-              data-aos="fade-up"
-              data-aos-duration="700"
-              data-aos-offset="50"
-              data-aos-delay="50"
-            >
+            <div class="flex justify-center mt-4" data-aos="fade-up" data-aos-duration="700" data-aos-offset="50"
+              data-aos-delay="50">
               <NuxtLink to="/garancia" class="btn btn-primary px-10 ml-2">
                 Garanciális feltételek
               </NuxtLink>
@@ -106,17 +86,10 @@ useHead(() => ({
           <p class="pb-6" data-aos="fade-up" data-aos-duration="700">
             Keressen minket
           </p>
-
-          <NuxtLink
-            to="tel:+36708824217"
-            class="h5 flex items-center w-fit"
-            data-aos="fade-up"
-            data-aos-duration="700"
-          >
-            <Icon
-              icon="material-symbols-light:send-to-mobile-outline"
-              class="w-10 h-10"
-            />
+          <NuxtLink to="mailto:gepeszet118@gmail.com" data-aos="fade-up" data-aos-duration="700" class="text-blue-500 my-4 h5 flex items-center w-fit">gepeszet118@gmail.com</NuxtLink>.
+          <NuxtLink to="tel:+36708824217" @click="(event) => reportConversion(event, '+36708824217')"
+            class="h5 flex items-center w-fit" data-aos="fade-up" data-aos-duration="700">
+            <Icon icon="material-symbols-light:send-to-mobile-outline" class="w-10 h-10" />
             <span class="ml-2">+36 70 882 4217</span>
           </NuxtLink>
         </article>

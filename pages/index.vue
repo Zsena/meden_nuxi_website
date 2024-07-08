@@ -1,4 +1,6 @@
 <script setup>
+import { useReportConversion } from '~/composables/useReportConversion';
+const { reportConversion } = useReportConversion();
 import { ref } from "vue";
 import { Icon } from "@iconify/vue";
 
@@ -161,7 +163,7 @@ A fő célunk, hogy ügyfeleink teljes megelégedéssel térjenek haza, és egy 
           </p>
 
           <NuxtLink
-            to="tel:+36708824217"
+            to="tel:+36708824217" @click="(event) => reportConversion(event, '+36708824217')"
             class="h5 flex items-center w-fit"
             data-aos="fade-up"
             data-aos-duration="700"
@@ -211,6 +213,11 @@ A fő célunk, hogy ügyfeleink teljes megelégedéssel térjenek haza, és egy 
             Még több
           </NuxtLink>
         </div>
+      </div>
+    </section>
+    <section class="py-10 px-4">
+      <div class="container mx-auto my-8">
+        <SeoArticle />
       </div>
     </section>
   </main>

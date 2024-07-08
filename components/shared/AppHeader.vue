@@ -10,7 +10,7 @@
         <NuxtLink to="/szolgaltatasok" :class="{'active-link': isActive('/szolgaltatasok')}">Szolgáltatásaink</NuxtLink>
         <NuxtLink to="/munkaink" :class="{'active-link': isActive('/munkaink')}">Munkáink</NuxtLink>
         <NuxtLink to="/arajanlat" :class="{'active-link': isActive('/arajanlat')}">Árajánlat</NuxtLink>
-        <NuxtLink to="tel:+36708824217" class="h5 hidden lg:flex items-center w-fit">
+        <NuxtLink to="tel:+36708824217"  @click="(event) => reportConversion(event, '+36708824217')" class="h5 hidden lg:flex items-center w-fit">
           <span class="ml-2">+36 70 882 4217</span>
         </NuxtLink>
       </div>
@@ -81,7 +81,7 @@
               @click="toggleMobileMenu"
               >Árajánlat</NuxtLink
             >
-            <NuxtLink to="tel:+36708824217" class="h5 flex items-center w-fit">
+            <NuxtLink to="tel:+36708824217" @click="(event) => reportConversion(event, '+36708824217')" class="h5 flex items-center w-fit">
               <span class="ml-2">+36 70 882 4217</span>
             </NuxtLink>
           </div>
@@ -92,6 +92,8 @@
 </template>
 
 <script setup>
+import { useReportConversion } from '~/composables/useReportConversion';
+const { reportConversion } = useReportConversion();
 import { Icon } from "@iconify/vue";
 import { ref } from 'vue';
 import { useRoute } from 'vue-router';

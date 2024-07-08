@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { useReportConversion } from '~/composables/useReportConversion';
+const { reportConversion } = useReportConversion();
 import { Icon } from "@iconify/vue";
 useHead(() => ({
   title: "Mé-den épületgépészet - Garancia",
@@ -119,7 +121,7 @@ useHead(() => ({
                       kapcsolatba ügyfélszolgálatunkkal az alábbi
                       elérhetőségeken:
                       <NuxtLink
-                        to="tel:+36708824217"
+                        to="tel:+36708824217" @click="(event) => reportConversion(event, '+36708824217')"
                         class="h5 flex items-center w-fit"
                       >
                         <span class="ml-2">+36 70 882 4217</span>

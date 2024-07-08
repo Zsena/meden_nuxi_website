@@ -8,7 +8,7 @@
   >
     <h4 class="h4">Keressen minket bizalommal</h4>
     <NuxtLink
-      to="tel:+36708824217"
+      to="tel:+36708824217" @click="(event) => reportConversion(event, '+36708824217')"
       class="h5 flex items-center w-fit"
       data-aos="fade-up"
       data-aos-duration="700"
@@ -20,4 +20,6 @@
 </template>
 <script setup>
 import { Icon } from "@iconify/vue";
+import { useReportConversion } from '~/composables/useReportConversion';
+const { reportConversion } = useReportConversion();
 </script>

@@ -42,7 +42,7 @@
                 to="/arajanlat"
                 >Kérjen ingyenes árajánlatot most!</NuxtLink
               >
-              <NuxtLink class="btn grad-btn lg:text-lg" to="tel:+36708824217"
+              <NuxtLink class="btn grad-btn lg:text-lg" to="tel:+36708824217" @click="(event) => reportConversion(event, '+36708824217')"
                 >+36 70 882 4217</NuxtLink
               >
             </article>
@@ -78,7 +78,7 @@
                 to="/arajanlat"
                 >Kérjen ingyenes árajánlatot most!</NuxtLink
               >
-              <NuxtLink class="btn grad-btn lg:text-lg" to="tel:+36708824217"
+              <NuxtLink class="btn grad-btn lg:text-lg" to="tel:+36708824217"  @click="(event) => reportConversion(event, '+36708824217')"
                 >+36 70 882 4217</NuxtLink
               >
             </article>
@@ -89,6 +89,8 @@
   </div>
 </template>
 <script>
+import { useReportConversion } from '~/composables/useReportConversion';
+const { reportConversion } = useReportConversion();
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from "swiper/vue";
 
