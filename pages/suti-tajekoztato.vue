@@ -1,5 +1,7 @@
-<script setup lang="ts">
+<script setup>
 import { Icon } from "@iconify/vue";
+import { useRoute } from 'vue-router';
+const route = useRoute();
 
 useHead(() => ({
     title: "Mé-den épületgépészet - Adatkezelési és süti tájékoztató",
@@ -25,6 +27,9 @@ useHead(() => ({
             content: "https://medenepuletgepesz.hu/img/headers/header6.webp",
         },
         { hid: "og:url", property: "og:url", content: "https://medenepuletgepesz.hu/suti-tajekoztato" },
+    ],
+    link: [
+        { rel: 'canonical', href: 'https://medenepuletgepesz.hu' + route.path }
     ],
     script: [
         {

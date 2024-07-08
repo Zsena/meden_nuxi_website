@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import CallToAction from "~/components/CallToAction.vue";
-
+import { useRoute } from 'vue-router';
+const route = useRoute();
 useHead(() => ({
   title: "Mé-den épületgépészet - Munkáink",
   meta: [
@@ -23,6 +24,9 @@ useHead(() => ({
     },
     { hid: "og:image", property: "og:image", content: "https://medenepuletgepesz.hu/img/04heating.webp" },
     { hid: "og:url", property: "og:url", content: "https://medenepuletgepesz.hu/munkaink" },
+  ],
+  link: [
+    { rel: 'canonical', href: 'https://medenepuletgepesz.hu' + route.path }
   ],
   script: [
     {
@@ -181,17 +185,10 @@ const galleryImages3 = ref([
   <main class="">
     <SliderHero />
     <section class="mt-32">
-      <div
-        class="container px-4 lg:max-w-4xl xl:max-w-6xl mx-auto flex flex-col items-center relative h-full gap-8"
-      >
+      <div class="container px-4 lg:max-w-4xl xl:max-w-6xl mx-auto flex flex-col items-center relative h-full gap-8">
         <div class="flex justify-end w-full">
-          <article
-            class="w-auto text-right"
-            data-aos="fade-up"
-            data-aos-duration="700"
-            data-aos-offset="100"
-            data-aos-delay="50"
-          >
+          <article class="w-auto text-right" data-aos="fade-up" data-aos-duration="700" data-aos-offset="100"
+            data-aos-delay="50">
             <h2 class="h2 text-left -ml-5">Munkáink</h2>
             <h3 class="text-2xl lg:text-3xl font-bvpLight">
               Tervezés, kivitelezés
@@ -208,48 +205,28 @@ const galleryImages3 = ref([
     </section>
     <section class="py-10 px-4">
       <div class="container mx-auto my-8">
-        <h3
-          class="h3 mb-10 text-center"
-          data-aos="fade-up"
-          data-aos-duration="700"
-          data-aos-offset="50"
-          data-aos-delay="100"
-        >
+        <h3 class="h3 mb-10 text-center" data-aos="fade-up" data-aos-duration="700" data-aos-offset="50"
+          data-aos-delay="100">
           Három szintes családi ház padlófűtése. 👨🏽‍🔧
         </h3>
         <CallToAction />
         <LightBox :imgs="galleryImages1" :startIndex="2" />
-        <h3
-          class="h3 my-10 text-center"
-          data-aos="fade-up"
-          data-aos-duration="700"
-          data-aos-offset="50"
-          data-aos-delay="100"
-        >
+        <h3 class="h3 my-10 text-center" data-aos="fade-up" data-aos-duration="700" data-aos-offset="50"
+          data-aos-delay="100">
           Természetes folyamatokban kínálunk szolgáltatásokat, Víz-, gáz-, és
           fűtésszerelés, továbbá a duguláselhárítás terén is tevékenykedünk. 👨🏽‍🔧
         </h3>
         <CallToAction />
         <LightBox :imgs="galleryImages2" :startIndex="2" />
-        <h3
-          class="h3 my-10 text-center"
-          data-aos="fade-up"
-          data-aos-duration="700"
-          data-aos-offset="50"
-          data-aos-delay="100"
-        >
+        <h3 class="h3 my-10 text-center" data-aos="fade-up" data-aos-duration="700" data-aos-offset="50"
+          data-aos-delay="100">
           Családi ház padlófűtés szerelése, rendszer lemez használatával! 👨🏽‍🔧
         </h3>
         <CallToAction />
         <LightBox :imgs="galleryImages3" :startIndex="2" />
       </div>
-      <div
-        class="flex justify-center mt-10"
-        data-aos="fade-up"
-        data-aos-duration="700"
-        data-aos-offset="50"
-        data-aos-delay="50"
-      >
+      <div class="flex justify-center mt-10" data-aos="fade-up" data-aos-duration="700" data-aos-offset="50"
+        data-aos-delay="50">
         <NuxtLink to="/arajanlat" class="btn btn-primary px-10">
           Kérjen árajánlatot most!
         </NuxtLink>

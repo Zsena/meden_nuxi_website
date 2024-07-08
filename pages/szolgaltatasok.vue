@@ -3,7 +3,8 @@ import NumberFour from "~/components/svg/NumberFour.vue";
 import NumberOne from "~/components/svg/NumberOne.vue";
 import NumberThree from "~/components/svg/NumberThree.vue";
 import NumberTwo from "~/components/svg/NumberTwo.vue";
-
+import { useRoute } from 'vue-router';
+const route = useRoute();
 useHead(() => ({
   title: "Mé-den épületgépészet - Szolgáltatásaink",
   meta: [
@@ -26,6 +27,9 @@ useHead(() => ({
     },
     { hid: "og:image", property: "og:image", content: "https://medenepuletgepesz.hu/img/01water.webp" },
     { hid: "og:url", property: "og:url", content: "https://medenepuletgepesz.hu/szolgaltatasok" },
+  ],
+  link: [
+    { rel: 'canonical', href: 'https://medenepuletgepesz.hu' + route.path }
   ],
   script: [
     {
@@ -90,17 +94,10 @@ const CardData = [
   <main class="">
     <SliderHero />
     <section class="my-32">
-      <div
-        class="container px-4 lg:max-w-4xl xl:max-w-6xl mx-auto flex flex-col items-center relative h-full gap-8"
-      >
+      <div class="container px-4 lg:max-w-4xl xl:max-w-6xl mx-auto flex flex-col items-center relative h-full gap-8">
         <div class="flex justify-end w-full">
-          <article
-            class="w-auto text-right"
-            data-aos="fade-up"
-            data-aos-duration="700"
-            data-aos-offset="100"
-            data-aos-delay="50"
-          >
+          <article class="w-auto text-right" data-aos="fade-up" data-aos-duration="700" data-aos-offset="100"
+            data-aos-delay="50">
             <h2 class="h2">Szolgáltatásaink</h2>
             <h3 class="text-2xl lg:text-3xl font-bvpLight">
               Tervezés, kivitelezés
@@ -113,106 +110,43 @@ const CardData = [
             </h5>
           </article>
         </div>
-        <div
-          class="flex flex-col md:flex-row justify-between w-full gap-8 mt-10"
-        >
-          <div
-            class="mt-20 lg:flex relative"
-            data-aos="fade-up"
-            data-aos-duration="700"
-            data-aos-offset="100"
-            data-aos-delay="50"
-          >
-            <ImgCard
-              :title="CardData[0].title"
-              :list1="CardData[0].list1"
-              :list2="CardData[0].list2"
-              :list3="CardData[0].list3"
-              :list4="CardData[0].list4"
-              :bgClass="CardData[0].bgColor"
-              :url="CardData[0].url"
-              class="z-10"
-            />
-            <NumberOne
-              class="absolute -ml-[72px] lg:ml-0 -top-24 inset-1/2 lg:-left-20"
-            />
+        <div class="flex flex-col md:flex-row justify-between w-full gap-8 mt-10">
+          <div class="mt-20 lg:flex relative" data-aos="fade-up" data-aos-duration="700" data-aos-offset="100"
+            data-aos-delay="50">
+            <ImgCard :title="CardData[0].title" :list1="CardData[0].list1" :list2="CardData[0].list2"
+              :list3="CardData[0].list3" :list4="CardData[0].list4" :bgClass="CardData[0].bgColor"
+              :url="CardData[0].url" class="z-10" />
+            <NumberOne class="absolute -ml-[72px] lg:ml-0 -top-24 inset-1/2 lg:-left-20" />
           </div>
 
-          <div
-            class="mt-20 lg:flex lg:mt-[35rem] relative"
-            data-aos="fade-up"
-            data-aos-duration="700"
-            data-aos-offset="100"
-            data-aos-delay="100"
-          >
-            <ImgCard
-              :title="CardData[2].title"
-              :list1="CardData[2].list1"
-              :list2="CardData[2].list2"
-              :list3="CardData[2].list3"
-              :list4="CardData[2].list4"
-              :bgClass="CardData[2].bgColor"
-              :url="CardData[2].url"
-              class="z-10"
-            />
-            <NumberTwo
-              class="absolute -ml-[72px] lg:ml-0 -top-24 inset-1/2 lg:-left-20"
-            />
+          <div class="mt-20 lg:flex lg:mt-[35rem] relative" data-aos="fade-up" data-aos-duration="700"
+            data-aos-offset="100" data-aos-delay="100">
+            <ImgCard :title="CardData[2].title" :list1="CardData[2].list1" :list2="CardData[2].list2"
+              :list3="CardData[2].list3" :list4="CardData[2].list4" :bgClass="CardData[2].bgColor"
+              :url="CardData[2].url" class="z-10" />
+            <NumberTwo class="absolute -ml-[72px] lg:ml-0 -top-24 inset-1/2 lg:-left-20" />
           </div>
         </div>
         <div class="flex flex-col md:flex-row justify-between w-full gap-8">
-          <div
-            class="mt-20 lg:flex relative"
-            data-aos="fade-up"
-            data-aos-duration="700"
-            data-aos-offset="100"
-            data-aos-delay="150"
-          >
-            <ImgCard
-              :title="CardData[1].title"
-              :list1="CardData[1].list1"
-              :list2="CardData[1].list2"
-              :list3="CardData[1].list3"
-              :list4="CardData[1].list4"
-              :bgClass="CardData[1].bgColor"
-              :url="CardData[1].url"
-              class="z-10"
-            />
-            <NumberThree
-              class="absolute -ml-[72px] lg:ml-0 -top-24 inset-1/2 lg:-left-20"
-            />
+          <div class="mt-20 lg:flex relative" data-aos="fade-up" data-aos-duration="700" data-aos-offset="100"
+            data-aos-delay="150">
+            <ImgCard :title="CardData[1].title" :list1="CardData[1].list1" :list2="CardData[1].list2"
+              :list3="CardData[1].list3" :list4="CardData[1].list4" :bgClass="CardData[1].bgColor"
+              :url="CardData[1].url" class="z-10" />
+            <NumberThree class="absolute -ml-[72px] lg:ml-0 -top-24 inset-1/2 lg:-left-20" />
           </div>
 
-          <div
-            class="mt-20 lg:flex lg:mt-[35rem] relative"
-            data-aos="fade-up"
-            data-aos-duration="700"
-            data-aos-offset="100"
-            data-aos-delay="200"
-          >
-            <ImgCard
-              :title="CardData[3].title"
-              :list1="CardData[3].list1"
-              :list2="CardData[3].list2"
-              :list3="CardData[3].list3"
-              :list4="CardData[3].list4"
-              :bgClass="CardData[3].bgColor"
-              :url="CardData[3].url"
-              class="z-10"
-            />
-            <NumberFour
-              class="absolute -ml-[72px] lg:ml-0 -top-24 inset-1/2 lg:-left-20"
-            />
+          <div class="mt-20 lg:flex lg:mt-[35rem] relative" data-aos="fade-up" data-aos-duration="700"
+            data-aos-offset="100" data-aos-delay="200">
+            <ImgCard :title="CardData[3].title" :list1="CardData[3].list1" :list2="CardData[3].list2"
+              :list3="CardData[3].list3" :list4="CardData[3].list4" :bgClass="CardData[3].bgColor"
+              :url="CardData[3].url" class="z-10" />
+            <NumberFour class="absolute -ml-[72px] lg:ml-0 -top-24 inset-1/2 lg:-left-20" />
           </div>
         </div>
       </div>
-      <div
-        class="flex justify-center mt-10"
-        data-aos="fade-up"
-        data-aos-duration="700"
-        data-aos-offset="50"
-        data-aos-delay="50"
-      >
+      <div class="flex justify-center mt-10" data-aos="fade-up" data-aos-duration="700" data-aos-offset="50"
+        data-aos-delay="50">
         <NuxtLink to="/arajanlat" class="btn btn-primary px-10">
           Kérjen árajánlatot most!
         </NuxtLink>

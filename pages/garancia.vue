@@ -2,6 +2,8 @@
 import { useReportConversion } from '~/composables/useReportConversion';
 const { reportConversion } = useReportConversion();
 import { Icon } from "@iconify/vue";
+import { useRoute } from 'vue-router';
+const route = useRoute();
 useHead(() => ({
   title: "Mé-den épületgépészet - Garancia",
   meta: [
@@ -29,6 +31,9 @@ useHead(() => ({
     },
     { hid: "og:url", property: "og:url", content: "https://medenepuletgepesz.hu/garancia" },
   ],
+  link: [
+    { rel: 'canonical', href: 'https://medenepuletgepesz.hu' + route.path }
+  ],
   script: [
     {
       type: "application/ld+json",
@@ -53,23 +58,13 @@ useHead(() => ({
           <div class="mx-auto max-w-2xl lg:max-w-5xl">
             <div class="xl:relative">
               <div class="mx-auto max-w-2xl">
-                <NuxtLink
-                  to="/"
-                  type="button"
-                  aria-label="vissza a főoldalra"
-                  class="back-button"
-                >
+                <NuxtLink to="/" type="button" aria-label="vissza a főoldalra" class="back-button">
                   <Icon icon="akar-icons:arrow-back" />
                 </NuxtLink>
                 <article>
                   <header class="flex flex-col">
-                    <time
-                      datetime="2022-09-05"
-                      class="flex items-center text-base text-slate-400"
-                    >
-                      <span class="h-4 w-0.5 bg-slate-200"></span
-                      ><span class="ml-3">marcius 5, 2024</span></time
-                    >
+                    <time datetime="2022-09-05" class="flex items-center text-base text-slate-400">
+                      <span class="h-4 w-0.5 bg-slate-200"></span><span class="ml-3">marcius 5, 2024</span></time>
                     <h1 class="h1">Garancia</h1>
                   </header>
                   <div class="mt-8" data-mdx-content="true">
@@ -120,16 +115,11 @@ useHead(() => ({
                       ha további információra van szüksége, kérjük, lépjen
                       kapcsolatba ügyfélszolgálatunkkal az alábbi
                       elérhetőségeken:
-                      <NuxtLink
-                        to="tel:+36708824217" @click="(event) => reportConversion(event, '+36708824217')"
-                        class="h5 flex items-center w-fit"
-                      >
+                      <NuxtLink to="tel:+36708824217" @click="(event) => reportConversion(event, '+36708824217')"
+                        class="h5 flex items-center w-fit">
                         <span class="ml-2">+36 70 882 4217</span>
                       </NuxtLink>
-                      <NuxtLink
-                        to="mailto:gepeszet118@gmail.com"
-                        class="h5 flex items-center w-fit"
-                      >
+                      <NuxtLink to="mailto:gepeszet118@gmail.com" class="h5 flex items-center w-fit">
                         <span class="ml-2">gepeszet118@gmail.com</span>
                       </NuxtLink>
                       Munkatársaink készséggel állnak rendelkezésére minden
@@ -144,13 +134,8 @@ useHead(() => ({
                       <li>Türelem</li>
                     </ol>
                   </div>
-                  <div
-                    class="flex justify-center mt-10"
-                    data-aos="fade-up"
-                    data-aos-duration="700"
-                    data-aos-offset="50"
-                    data-aos-delay="50"
-                  >
+                  <div class="flex justify-center mt-10" data-aos="fade-up" data-aos-duration="700" data-aos-offset="50"
+                    data-aos-delay="50">
                     <NuxtLink to="/arajanlat" class="btn btn-primary px-10">
                       Kérjen árajánlatot
                     </NuxtLink>

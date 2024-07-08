@@ -2,6 +2,8 @@
 import { useReportConversion } from '~/composables/useReportConversion';
 const { reportConversion } = useReportConversion();
 import { Icon } from "@iconify/vue";
+import { useRoute } from 'vue-router';
+const route = useRoute();
 
 useHead(() => ({
   title: "Mé-den épületgépészet - Árajánlatkérés",
@@ -25,6 +27,9 @@ useHead(() => ({
     },
     { hid: "og:image", property: "og:image", content: "https://medenepuletgepesz.hu/img/05engineer.webp" },
     { hid: "og:url", property: "og:url", content: "https://medenepuletgepesz.hu/arajanlat" },
+  ],
+  link: [
+    { rel: 'canonical', href: 'https://medenepuletgepesz.hu' + route.path }
   ],
   script: [
     {
