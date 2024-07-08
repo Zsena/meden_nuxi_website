@@ -31,19 +31,6 @@ useHead(() => ({
   link: [
     { rel: 'canonical', href: 'https://medenepuletgepesz.hu' + route.path }
   ],
-  script: [
-    {
-      type: "application/ld+json",
-      innerHTML: JSON.stringify({
-        "@context": "http://schema.org",
-        "@type": "Service",
-        name: "Mé-den épületgépészet - Szolgáltatásaink",
-        description:
-          "Tekintse meg szolgáltatásainkat! Vállalkozásunk széleskörűen foglalkozik Víz, Gáz és Fűtés szereléssel, gépi és magasnyomású mosással, duguláselhárítással, valamint gépi, vegyszeres fűtésrendszer tisztítással.",
-        image: "https://medenepuletgepesz.hu/img/01water.webp",
-      }),
-    },
-  ],
 }));
 
 const CardData = [

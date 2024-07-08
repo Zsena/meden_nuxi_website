@@ -25,7 +25,11 @@ export default defineNuxtConfig({
         class: "scroll-smooth",
       },
       script: [
-        { src: "https://www.googletagmanager.com/gtag/js?id=G-P70G108MQD", async: true },
+        {
+          src: "https://www.googletagmanager.com/gtag/js?id=G-P70G108MQD",
+          defer: true,
+          type: "text/javascript"
+        },
         {
           hid: 'gtm',
           children: `window.dataLayer = window.dataLayer || [];
@@ -40,7 +44,7 @@ export default defineNuxtConfig({
           type: 'text/javascript',
         },
         {
-          src: "//cdn.cookie-script.com/s/a3448cb7ae3ea3adfd6e8acdbb58a776.js",
+          src: "https://cdn.cookie-script.com/s/a3448cb7ae3ea3adfd6e8acdbb58a776.js",
           type: "text/javascript",
         }
       ],

@@ -28,19 +28,6 @@ useHead(() => ({
   link: [
     { rel: 'canonical', href: 'https://medenepuletgepesz.hu' + route.path }
   ],
-  script: [
-    {
-      type: "application/ld+json",
-      innerHTML: JSON.stringify({
-        "@context": "http://schema.org",
-        "@type": "Service",
-        name: "Mé-den épületgépészet - Munkáink",
-        description:
-          "Tekintse meg referenciáinkat és eddigi munkáinkat! Vállalkozásunk számos sikeres projektet tud felmutatni Víz, Gáz és Fűtés szerelésben, gépi és magasnyomású mosásban, duguláselhárításban, valamint gépi, vegyszeres fűtésrendszer tisztításban.",
-        image: "https://medenepuletgepesz.hu/img/04heating.webp",
-      }),
-    },
-  ],
 }));
 
 const galleryImages1 = ref([

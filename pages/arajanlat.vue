@@ -31,19 +31,6 @@ useHead(() => ({
   link: [
     { rel: 'canonical', href: 'https://medenepuletgepesz.hu' + route.path }
   ],
-  script: [
-    {
-      type: "application/ld+json",
-      innerHTML: JSON.stringify({
-        "@context": "http://schema.org",
-        "@type": "Service",
-        name: "Mé-den épületgépészet - Árajánlatkérés",
-        description:
-          "Kérjen árajánlatot szolgáltatásainkra! Vállalkozásunk készséggel áll rendelkezésére Víz, Gáz és Fűtés szerelésben, gépi és magasnyomású mosásban, duguláselhárításban, valamint gépi, vegyszeres fűtésrendszer tisztításban.",
-        image: "https://medenepuletgepesz.hu/img/05engineer.webp",
-      }),
-    },
-  ],
 }));
 </script>
 
